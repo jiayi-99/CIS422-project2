@@ -1,0 +1,221 @@
+[ 2020-05-07T11:14:22+08:00 ] 127.0.0.1 /admin.php/Farmer/purchaser_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.034002s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.036002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.113006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.115006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007001s ]
+
+[ 2020-05-07T11:14:26+08:00 ] 127.0.0.1 /admin.php/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.082005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.085005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009000s ]
+
+[ 2020-05-07T14:27:54+08:00 ] 127.0.0.1 /admin.php/Login/ajax_login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.040003s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.117007s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.120007s ]
+SQL: SHOW COLUMNS FROM `lh_admin` [ RunTime:0.0610s ]
+SQL: SELECT * FROM `lh_admin` WHERE `account` = 'admin' AND `password` = 'fcea920f7412b5da7be0cf42b8c93759' AND `status` = 0 LIMIT 1   [ RunTime:0.0640s ]
+SQL: SHOW COLUMNS FROM `lh_log_admin` [ RunTime:0.1090s ]
+SQL: INSERT INTO `lh_log_admin` (`ip`,`admin_id`,`login_time`) VALUES ('127.0.0.1','14','2020-05-07 14:27:54') [ RunTime:0.2020s ]
+
+[ 2020-05-07T14:28:26+08:00 ] 127.0.0.1 /admin.php/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.025001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.040002s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.041002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.314018s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.314018s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.020001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.020001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.035002s ]
+INFO: [ app_end ] --END-- [ RunTime:0.035002s ]
+
+[ 2020-05-07T14:29:42+08:00 ] 127.0.0.1 /admin.php/Login/ajax_login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `lh_admin` [ RunTime:0.0470s ]
+SQL: SELECT * FROM `lh_admin` WHERE `account` = 'admin' AND `password` = 'fcea920f7412b5da7be0cf42b8c93759' AND `status` = 0 LIMIT 1   [ RunTime:0.0470s ]
+SQL: SHOW COLUMNS FROM `lh_log_admin` [ RunTime:0.0580s ]
+SQL: INSERT INTO `lh_log_admin` (`ip`,`admin_id`,`login_time`) VALUES ('127.0.0.1','14','2020-05-07 14:29:42') [ RunTime:0.0980s ]
+
+[ 2020-05-07T14:29:43+08:00 ] 127.0.0.1 /admin.php/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `lh_auth_group_access` [ RunTime:0.0480s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM lh_auth_group_access a INNER JOIN lh_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0450s ]
+SQL: SHOW COLUMNS FROM `lh_auth_rule` [ RunTime:0.0480s ]
+SQL: SELECT `condition`,`name` FROM `lh_auth_rule` WHERE `id` IN ('3','348','50','349','350','351','359','360','361','362','363','364','365','379','427','435','366','367','371','376','377','378','380','381','382','383','384','385','396','428','429','430','431','432','433','434','437','463','464','369','370','386','387','388','389','390','391','392','393','394','395','397','398','399','400','401','402','403','404','405','406','407','408','410','411','412','413','414','416','417','418','448','455','456','457','458','459','462','465','466','472','473','474','475','476','477','478','479','480','372','373','419','420','421','422','374','375','423','424','425','426','438','439','440','441','442','443','444','445','446','447','460','461','467','468','469','470','471','449','450','451','452','453','454') AND `type` = 1 AND `status` = 1  [ RunTime:0.0490s ]
+
+[ 2020-05-07T14:30:11+08:00 ] 127.0.0.1 /admin.php/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `lh_auth_group_access` [ RunTime:0.0510s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM lh_auth_group_access a INNER JOIN lh_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0520s ]
+SQL: SHOW COLUMNS FROM `lh_auth_rule` [ RunTime:0.0580s ]
+SQL: SELECT `condition`,`name` FROM `lh_auth_rule` WHERE `id` IN ('3','348','50','349','350','351','359','360','361','362','363','364','365','379','427','435','366','367','371','376','377','378','380','381','382','383','384','385','396','428','429','430','431','432','433','434','437','463','464','369','370','386','387','388','389','390','391','392','393','394','395','397','398','399','400','401','402','403','404','405','406','407','408','410','411','412','413','414','416','417','418','448','455','456','457','458','459','462','465','466','472','473','474','475','476','477','478','479','480','372','373','419','420','421','422','374','375','423','424','425','426','438','439','440','441','442','443','444','445','446','447','460','461','467','468','469','470','471','449','450','451','452','453','454') AND `type` = 1 AND `status` = 1  [ RunTime:0.0570s ]
+
+[ 2020-05-07T14:33:32+08:00 ] 127.0.0.1 /admin.php/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `lh_auth_group_access` [ RunTime:0.0460s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM lh_auth_group_access a INNER JOIN lh_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0440s ]
+SQL: SHOW COLUMNS FROM `lh_auth_rule` [ RunTime:0.0500s ]
+SQL: SELECT `condition`,`name` FROM `lh_auth_rule` WHERE `id` IN ('3','348','50','349','350','351','359','360','361','362','363','364','365','379','427','435','366','367','371','376','377','378','380','381','382','383','384','385','396','428','429','430','431','432','433','434','437','463','464','369','370','386','387','388','389','390','391','392','393','394','395','397','398','399','400','401','402','403','404','405','406','407','408','410','411','412','413','414','416','417','418','448','455','456','457','458','459','462','465','466','472','473','474','475','476','477','478','479','480','372','373','419','420','421','422','374','375','423','424','425','426','438','439','440','441','442','443','444','445','446','447','460','461','467','468','469','470','471','449','450','451','452','453','454') AND `type` = 1 AND `status` = 1  [ RunTime:0.0540s ]
+
+[ 2020-05-07T14:34:49+08:00 ] 127.0.0.1 /admin.php/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `lh_auth_group_access` [ RunTime:0.0440s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM lh_auth_group_access a INNER JOIN lh_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0470s ]
+SQL: SHOW COLUMNS FROM `lh_auth_rule` [ RunTime:0.0490s ]
+SQL: SELECT `condition`,`name` FROM `lh_auth_rule` WHERE `id` IN ('3','348','50','349','350','351','359','360','361','362','363','364','365','379','427','435','366','367','371','376','377','378','380','381','382','383','384','385','396','428','429','430','431','432','433','434','437','463','464','369','370','386','387','388','389','390','391','392','393','394','395','397','398','399','400','401','402','403','404','405','406','407','408','410','411','412','413','414','416','417','418','448','455','456','457','458','459','462','465','466','472','473','474','475','476','477','478','479','480','372','373','419','420','421','422','374','375','423','424','425','426','438','439','440','441','442','443','444','445','446','447','460','461','467','468','469','470','471','449','450','451','452','453','454') AND `type` = 1 AND `status` = 1  [ RunTime:0.0540s ]
+
+[ 2020-05-07T14:38:42+08:00 ] 127.0.0.1 /admin.php/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `lh_auth_group_access` [ RunTime:0.0500s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM lh_auth_group_access a INNER JOIN lh_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0480s ]
+SQL: SHOW COLUMNS FROM `lh_auth_rule` [ RunTime:0.0480s ]
+SQL: SELECT `condition`,`name` FROM `lh_auth_rule` WHERE `id` IN ('3','348','50','349','350','351','359','360','361','362','363','364','365','379','427','435','366','367','371','376','377','378','380','381','382','383','384','385','396','428','429','430','431','432','433','434','437','463','464','369','370','386','387','388','389','390','391','392','393','394','395','397','398','399','400','401','402','403','404','405','406','407','408','410','411','412','413','414','416','417','418','448','455','456','457','458','459','462','465','466','472','473','474','475','476','477','478','479','480','372','373','419','420','421','422','374','375','423','424','425','426','438','439','440','441','442','443','444','445','446','447','460','461','467','468','469','470','471','449','450','451','452','453','454') AND `type` = 1 AND `status` = 1  [ RunTime:0.0550s ]
+
+[ 2020-05-07T14:39:44+08:00 ] 127.0.0.1 /admin.php/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008000s ]
+SQL: SHOW COLUMNS FROM `lh_auth_group_access` [ RunTime:0.0560s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM lh_auth_group_access a INNER JOIN lh_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0490s ]
+SQL: SHOW COLUMNS FROM `lh_auth_rule` [ RunTime:0.0520s ]
+SQL: SELECT `condition`,`name` FROM `lh_auth_rule` WHERE `id` IN ('3','348','50','349','350','351','359','360','361','362','363','364','365','379','427','435','366','367','371','376','377','378','380','381','382','383','384','385','396','428','429','430','431','432','433','434','437','463','464','369','370','386','387','388','389','390','391','392','393','394','395','397','398','399','400','401','402','403','404','405','406','407','408','410','411','412','413','414','416','417','418','448','455','456','457','458','459','462','465','466','472','473','474','475','476','477','478','479','480','372','373','419','420','421','422','374','375','423','424','425','426','438','439','440','441','442','443','444','445','446','447','460','461','467','468','469','470','471','449','450','451','452','453','454') AND `type` = 1 AND `status` = 1  [ RunTime:0.0520s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.023002s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.027002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.130065s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.133065s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.106006s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.110006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.020001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.022001s ]
+
+[ 2020-05-07T15:12:47+08:00 ] 127.0.0.1 /admin.php/Commodity/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.029002s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.025001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.028002s ]
+SQL: SHOW COLUMNS FROM `lh_auth_group_access` [ RunTime:0.0630s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM lh_auth_group_access a INNER JOIN lh_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0780s ]
+SQL: SHOW COLUMNS FROM `lh_auth_rule` [ RunTime:0.0590s ]
+SQL: SELECT `condition`,`name` FROM `lh_auth_rule` WHERE `id` IN ('3','348','50','349','350','351','359','360','361','362','363','364','365','379','427','435','366','367','371','376','377','378','380','381','382','383','384','385','396','428','429','430','431','432','433','434','437','463','464','369','370','386','387','388','389','390','391','392','393','394','395','397','398','399','400','401','402','403','404','405','406','407','408','410','411','412','413','414','416','417','418','448','455','456','457','458','459','462','465','466','472','473','474','475','476','477','478','479','480','372','373','419','420','421','422','374','375','423','424','425','426','438','439','440','441','442','443','444','445','446','447','460','461','467','468','469','470','471','449','450','451','452','453','454') AND `type` = 1 AND `status` = 1  [ RunTime:0.0600s ]
+SQL: SHOW COLUMNS FROM `lh_update_commodity_time` [ RunTime:0.0640s ]
+SQL: INSERT INTO `lh_update_commodity_time` (`createtime`) VALUES ('1588835562') [ RunTime:0.0930s ]
+SQL: SHOW COLUMNS FROM `lh_commodity` [ RunTime:0.0570s ]
+SQL: SELECT * FROM `lh_commodity` WHERE `del_status` = 1  [ RunTime:0.0640s ]
+SQL: SELECT * FROM `lh_commodity` WHERE `del_status` = 1 ORDER BY `id` DESC LIMIT 0,20   [ RunTime:0.0560s ]
+SQL: SHOW COLUMNS FROM `lh_commodity_sort` [ RunTime:0.0620s ]
+SQL: SELECT * FROM `lh_commodity_sort` WHERE `id` = 1 LIMIT 1   [ RunTime:0.1100s ]
+SQL: SELECT * FROM `lh_commodity_sort` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0630s ]
+SQL: SELECT * FROM `lh_commodity_sort` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0530s ]
+SQL: SELECT * FROM `lh_commodity_sort` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0620s ]
+SQL: SELECT * FROM `lh_commodity_sort` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0470s ]
+SQL: SELECT * FROM `lh_commodity_sort` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0930s ]
+SQL: SELECT * FROM `lh_commodity_sort` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0550s ]
+SQL: SELECT * FROM `lh_commodity_sort` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0630s ]
+SQL: SELECT * FROM `lh_commodity_sort` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0640s ]
+SQL: SELECT * FROM `lh_commodity_sort` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0610s ]
+SQL: SELECT * FROM `lh_commodity_sort` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0610s ]
+SQL: SELECT * FROM `lh_commodity_sort` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0590s ]
+SQL: SELECT * FROM `lh_commodity_sort` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0520s ]
+SQL: SELECT * FROM `lh_commodity_sort` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0540s ]
+SQL: SELECT * FROM `lh_commodity_sort` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0800s ]
+SQL: SELECT * FROM `lh_commodity_sort` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0620s ]
+SQL: SELECT * FROM `lh_commodity_sort` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0740s ]
+SQL: SELECT * FROM `lh_commodity_sort` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0620s ]
+SQL: SELECT * FROM `lh_commodity_sort` WHERE `id` = 8 LIMIT 1   [ RunTime:0.1000s ]
+SQL: SELECT * FROM `lh_commodity_sort` WHERE `id` = 3 LIMIT 1   [ RunTime:0.1170s ]
+SQL: SELECT * FROM `lh_commodity_sort` WHERE `status` = 1 AND `del_status` = 1  [ RunTime:0.0570s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.044002s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.046002s ]
+NOTIC: [8] Undefined variable: commodity_sort_id G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\57d68221919c5f569b6377ac6e52126b.php 第 285 行.
+NOTIC: [8] Undefined variable: commodity_sort_id G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\57d68221919c5f569b6377ac6e52126b.php 第 285 行.
+NOTIC: [8] Undefined variable: commodity_sort_id G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\57d68221919c5f569b6377ac6e52126b.php 第 285 行.
+NOTIC: [8] Undefined variable: commodity_sort_id G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\57d68221919c5f569b6377ac6e52126b.php 第 285 行.
+NOTIC: [8] Undefined variable: name G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\57d68221919c5f569b6377ac6e52126b.php 第 298 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.834105s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.838105s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.029001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.034002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.021001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.026001s ]
+

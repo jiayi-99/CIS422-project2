@@ -1,0 +1,165 @@
+[ 2020-03-24T11:14:54+08:00 ] 127.0.0.1 /api.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.019001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.021001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.024002s ]
+ERR: 非法操作:index
+
+[ 2020-03-24T11:15:18+08:00 ] 127.0.0.1 /api.php/My/send?phone=15298921808
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.016001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.018001s ]
+
+[ 2020-03-24T11:15:51+08:00 ] 127.0.0.1 /api.php/My/send?phone=15298921808
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007000s ]
+
+[ 2020-03-24T13:55:49+08:00 ] 127.0.0.1 /api.php/My/check_user?user_id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.018001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.023002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.026002s ]
+SQL: SHOW COLUMNS FROM `lh_user` [ RunTime:0.0780s ]
+SQL: SELECT * FROM `lh_user` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0780s ]
+SQL: SHOW COLUMNS FROM `lh_technology` [ RunTime:0.0590s ]
+SQL: SELECT * FROM `lh_technology` WHERE `user_id` = 10 LIMIT 1   [ RunTime:0.0880s ]
+SQL: SHOW COLUMNS FROM `lh_farmer` [ RunTime:0.1110s ]
+SQL: SELECT * FROM `lh_farmer` WHERE `phone` = '15298921808' LIMIT 1   [ RunTime:0.2260s ]
+
+[ 2020-03-24T13:56:58+08:00 ] 127.0.0.1 /api.php/My/check_user?user_id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `lh_user` [ RunTime:0.0800s ]
+SQL: SELECT * FROM `lh_user` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0890s ]
+SQL: SHOW COLUMNS FROM `lh_technology` [ RunTime:0.0970s ]
+SQL: SELECT * FROM `lh_technology` WHERE `user_id` = 10 LIMIT 1   [ RunTime:0.0810s ]
+SQL: SHOW COLUMNS FROM `lh_farmer` [ RunTime:0.1950s ]
+SQL: SELECT * FROM `lh_farmer` WHERE `phone` = '15298921808' LIMIT 1   [ RunTime:0.0960s ]
+
+[ 2020-03-24T14:22:07+08:00 ] 127.0.0.1 /api.php/My/send?phone=15298921808
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.014000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008001s ]
+
+[ 2020-03-24T14:22:24+08:00 ] 127.0.0.1 /api.php/My/auth_user?user_id=10&type=2&phone=15298921808&code=4543
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009001s ]
+
+[ 2020-03-24T14:23:15+08:00 ] 127.0.0.1 /api.php/My/auth_user?user_id=10&type=2&phone=15298921808&code=4543
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009001s ]
+
+[ 2020-03-24T14:59:02+08:00 ] 127.0.0.1 /api.php/My/auth_user?user_id=10&type=2&phone=15298921808&code=4543
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.019001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.023001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.027002s ]
+
+[ 2020-03-24T14:59:38+08:00 ] 127.0.0.1 /api.php/My/check_user?user_id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012000s ]
+
+[ 2020-03-24T14:59:43+08:00 ] 127.0.0.1 /api.php/My/auth_user?user_id=10&type=2&phone=15298921808&code=322777
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008000s ]
+
+[ 2020-03-24T15:00:27+08:00 ] 127.0.0.1 /api.php/My/auth_user?user_id=10&type=2&phone=15298921808&code=322777
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+
+[ 2020-03-24T15:00:49+08:00 ] 127.0.0.1 /api.php/My/send?user_id=10&type=2&phone=15298921808&code=322777
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+
+[ 2020-03-24T15:04:04+08:00 ] 127.0.0.1 /api.php/My/auth_user?user_id=10&type=2&phone=15298921808&code=172862
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008000s ]
+SQL: SHOW COLUMNS FROM `lh_technology` [ RunTime:0.8871s ]
+SQL: SELECT * FROM `lh_technology` WHERE `user_id` = 10 AND `del_status` = 1 LIMIT 1   [ RunTime:0.1020s ]
+SQL: UPDATE `lh_technology` SET `status`='1',`phone`='15298921808' WHERE `id` = 2 [ RunTime:0.0910s ]
+NOTIC: [2] Cannot use a scalar value as an array G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Api\Controller\MyController.class.php 第 169 行.
+
+[ 2020-03-24T15:04:26+08:00 ] 127.0.0.1 /api.php/My/auth_user?user_id=10&type=2&phone=15298921808&code=172862
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+SQL: SHOW COLUMNS FROM `lh_technology` [ RunTime:0.0740s ]
+SQL: SELECT * FROM `lh_technology` WHERE `user_id` = 10 AND `del_status` = 1 LIMIT 1   [ RunTime:0.0620s ]
+SQL: UPDATE `lh_technology` SET `status`='1',`phone`='15298921808' WHERE `id` = 2 [ RunTime:0.0820s ]
+
+[ 2020-03-24T15:32:11+08:00 ] 127.0.0.1 /api.php/My/send?user_id=10&type=2&phone=15298921808&code=322777
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.020001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.014001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017001s ]
+
+[ 2020-03-24T15:32:20+08:00 ] 127.0.0.1 /api.php/My/auth_user?user_id=10&type=2&phone=15298921808&code=172862
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.005000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013001s ]
+

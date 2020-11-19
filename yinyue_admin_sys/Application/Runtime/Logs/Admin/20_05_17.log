@@ -1,0 +1,598 @@
+[ 2020-05-17T21:22:19+08:00 ] 127.0.0.1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.055003s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.035002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.037003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.022001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.025002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.292016s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.294017s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.031001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.033002s ]
+
+[ 2020-05-17T21:22:22+08:00 ] 127.0.0.1 /admin.php/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.137008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.139008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.027002s ]
+INFO: [ app_end ] --END-- [ RunTime:0.029002s ]
+
+[ 2020-05-17T21:22:24+08:00 ] 127.0.0.1 /admin.php/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.098005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.100005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.012001s ]
+
+[ 2020-05-17T21:22:30+08:00 ] 127.0.0.1 /admin.php/Login/ajax_login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.047003s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009001s ]
+SQL: SHOW COLUMNS FROM `kq_admin` [ RunTime:0.0880s ]
+SQL: SELECT * FROM `kq_admin` WHERE `account` = 'admin' AND `password` = 'fcea920f7412b5da7be0cf42b8c93759' AND `status` = 0 LIMIT 1   [ RunTime:0.1060s ]
+SQL: SHOW COLUMNS FROM `kq_log_admin` [ RunTime:0.0750s ]
+SQL: INSERT INTO `kq_log_admin` (`ip`,`admin_id`,`login_time`) VALUES ('127.0.0.1','14','2020-05-17 21:22:30') [ RunTime:0.0760s ]
+
+[ 2020-05-17T21:22:33+08:00 ] 127.0.0.1 /admin.php/User/list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.042002s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `kq_auth_group_access` [ RunTime:0.0680s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM kq_auth_group_access a INNER JOIN kq_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0670s ]
+SQL: SHOW COLUMNS FROM `kq_auth_rule` [ RunTime:0.0670s ]
+SQL: SELECT `condition`,`name` FROM `kq_auth_rule` WHERE `id` IN ('3','348','50','349','350','351','359','360','361','362','363','364','482','483','495','496','497','498','499','500','501','502','503','504') AND `type` = 1 AND `status` = 1  [ RunTime:0.0650s ]
+ERR: ����Ŀ�����������ܾ����޷����ӡ�
+
+
+[ 2020-05-17T21:23:16+08:00 ] 127.0.0.1 /admin.php/User/list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.023001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.020001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.026001s ]
+SQL: SHOW COLUMNS FROM `kq_auth_group_access` [ RunTime:0.0770s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM kq_auth_group_access a INNER JOIN kq_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0760s ]
+SQL: SHOW COLUMNS FROM `kq_auth_rule` [ RunTime:0.0750s ]
+SQL: SELECT `condition`,`name` FROM `kq_auth_rule` WHERE `id` IN ('3','348','50','349','350','351','359','360','361','362','363','364','482','483','495','496','497','498','499','500','501','502','503','504') AND `type` = 1 AND `status` = 1  [ RunTime:0.0750s ]
+SQL: SHOW COLUMNS FROM `kq_user` [ RunTime:0.0750s ]
+SQL: SELECT * FROM `kq_user`  [ RunTime:0.0760s ]
+SQL: SELECT * FROM `kq_user` ORDER BY `id` DESC LIMIT 0,20   [ RunTime:0.0760s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined variable: nickname G:\phpStudy\PHPTutorial\WWW\kq_admin\Application\Runtime\Cache\Admin\348efd2a0dd83b3e88e89458f20a0b1c.php 第 216 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.438025s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.441025s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.012001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.014001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.021002s ]
+INFO: [ app_end ] --END-- [ RunTime:0.023002s ]
+
+[ 2020-05-17T21:23:29+08:00 ] 127.0.0.1 /admin.php/Project/list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+SQL: SHOW COLUMNS FROM `kq_auth_group_access` [ RunTime:0.0740s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM kq_auth_group_access a INNER JOIN kq_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0760s ]
+SQL: SHOW COLUMNS FROM `kq_auth_rule` [ RunTime:0.0740s ]
+SQL: SELECT `condition`,`name` FROM `kq_auth_rule` WHERE `id` IN ('3','348','50','349','350','351','359','360','361','362','363','364','482','483','495','496','497','498','499','500','501','502','503','504') AND `type` = 1 AND `status` = 1  [ RunTime:0.0750s ]
+SQL: SHOW COLUMNS FROM `kq_project` [ RunTime:0.0730s ]
+SQL: SELECT * FROM `kq_project` WHERE `del_status` = 1  [ RunTime:0.0730s ]
+SQL: SELECT * FROM `kq_project` WHERE `del_status` = 1 ORDER BY `id` DESC LIMIT 0,20   [ RunTime:0.0730s ]
+SQL: SHOW COLUMNS FROM `kq_user` [ RunTime:0.0770s ]
+SQL: SELECT * FROM `kq_user` WHERE `phone` = '15298921808' LIMIT 1   [ RunTime:0.0730s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined variable: name G:\phpStudy\PHPTutorial\WWW\kq_admin\Application\Runtime\Cache\Admin\b6271d02aac81c66350ebc8a6b1d17a9.php 第 217 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.262015s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.264015s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009001s ]
+
+[ 2020-05-17T21:24:51+08:00 ] 127.0.0.1 /admin.php/Project/list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.003001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.037002s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.024001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.029001s ]
+SQL: SHOW COLUMNS FROM `kq_auth_group_access` [ RunTime:0.0750s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM kq_auth_group_access a INNER JOIN kq_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0730s ]
+SQL: SHOW COLUMNS FROM `kq_auth_rule` [ RunTime:0.0720s ]
+SQL: SELECT `condition`,`name` FROM `kq_auth_rule` WHERE `id` IN ('3','348','50','349','350','351','359','360','361','362','363','364','482','483','495','496','497','498','499','500','501','502','503','504') AND `type` = 1 AND `status` = 1  [ RunTime:0.0770s ]
+SQL: SHOW COLUMNS FROM `kq_project` [ RunTime:0.0730s ]
+SQL: SELECT * FROM `kq_project` WHERE `del_status` = 1  [ RunTime:0.0730s ]
+SQL: SELECT * FROM `kq_project` WHERE `del_status` = 1 ORDER BY `id` DESC LIMIT 0,20   [ RunTime:0.0740s ]
+SQL: SHOW COLUMNS FROM `kq_user` [ RunTime:0.0740s ]
+SQL: SELECT * FROM `kq_user` WHERE `phone` = '15298921808' LIMIT 1   [ RunTime:0.0750s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005001s ]
+NOTIC: [8] Undefined variable: name G:\phpStudy\PHPTutorial\WWW\kq_admin\Application\Runtime\Cache\Admin\b6271d02aac81c66350ebc8a6b1d17a9.php 第 217 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.645037s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.651037s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.025001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.030001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.024001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.031001s ]
+
+[ 2020-05-17T21:25:26+08:00 ] 127.0.0.1 /admin.php/Project/attendance_list?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019001s ]
+SQL: SHOW COLUMNS FROM `kq_auth_group_access` [ RunTime:0.0660s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM kq_auth_group_access a INNER JOIN kq_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0660s ]
+SQL: SHOW COLUMNS FROM `kq_auth_rule` [ RunTime:0.0660s ]
+SQL: SELECT `condition`,`name` FROM `kq_auth_rule` WHERE `id` IN ('3','348','50','349','350','351','359','360','361','362','363','364','482','483','495','496','497','498','499','500','501','502','503','504') AND `type` = 1 AND `status` = 1  [ RunTime:0.0670s ]
+SQL: SHOW COLUMNS FROM `kq_attendance` [ RunTime:0.0670s ]
+SQL: SELECT * FROM `kq_attendance` WHERE `del_status` = 1 AND `project_id` = 3  [ RunTime:0.0700s ]
+SQL: SELECT * FROM `kq_attendance` WHERE `del_status` = 1 AND `project_id` = 3 ORDER BY `id` DESC LIMIT 0,20   [ RunTime:0.0660s ]
+SQL: SHOW COLUMNS FROM `kq_user` [ RunTime:0.0660s ]
+SQL: SELECT * FROM `kq_user` WHERE `phone` = '2147483647' LIMIT 1   [ RunTime:0.0670s ]
+SQL: SELECT * FROM `kq_user` WHERE `phone` = '2147483647' LIMIT 1   [ RunTime:0.0710s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.006000s ]
+NOTIC: [8] Undefined variable: name G:\phpStudy\PHPTutorial\WWW\kq_admin\Application\Runtime\Cache\Admin\0b8b30b828ee9f4c8549fd3e40045854.php 第 217 行.
+NOTIC: [8] Undefined index: name G:\phpStudy\PHPTutorial\WWW\kq_admin\Application\Runtime\Cache\Admin\0b8b30b828ee9f4c8549fd3e40045854.php 第 280 行.
+NOTIC: [8] Undefined index: name G:\phpStudy\PHPTutorial\WWW\kq_admin\Application\Runtime\Cache\Admin\0b8b30b828ee9f4c8549fd3e40045854.php 第 280 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.264015s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.269015s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.012001s ]
+
+[ 2020-05-17T21:25:31+08:00 ] 127.0.0.1 /admin.php/Project/attendance_operation?id=2&project_id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008000s ]
+SQL: SHOW COLUMNS FROM `kq_auth_group_access` [ RunTime:0.0710s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM kq_auth_group_access a INNER JOIN kq_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0740s ]
+SQL: SHOW COLUMNS FROM `kq_auth_rule` [ RunTime:0.0710s ]
+SQL: SELECT `condition`,`name` FROM `kq_auth_rule` WHERE `id` IN ('3','348','50','349','350','351','359','360','361','362','363','364','482','483','495','496','497','498','499','500','501','502','503','504') AND `type` = 1 AND `status` = 1  [ RunTime:0.0710s ]
+SQL: SHOW COLUMNS FROM `kq_attendance` [ RunTime:0.0710s ]
+SQL: SELECT * FROM `kq_attendance` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0740s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.007000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.011000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.369021s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.381021s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008000s ]
+
+[ 2020-05-17T21:26:33+08:00 ] 127.0.0.1 /admin.php/Project/attendance_edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.026002s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.014001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017001s ]
+SQL: SHOW COLUMNS FROM `kq_auth_group_access` [ RunTime:0.0720s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM kq_auth_group_access a INNER JOIN kq_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0700s ]
+SQL: SHOW COLUMNS FROM `kq_auth_rule` [ RunTime:0.0760s ]
+SQL: SELECT `condition`,`name` FROM `kq_auth_rule` WHERE `id` IN ('3','348','50','349','350','351','359','360','361','362','363','364','482','483','495','496','497','498','499','500','501','502','503','504') AND `type` = 1 AND `status` = 1  [ RunTime:0.0730s ]
+SQL: SHOW COLUMNS FROM `kq_user` [ RunTime:0.0710s ]
+SQL: SELECT * FROM `kq_user` WHERE `phone` = '15298921808' LIMIT 1   [ RunTime:0.0710s ]
+SQL: SHOW COLUMNS FROM `kq_attendance` [ RunTime:0.0720s ]
+SQL: UPDATE `kq_attendance` SET `id`='2',`project_id`='3',`phone`='2147483647',`createtime`='1589721941',`end_time`='1589721942' WHERE `id` = 2 [ RunTime:0.0730s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.228013s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.231013s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.019001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.023001s ]
+
+[ 2020-05-17T21:26:36+08:00 ] 127.0.0.1 /admin.php/Project/attendance_list/id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008001s ]
+SQL: SHOW COLUMNS FROM `kq_auth_group_access` [ RunTime:0.0730s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM kq_auth_group_access a INNER JOIN kq_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0700s ]
+SQL: SHOW COLUMNS FROM `kq_auth_rule` [ RunTime:0.0710s ]
+SQL: SELECT `condition`,`name` FROM `kq_auth_rule` WHERE `id` IN ('3','348','50','349','350','351','359','360','361','362','363','364','482','483','495','496','497','498','499','500','501','502','503','504') AND `type` = 1 AND `status` = 1  [ RunTime:0.0740s ]
+SQL: SHOW COLUMNS FROM `kq_attendance` [ RunTime:0.0730s ]
+SQL: SELECT * FROM `kq_attendance` WHERE `del_status` = 1 AND `project_id` = 3  [ RunTime:0.0740s ]
+SQL: SELECT * FROM `kq_attendance` WHERE `del_status` = 1 AND `project_id` = 3 ORDER BY `id` DESC LIMIT 0,20   [ RunTime:0.0710s ]
+SQL: SHOW COLUMNS FROM `kq_user` [ RunTime:0.0720s ]
+SQL: SELECT * FROM `kq_user` WHERE `phone` = '2147483647' LIMIT 1   [ RunTime:0.0710s ]
+SQL: SELECT * FROM `kq_user` WHERE `phone` = '2147483647' LIMIT 1   [ RunTime:0.0720s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005001s ]
+NOTIC: [8] Undefined variable: name G:\phpStudy\PHPTutorial\WWW\kq_admin\Application\Runtime\Cache\Admin\0b8b30b828ee9f4c8549fd3e40045854.php 第 217 行.
+NOTIC: [8] Undefined index: name G:\phpStudy\PHPTutorial\WWW\kq_admin\Application\Runtime\Cache\Admin\0b8b30b828ee9f4c8549fd3e40045854.php 第 280 行.
+NOTIC: [8] Undefined index: name G:\phpStudy\PHPTutorial\WWW\kq_admin\Application\Runtime\Cache\Admin\0b8b30b828ee9f4c8549fd3e40045854.php 第 280 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.326019s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.329019s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009001s ]
+
+[ 2020-05-17T21:26:41+08:00 ] 127.0.0.1 /admin.php/Project/attendance_operation?id=2&project_id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008001s ]
+SQL: SHOW COLUMNS FROM `kq_auth_group_access` [ RunTime:0.0700s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM kq_auth_group_access a INNER JOIN kq_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0720s ]
+SQL: SHOW COLUMNS FROM `kq_auth_rule` [ RunTime:0.0690s ]
+SQL: SELECT `condition`,`name` FROM `kq_auth_rule` WHERE `id` IN ('3','348','50','349','350','351','359','360','361','362','363','364','482','483','495','496','497','498','499','500','501','502','503','504') AND `type` = 1 AND `status` = 1  [ RunTime:0.0700s ]
+SQL: SHOW COLUMNS FROM `kq_attendance` [ RunTime:0.0690s ]
+SQL: SELECT * FROM `kq_attendance` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0700s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.427024s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.429024s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008001s ]
+
+[ 2020-05-17T21:28:08+08:00 ] 127.0.0.1 /admin.php/Project/attendance_edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.023001s ]
+SQL: SHOW COLUMNS FROM `kq_auth_group_access` [ RunTime:0.0730s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM kq_auth_group_access a INNER JOIN kq_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0680s ]
+SQL: SHOW COLUMNS FROM `kq_auth_rule` [ RunTime:0.0710s ]
+SQL: SELECT `condition`,`name` FROM `kq_auth_rule` WHERE `id` IN ('3','348','50','349','350','351','359','360','361','362','363','364','482','483','495','496','497','498','499','500','501','502','503','504') AND `type` = 1 AND `status` = 1  [ RunTime:0.0680s ]
+SQL: SHOW COLUMNS FROM `kq_user` [ RunTime:0.0710s ]
+SQL: SELECT * FROM `kq_user` WHERE `phone` = '15298921808' LIMIT 1   [ RunTime:0.0700s ]
+SQL: SHOW COLUMNS FROM `kq_attendance` [ RunTime:0.0730s ]
+SQL: UPDATE `kq_attendance` SET `id`='2',`project_id`='3',`phone`='15298921808',`createtime`='1589721941',`end_time`='1589721942' WHERE `id` = 2 [ RunTime:0.0710s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007001s ]
+
+[ 2020-05-17T21:28:12+08:00 ] 127.0.0.1 /admin.php/Project/attendance_list/id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `kq_auth_group_access` [ RunTime:0.0730s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM kq_auth_group_access a INNER JOIN kq_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0720s ]
+SQL: SHOW COLUMNS FROM `kq_auth_rule` [ RunTime:0.0770s ]
+SQL: SELECT `condition`,`name` FROM `kq_auth_rule` WHERE `id` IN ('3','348','50','349','350','351','359','360','361','362','363','364','482','483','495','496','497','498','499','500','501','502','503','504') AND `type` = 1 AND `status` = 1  [ RunTime:0.0760s ]
+SQL: SHOW COLUMNS FROM `kq_attendance` [ RunTime:0.0730s ]
+SQL: SELECT * FROM `kq_attendance` WHERE `del_status` = 1 AND `project_id` = 3  [ RunTime:0.0750s ]
+SQL: SELECT * FROM `kq_attendance` WHERE `del_status` = 1 AND `project_id` = 3 ORDER BY `id` DESC LIMIT 0,20   [ RunTime:0.0740s ]
+SQL: SHOW COLUMNS FROM `kq_user` [ RunTime:0.0740s ]
+SQL: SELECT * FROM `kq_user` WHERE `phone` = '15298921808' LIMIT 1   [ RunTime:0.0730s ]
+SQL: SELECT * FROM `kq_user` WHERE `phone` = '2147483647' LIMIT 1   [ RunTime:0.0740s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.003000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005000s ]
+NOTIC: [8] Undefined variable: name G:\phpStudy\PHPTutorial\WWW\kq_admin\Application\Runtime\Cache\Admin\0b8b30b828ee9f4c8549fd3e40045854.php 第 217 行.
+NOTIC: [8] Undefined index: name G:\phpStudy\PHPTutorial\WWW\kq_admin\Application\Runtime\Cache\Admin\0b8b30b828ee9f4c8549fd3e40045854.php 第 280 行.
+NOTIC: [8] Undefined index: name G:\phpStudy\PHPTutorial\WWW\kq_admin\Application\Runtime\Cache\Admin\0b8b30b828ee9f4c8549fd3e40045854.php 第 280 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.307017s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.310018s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009001s ]
+
+[ 2020-05-17T23:07:31+08:00 ] 127.0.0.1 /admin.php/Project/attendance_list/id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.029001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.024001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.028001s ]
+SQL: SHOW COLUMNS FROM `kq_auth_group_access` [ RunTime:0.0710s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM kq_auth_group_access a INNER JOIN kq_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0700s ]
+SQL: SHOW COLUMNS FROM `kq_auth_rule` [ RunTime:0.0720s ]
+SQL: SELECT `condition`,`name` FROM `kq_auth_rule` WHERE `id` IN ('3','348','50','349','350','351','359','360','361','362','363','364','482','483','507','508','509','510','495','496','497','498','499','500','501','502','503','504','506','511','512','513','514') AND `type` = 1 AND `status` = 1  [ RunTime:0.0690s ]
+SQL: SHOW COLUMNS FROM `kq_attendance` [ RunTime:0.0690s ]
+SQL: SELECT * FROM `kq_attendance` WHERE `del_status` = 1 AND `project_id` = 3  [ RunTime:0.0720s ]
+SQL: SELECT * FROM `kq_attendance` WHERE `del_status` = 1 AND `project_id` = 3 ORDER BY `id` DESC LIMIT 0,20   [ RunTime:0.0700s ]
+SQL: SHOW COLUMNS FROM `kq_user` [ RunTime:0.0710s ]
+SQL: SELECT * FROM `kq_user` WHERE `phone` = '15298921808' LIMIT 1   [ RunTime:0.0730s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.023001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.027002s ]
+NOTIC: [8] Undefined variable: name G:\phpStudy\PHPTutorial\WWW\kq_admin\Application\Runtime\Cache\Admin\0b8b30b828ee9f4c8549fd3e40045854.php 第 236 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.549031s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.553031s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.025002s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.028002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.029002s ]
+INFO: [ app_end ] --END-- [ RunTime:0.032002s ]
+
+[ 2020-05-17T23:07:35+08:00 ] 127.0.0.1 /admin.php/commodity/list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `kq_auth_group_access` [ RunTime:0.0710s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM kq_auth_group_access a INNER JOIN kq_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0710s ]
+SQL: SHOW COLUMNS FROM `kq_auth_rule` [ RunTime:0.0700s ]
+SQL: SELECT `condition`,`name` FROM `kq_auth_rule` WHERE `id` IN ('3','348','50','349','350','351','359','360','361','362','363','364','482','483','507','508','509','510','495','496','497','498','499','500','501','502','503','504','506','511','512','513','514') AND `type` = 1 AND `status` = 1  [ RunTime:0.0720s ]
+ERR: 1146:Table 'miniapp_mandyapp.kq_update_commodity_time' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `kq_update_commodity_time`
+ERR: 1146:Table 'miniapp_mandyapp.kq_update_commodity_time' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `kq_update_commodity_time`
+
+[ 2020-05-17T23:07:46+08:00 ] 127.0.0.1 /admin.php/commodity/list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012001s ]
+SQL: SHOW COLUMNS FROM `kq_auth_group_access` [ RunTime:0.0790s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM kq_auth_group_access a INNER JOIN kq_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0790s ]
+SQL: SHOW COLUMNS FROM `kq_auth_rule` [ RunTime:0.0790s ]
+SQL: SELECT `condition`,`name` FROM `kq_auth_rule` WHERE `id` IN ('3','348','50','349','350','351','359','360','361','362','363','364','482','483','507','508','509','510','495','496','497','498','499','500','501','502','503','504','506','511','512','513','514') AND `type` = 1 AND `status` = 1  [ RunTime:0.0810s ]
+ERR: 1146:Table 'miniapp_mandyapp.kq_update_commodity_time' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `kq_update_commodity_time`
+ERR: 1146:Table 'miniapp_mandyapp.kq_update_commodity_time' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `kq_update_commodity_time`
+
+[ 2020-05-17T23:08:41+08:00 ] 127.0.0.1 /admin.php/commodity/list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008000s ]
+SQL: SHOW COLUMNS FROM `kq_auth_group_access` [ RunTime:0.0810s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM kq_auth_group_access a INNER JOIN kq_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0780s ]
+SQL: SHOW COLUMNS FROM `kq_auth_rule` [ RunTime:0.0790s ]
+SQL: SELECT `condition`,`name` FROM `kq_auth_rule` WHERE `id` IN ('3','348','50','349','350','351','359','360','361','362','363','364','482','483','507','508','509','510','495','496','497','498','499','500','501','502','503','504','506','511','512','513','514') AND `type` = 1 AND `status` = 1  [ RunTime:0.0810s ]
+ERR: 1146:Table 'miniapp_mandyapp.kq_update_commodity_time' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `kq_update_commodity_time`
+ERR: 1146:Table 'miniapp_mandyapp.kq_update_commodity_time' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `kq_update_commodity_time`
+
+[ 2020-05-17T23:09:06+08:00 ] 127.0.0.1 /admin.php/commodity/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `kq_auth_group_access` [ RunTime:0.0760s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM kq_auth_group_access a INNER JOIN kq_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0720s ]
+SQL: SHOW COLUMNS FROM `kq_auth_rule` [ RunTime:0.0720s ]
+SQL: SELECT `condition`,`name` FROM `kq_auth_rule` WHERE `id` IN ('3','348','50','349','350','351','359','360','361','362','363','364','482','483','507','508','509','510','495','496','497','498','499','500','501','502','503','504','506','511','512','513','514') AND `type` = 1 AND `status` = 1  [ RunTime:0.0720s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.158009s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.162009s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.024002s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.026002s ]
+
+[ 2020-05-17T23:09:11+08:00 ] 127.0.0.1 /admin.php/commodity/list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.002001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+SQL: SHOW COLUMNS FROM `kq_auth_group_access` [ RunTime:0.0760s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM kq_auth_group_access a INNER JOIN kq_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0760s ]
+SQL: SHOW COLUMNS FROM `kq_auth_rule` [ RunTime:0.0770s ]
+SQL: SELECT `condition`,`name` FROM `kq_auth_rule` WHERE `id` IN ('3','348','50','349','350','351','359','360','361','362','363','364','482','483','507','508','509','510','495','496','497','498','499','500','501','502','503','504','506','511','512','513','514') AND `type` = 1 AND `status` = 1  [ RunTime:0.0750s ]
+ERR: 1146:Table 'miniapp_mandyapp.kq_update_commodity_time' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `kq_update_commodity_time`
+ERR: 1146:Table 'miniapp_mandyapp.kq_update_commodity_time' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `kq_update_commodity_time`
+
+[ 2020-05-17T23:10:00+08:00 ] 127.0.0.1 /admin.php/commodity/list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009000s ]
+SQL: SHOW COLUMNS FROM `kq_auth_group_access` [ RunTime:0.0780s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM kq_auth_group_access a INNER JOIN kq_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0800s ]
+SQL: SHOW COLUMNS FROM `kq_auth_rule` [ RunTime:0.0790s ]
+SQL: SELECT `condition`,`name` FROM `kq_auth_rule` WHERE `id` IN ('3','348','50','349','350','351','359','360','361','362','363','364','482','483','507','508','509','510','495','496','497','498','499','500','501','502','503','504','506','511','512','513','514') AND `type` = 1 AND `status` = 1  [ RunTime:0.0770s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+
+[ 2020-05-17T23:10:22+08:00 ] 127.0.0.1 /admin.php/Project/attendance_operation?id=2&project_id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012000s ]
+SQL: SHOW COLUMNS FROM `kq_auth_group_access` [ RunTime:0.0820s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM kq_auth_group_access a INNER JOIN kq_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0810s ]
+SQL: SHOW COLUMNS FROM `kq_auth_rule` [ RunTime:0.0820s ]
+SQL: SELECT `condition`,`name` FROM `kq_auth_rule` WHERE `id` IN ('3','348','50','349','350','351','359','360','361','362','363','364','482','483','507','508','509','510','495','496','497','498','499','500','501','502','503','504','506','511','512','513','514') AND `type` = 1 AND `status` = 1  [ RunTime:0.0980s ]
+SQL: SHOW COLUMNS FROM `kq_attendance` [ RunTime:0.0810s ]
+SQL: SELECT * FROM `kq_attendance` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0810s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.365021s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.369021s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.021001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.024001s ]
+
+[ 2020-05-17T23:10:27+08:00 ] 127.0.0.1 /admin.php/commodity/list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009001s ]
+SQL: SHOW COLUMNS FROM `kq_auth_group_access` [ RunTime:0.0830s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM kq_auth_group_access a INNER JOIN kq_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0810s ]
+SQL: SHOW COLUMNS FROM `kq_auth_rule` [ RunTime:0.0800s ]
+SQL: SELECT `condition`,`name` FROM `kq_auth_rule` WHERE `id` IN ('3','348','50','349','350','351','359','360','361','362','363','364','482','483','507','508','509','510','495','496','497','498','499','500','501','502','503','504','506','511','512','513','514') AND `type` = 1 AND `status` = 1  [ RunTime:0.0790s ]
+ERR: 1146:Table 'miniapp_mandyapp.kq_update_commodity_time' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `kq_update_commodity_time`
+ERR: 1146:Table 'miniapp_mandyapp.kq_update_commodity_time' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `kq_update_commodity_time`
+
+[ 2020-05-17T23:11:42+08:00 ] 127.0.0.1 /admin.php/commodity/list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008000s ]
+SQL: SHOW COLUMNS FROM `kq_auth_group_access` [ RunTime:0.0740s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM kq_auth_group_access a INNER JOIN kq_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0740s ]
+SQL: SHOW COLUMNS FROM `kq_auth_rule` [ RunTime:0.0730s ]
+SQL: SELECT `condition`,`name` FROM `kq_auth_rule` WHERE `id` IN ('3','348','50','349','350','351','359','360','361','362','363','364','482','483','507','508','509','510','495','496','497','498','499','500','501','502','503','504','506','511','512','513','514') AND `type` = 1 AND `status` = 1  [ RunTime:0.0810s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008000s ]
+
+[ 2020-05-17T23:12:07+08:00 ] 127.0.0.1 /admin.php/commodity/list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+SQL: SHOW COLUMNS FROM `kq_auth_group_access` [ RunTime:0.0690s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM kq_auth_group_access a INNER JOIN kq_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0680s ]
+SQL: SHOW COLUMNS FROM `kq_auth_rule` [ RunTime:0.0700s ]
+SQL: SELECT `condition`,`name` FROM `kq_auth_rule` WHERE `id` IN ('3','348','50','349','350','351','359','360','361','362','363','364','482','483','507','508','509','510','495','496','497','498','499','500','501','502','503','504','506','511','512','513','514') AND `type` = 1 AND `status` = 1  [ RunTime:0.0710s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005000s ]
+NOTIC: [8] Undefined variable: nickname G:\phpStudy\PHPTutorial\WWW\kq_admin\Application\Runtime\Cache\Admin\57d68221919c5f569b6377ac6e52126b.php 第 235 行.
+NOTIC: [8] Undefined variable: list G:\phpStudy\PHPTutorial\WWW\kq_admin\Application\Runtime\Cache\Admin\57d68221919c5f569b6377ac6e52126b.php 第 299 行.
+NOTIC: [8] Undefined variable: page G:\phpStudy\PHPTutorial\WWW\kq_admin\Application\Runtime\Cache\Admin\57d68221919c5f569b6377ac6e52126b.php 第 337 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.422024s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.424025s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006000s ]
+

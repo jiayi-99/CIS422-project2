@@ -1,0 +1,69 @@
+[ 2020-03-31T14:35:28+08:00 ] 127.0.0.1 /api.php/Farmer/get_farmer_list?commodity_sort_id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.020001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.021001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.024001s ]
+SQL: SHOW COLUMNS FROM `lh_commodity` [ RunTime:0.1080s ]
+SQL: SELECT `id` FROM `lh_commodity` WHERE `commodity_sort_id` = 3  [ RunTime:0.0860s ]
+SQL: SHOW COLUMNS FROM `lh_farmer_commodity` [ RunTime:0.2820s ]
+ERR: 表达式错误:commodity_id
+
+[ 2020-03-31T14:37:46+08:00 ] 127.0.0.1 /api.php/Farmer/get_farmer_list?commodity_sort_id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `lh_commodity` [ RunTime:0.0710s ]
+SQL: SELECT `id` FROM `lh_commodity` WHERE `commodity_sort_id` = 3  [ RunTime:0.1200s ]
+SQL: SHOW COLUMNS FROM `lh_farmer_commodity` [ RunTime:0.1300s ]
+SQL: SELECT `farmer_id` FROM `lh_farmer_commodity` WHERE `commodity_id` IN ('2','3','4','12','13','15') AND `del_status` = 1  [ RunTime:0.0900s ]
+SQL: SHOW COLUMNS FROM `lh_farmer` [ RunTime:0.1460s ]
+SQL: SELECT * FROM `lh_farmer` WHERE `status` = 1 AND `del_status` = 1 AND `id` IN ('2','3','4','39') ORDER BY `id` DESC  [ RunTime:0.0900s ]
+SQL: SHOW COLUMNS FROM `lh_user` [ RunTime:0.0900s ]
+SQL: SELECT * FROM `lh_user` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0860s ]
+SQL: SHOW COLUMNS FROM `lh_province` [ RunTime:0.0800s ]
+SQL: SELECT * FROM `lh_province` WHERE `id` = 1 LIMIT 1   [ RunTime:0.1060s ]
+SQL: SHOW COLUMNS FROM `lh_city` [ RunTime:0.0760s ]
+SQL: SELECT * FROM `lh_city` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0920s ]
+SQL: SHOW COLUMNS FROM `lh_area` [ RunTime:0.0810s ]
+SQL: SELECT * FROM `lh_area` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0920s ]
+SQL: SELECT * FROM `lh_farmer_commodity` WHERE `farmer_id` = 4 AND `del_status` = 1  [ RunTime:0.0990s ]
+SQL: SELECT * FROM `lh_commodity` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0840s ]
+SQL: SHOW COLUMNS FROM `lh_commodity_sort` [ RunTime:0.0780s ]
+SQL: SELECT * FROM `lh_commodity_sort` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0880s ]
+SQL: SELECT * FROM `lh_commodity` WHERE `id` = 14 LIMIT 1   [ RunTime:0.0700s ]
+SQL: SELECT * FROM `lh_commodity_sort` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0810s ]
+SQL: SELECT * FROM `lh_user` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0850s ]
+SQL: SELECT * FROM `lh_province` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0660s ]
+SQL: SELECT * FROM `lh_city` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0850s ]
+SQL: SELECT * FROM `lh_area` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0880s ]
+SQL: SELECT * FROM `lh_farmer_commodity` WHERE `farmer_id` = 3 AND `del_status` = 1  [ RunTime:0.0870s ]
+SQL: SELECT * FROM `lh_commodity` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0750s ]
+SQL: SELECT * FROM `lh_commodity_sort` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0630s ]
+SQL: SELECT * FROM `lh_commodity` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0790s ]
+SQL: SELECT * FROM `lh_commodity_sort` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0840s ]
+
+[ 2020-03-31T17:41:16+08:00 ] 127.0.0.1 /api.php/Commodity/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.025001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.020002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.023002s ]
+NOTIC: [2] fopen(G:/phpStudy/PHPTutorial/WWW/longhuanongye/Uploads/image/158564756521380.jpg): failed to open stream: No such file or directory G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Common\Common\function.php 第 963 行.
+NOTIC: [2] fwrite() expects parameter 1 to be resource, boolean given G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Common\Common\function.php 第 964 行.
+
+[ 2020-03-31T17:41:49+08:00 ] 127.0.0.1 /api.php/Commodity/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+NOTIC: [2] fopen(G:/phpStudy/PHPTutorial/WWW/longhuanongye__PUBLIC__/Uploads/image/158564769410406.jpg): failed to open stream: No such file or directory G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Common\Common\function.php 第 963 行.
+NOTIC: [2] fwrite() expects parameter 1 to be resource, boolean given G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Common\Common\function.php 第 964 行.
+

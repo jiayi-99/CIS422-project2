@@ -1,0 +1,817 @@
+[ 2020-03-30T11:28:49+08:00 ] 127.0.0.1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.024001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.016001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.030002s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.034002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.170009s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.173009s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.030001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.032001s ]
+
+[ 2020-03-30T11:28:53+08:00 ] 127.0.0.1 /admin.php/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.073004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.019001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.023001s ]
+
+[ 2020-03-30T11:29:03+08:00 ] 127.0.0.1 /admin.php/Login/ajax_login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `lh_admin` [ RunTime:0.3130s ]
+SQL: SELECT * FROM `lh_admin` WHERE `account` = 'admin' AND `password` = 'fcea920f7412b5da7be0cf42b8c93759' AND `status` = 0 LIMIT 1   [ RunTime:0.0480s ]
+SQL: SHOW COLUMNS FROM `lh_log_admin` [ RunTime:0.0800s ]
+SQL: INSERT INTO `lh_log_admin` (`ip`,`admin_id`,`login_time`) VALUES ('127.0.0.1','14','2020-03-30 11:29:02') [ RunTime:0.1910s ]
+
+[ 2020-03-30T11:29:05+08:00 ] 127.0.0.1 /admin.php/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+SQL: SHOW COLUMNS FROM `lh_auth_group_access` [ RunTime:0.0450s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM lh_auth_group_access a INNER JOIN lh_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0440s ]
+SQL: SHOW COLUMNS FROM `lh_auth_rule` [ RunTime:0.0440s ]
+SQL: SELECT `condition`,`name` FROM `lh_auth_rule` WHERE `id` IN ('3','348','50','349','350','351','359','360','361','362','363','364','365','379','427','435','366','367','371','376','377','378','380','381','382','383','384','385','396','428','429','430','431','432','433','434','437','369','370','386','387','388','389','390','391','392','393','394','395','397','398','399','400','401','402','403','404','405','406','407','408','410','411','412','413','414','416','417','418','448','372','373','419','420','421','422','374','375','423','424','425','426','438','439','440','441','442','443','444','445','446','447') AND `type` = 1 AND `status` = 1  [ RunTime:0.0440s ]
+ERR: ����Ŀ�����������ܾ����޷����ӡ�
+
+
+[ 2020-03-30T11:29:59+08:00 ] 127.0.0.1 /admin.php/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008001s ]
+SQL: SHOW COLUMNS FROM `lh_auth_group_access` [ RunTime:0.0500s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM lh_auth_group_access a INNER JOIN lh_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0490s ]
+SQL: SHOW COLUMNS FROM `lh_auth_rule` [ RunTime:0.0570s ]
+SQL: SELECT `condition`,`name` FROM `lh_auth_rule` WHERE `id` IN ('3','348','50','349','350','351','359','360','361','362','363','364','365','379','427','435','366','367','371','376','377','378','380','381','382','383','384','385','396','428','429','430','431','432','433','434','437','369','370','386','387','388','389','390','391','392','393','394','395','397','398','399','400','401','402','403','404','405','406','407','408','410','411','412','413','414','416','417','418','448','372','373','419','420','421','422','374','375','423','424','425','426','438','439','440','441','442','443','444','445','446','447') AND `type` = 1 AND `status` = 1  [ RunTime:0.0570s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.651037s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.654037s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007001s ]
+
+[ 2020-03-30T11:30:08+08:00 ] 127.0.0.1 /admin.php/Farmer/technology_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `lh_auth_group_access` [ RunTime:0.0430s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM lh_auth_group_access a INNER JOIN lh_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0440s ]
+SQL: SHOW COLUMNS FROM `lh_auth_rule` [ RunTime:0.0510s ]
+SQL: SELECT `condition`,`name` FROM `lh_auth_rule` WHERE `id` IN ('3','348','50','349','350','351','359','360','361','362','363','364','365','379','427','435','366','367','371','376','377','378','380','381','382','383','384','385','396','428','429','430','431','432','433','434','437','369','370','386','387','388','389','390','391','392','393','394','395','397','398','399','400','401','402','403','404','405','406','407','408','410','411','412','413','414','416','417','418','448','372','373','419','420','421','422','374','375','423','424','425','426','438','439','440','441','442','443','444','445','446','447') AND `type` = 1 AND `status` = 1  [ RunTime:0.0510s ]
+SQL: SHOW COLUMNS FROM `lh_technology` [ RunTime:0.0460s ]
+SQL: SELECT * FROM `lh_technology` WHERE `del_status` = 1  [ RunTime:0.0480s ]
+SQL: SELECT * FROM `lh_technology` WHERE `del_status` = 1 ORDER BY `id` DESC LIMIT 0,20   [ RunTime:0.0480s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.564032s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.567032s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.012001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015001s ]
+
+[ 2020-03-30T11:30:13+08:00 ] 127.0.0.1 /admin.php/Farmer/technology_operation
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `lh_auth_group_access` [ RunTime:0.0550s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM lh_auth_group_access a INNER JOIN lh_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0570s ]
+SQL: SHOW COLUMNS FROM `lh_auth_rule` [ RunTime:0.0510s ]
+SQL: SELECT `condition`,`name` FROM `lh_auth_rule` WHERE `id` IN ('3','348','50','349','350','351','359','360','361','362','363','364','365','379','427','435','366','367','371','376','377','378','380','381','382','383','384','385','396','428','429','430','431','432','433','434','437','369','370','386','387','388','389','390','391','392','393','394','395','397','398','399','400','401','402','403','404','405','406','407','408','410','411','412','413','414','416','417','418','448','372','373','419','420','421','422','374','375','423','424','425','426','438','439','440','441','442','443','444','445','446','447') AND `type` = 1 AND `status` = 1  [ RunTime:0.0440s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005001s ]
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 215 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 227 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 263 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 297 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 323 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 336 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 357 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 361 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 377 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 393 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 403 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 415 行.
+NOTIC: [8] Undefined variable: auth_group G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 437 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 461 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 463 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.683039s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.685039s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007001s ]
+
+[ 2020-03-30T11:30:44+08:00 ] 127.0.0.1 /admin.php/Farmer/technology_operation
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `lh_auth_group_access` [ RunTime:0.0510s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM lh_auth_group_access a INNER JOIN lh_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0490s ]
+SQL: SHOW COLUMNS FROM `lh_auth_rule` [ RunTime:0.0490s ]
+SQL: SELECT `condition`,`name` FROM `lh_auth_rule` WHERE `id` IN ('3','348','50','349','350','351','359','360','361','362','363','364','365','379','427','435','366','367','371','376','377','378','380','381','382','383','384','385','396','428','429','430','431','432','433','434','437','369','370','386','387','388','389','390','391','392','393','394','395','397','398','399','400','401','402','403','404','405','406','407','408','410','411','412','413','414','416','417','418','448','372','373','419','420','421','422','374','375','423','424','425','426','438','439','440','441','442','443','444','445','446','447') AND `type` = 1 AND `status` = 1  [ RunTime:0.0900s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004001s ]
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 215 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 227 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 263 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 297 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 323 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 336 行.
+NOTIC: [8] Undefined variable: province G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 343 行.
+NOTIC: [8] Undefined variable: city G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 350 行.
+NOTIC: [8] Undefined variable: area G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 356 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 367 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 379 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 400 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 404 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 420 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 436 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 446 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 458 行.
+NOTIC: [8] Undefined variable: auth_group G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 480 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 504 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 506 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.739042s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.742043s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007000s ]
+
+[ 2020-03-30T11:31:40+08:00 ] 127.0.0.1 /admin.php/Farmer/technology_operation
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+SQL: SHOW COLUMNS FROM `lh_auth_group_access` [ RunTime:0.0470s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM lh_auth_group_access a INNER JOIN lh_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0480s ]
+SQL: SHOW COLUMNS FROM `lh_auth_rule` [ RunTime:0.0490s ]
+SQL: SELECT `condition`,`name` FROM `lh_auth_rule` WHERE `id` IN ('3','348','50','349','350','351','359','360','361','362','363','364','365','379','427','435','366','367','371','376','377','378','380','381','382','383','384','385','396','428','429','430','431','432','433','434','437','369','370','386','387','388','389','390','391','392','393','394','395','397','398','399','400','401','402','403','404','405','406','407','408','410','411','412','413','414','416','417','418','448','372','373','419','420','421','422','374','375','423','424','425','426','438','439','440','441','442','443','444','445','446','447') AND `type` = 1 AND `status` = 1  [ RunTime:0.1000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.003000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005000s ]
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 215 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 227 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 263 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 297 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 323 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 336 行.
+NOTIC: [8] Undefined variable: province G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 343 行.
+NOTIC: [8] Undefined variable: city G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 350 行.
+NOTIC: [8] Undefined variable: area G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 356 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 367 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 379 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 400 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 404 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 420 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 436 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 446 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 458 行.
+NOTIC: [8] Undefined variable: auth_group G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 480 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 504 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 506 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.736042s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.740043s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007001s ]
+
+[ 2020-03-30T11:33:02+08:00 ] 127.0.0.1 /admin.php/Farmer/technology_operation
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+SQL: SHOW COLUMNS FROM `lh_auth_group_access` [ RunTime:0.0510s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM lh_auth_group_access a INNER JOIN lh_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0510s ]
+SQL: SHOW COLUMNS FROM `lh_auth_rule` [ RunTime:0.0710s ]
+SQL: SELECT `condition`,`name` FROM `lh_auth_rule` WHERE `id` IN ('3','348','50','349','350','351','359','360','361','362','363','364','365','379','427','435','366','367','371','376','377','378','380','381','382','383','384','385','396','428','429','430','431','432','433','434','437','369','370','386','387','388','389','390','391','392','393','394','395','397','398','399','400','401','402','403','404','405','406','407','408','410','411','412','413','414','416','417','418','448','372','373','419','420','421','422','374','375','423','424','425','426','438','439','440','441','442','443','444','445','446','447') AND `type` = 1 AND `status` = 1  [ RunTime:0.0800s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 215 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 227 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 263 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 297 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 323 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 336 行.
+NOTIC: [8] Undefined variable: province G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 343 行.
+NOTIC: [8] Undefined variable: city G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 350 行.
+NOTIC: [8] Undefined variable: area G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 356 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 367 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 379 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 400 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 404 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 420 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 436 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 446 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 458 行.
+NOTIC: [8] Undefined variable: auth_group G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 480 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 504 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 506 行.
+NOTIC: [8] Undefined index: id G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 786 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.712040s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.715041s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008001s ]
+
+[ 2020-03-30T11:36:07+08:00 ] 127.0.0.1 /admin.php/Farmer/technology_operation
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `lh_auth_group_access` [ RunTime:0.0520s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM lh_auth_group_access a INNER JOIN lh_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0520s ]
+SQL: SHOW COLUMNS FROM `lh_auth_rule` [ RunTime:0.0590s ]
+SQL: SELECT `condition`,`name` FROM `lh_auth_rule` WHERE `id` IN ('3','348','50','349','350','351','359','360','361','362','363','364','365','379','427','435','366','367','371','376','377','378','380','381','382','383','384','385','396','428','429','430','431','432','433','434','437','369','370','386','387','388','389','390','391','392','393','394','395','397','398','399','400','401','402','403','404','405','406','407','408','410','411','412','413','414','416','417','418','448','372','373','419','420','421','422','374','375','423','424','425','426','438','439','440','441','442','443','444','445','446','447') AND `type` = 1 AND `status` = 1  [ RunTime:0.0480s ]
+SQL: SHOW COLUMNS FROM `lh_province` [ RunTime:0.0510s ]
+SQL: SELECT * FROM `lh_province`  [ RunTime:0.0550s ]
+SQL: SHOW COLUMNS FROM `lh_city` [ RunTime:0.0490s ]
+SQL: SELECT * FROM `lh_city`  [ RunTime:0.0480s ]
+SQL: SHOW COLUMNS FROM `lh_area` [ RunTime:0.0480s ]
+SQL: SELECT * FROM `lh_area`  [ RunTime:0.0490s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005000s ]
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 215 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 227 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 263 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 297 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 323 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 336 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 343 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 350 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 350 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 356 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 356 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 356 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 356 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 356 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 367 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 379 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 400 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 404 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 420 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 436 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 446 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 458 行.
+NOTIC: [8] Undefined variable: auth_group G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 480 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 504 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 506 行.
+NOTIC: [8] Undefined index: id G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 786 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.653038s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.656038s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007000s ]
+
+[ 2020-03-30T11:39:33+08:00 ] 127.0.0.1 /admin.php/Farmer/technology_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `lh_auth_group_access` [ RunTime:0.0520s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM lh_auth_group_access a INNER JOIN lh_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.1410s ]
+SQL: SHOW COLUMNS FROM `lh_auth_rule` [ RunTime:0.0520s ]
+SQL: SELECT `condition`,`name` FROM `lh_auth_rule` WHERE `id` IN ('3','348','50','349','350','351','359','360','361','362','363','364','365','379','427','435','366','367','371','376','377','378','380','381','382','383','384','385','396','428','429','430','431','432','433','434','437','369','370','386','387','388','389','390','391','392','393','394','395','397','398','399','400','401','402','403','404','405','406','407','408','410','411','412','413','414','416','417','418','448','372','373','419','420','421','422','374','375','423','424','425','426','438','439','440','441','442','443','444','445','446','447') AND `type` = 1 AND `status` = 1  [ RunTime:0.0600s ]
+SQL: SHOW COLUMNS FROM `lh_technology` [ RunTime:0.0670s ]
+SQL: SELECT * FROM `lh_technology` WHERE `del_status` = 1  [ RunTime:0.0500s ]
+SQL: SELECT * FROM `lh_technology` WHERE `del_status` = 1 ORDER BY `id` DESC LIMIT 0,20   [ RunTime:0.0570s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.551032s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.553032s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011001s ]
+
+[ 2020-03-30T11:39:41+08:00 ] 127.0.0.1 /admin.php/Farmer/technology_operation?id=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `lh_auth_group_access` [ RunTime:0.0490s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM lh_auth_group_access a INNER JOIN lh_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0610s ]
+SQL: SHOW COLUMNS FROM `lh_auth_rule` [ RunTime:0.0500s ]
+SQL: SELECT `condition`,`name` FROM `lh_auth_rule` WHERE `id` IN ('3','348','50','349','350','351','359','360','361','362','363','364','365','379','427','435','366','367','371','376','377','378','380','381','382','383','384','385','396','428','429','430','431','432','433','434','437','369','370','386','387','388','389','390','391','392','393','394','395','397','398','399','400','401','402','403','404','405','406','407','408','410','411','412','413','414','416','417','418','448','372','373','419','420','421','422','374','375','423','424','425','426','438','439','440','441','442','443','444','445','446','447') AND `type` = 1 AND `status` = 1  [ RunTime:0.0610s ]
+SQL: SHOW COLUMNS FROM `lh_province` [ RunTime:0.0490s ]
+SQL: SELECT * FROM `lh_province`  [ RunTime:0.0470s ]
+SQL: SHOW COLUMNS FROM `lh_city` [ RunTime:0.0480s ]
+SQL: SELECT * FROM `lh_city`  [ RunTime:0.0710s ]
+SQL: SHOW COLUMNS FROM `lh_area` [ RunTime:0.0710s ]
+SQL: SELECT * FROM `lh_area`  [ RunTime:0.0670s ]
+SQL: SHOW COLUMNS FROM `lh_technology` [ RunTime:0.0500s ]
+SQL: SELECT * FROM `lh_technology` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.2570s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: password G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 400 行.
+NOTIC: [8] Undefined index: password G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 404 行.
+NOTIC: [8] Undefined index: icon G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 446 行.
+NOTIC: [8] Undefined index: icon G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 458 行.
+NOTIC: [8] Undefined variable: auth_group G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 480 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.618035s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.620035s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008001s ]
+
+[ 2020-03-30T11:47:07+08:00 ] 127.0.0.1 /admin.php/Farmer/technology_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `lh_auth_group_access` [ RunTime:0.0480s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM lh_auth_group_access a INNER JOIN lh_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0460s ]
+SQL: SHOW COLUMNS FROM `lh_auth_rule` [ RunTime:0.0480s ]
+SQL: SELECT `condition`,`name` FROM `lh_auth_rule` WHERE `id` IN ('3','348','50','349','350','351','359','360','361','362','363','364','365','379','427','435','366','367','371','376','377','378','380','381','382','383','384','385','396','428','429','430','431','432','433','434','437','369','370','386','387','388','389','390','391','392','393','394','395','397','398','399','400','401','402','403','404','405','406','407','408','410','411','412','413','414','416','417','418','448','372','373','419','420','421','422','374','375','423','424','425','426','438','439','440','441','442','443','444','445','446','447') AND `type` = 1 AND `status` = 1  [ RunTime:0.0490s ]
+SQL: SHOW COLUMNS FROM `lh_technology` [ RunTime:0.0490s ]
+SQL: SELECT * FROM `lh_technology` WHERE `del_status` = 1  [ RunTime:0.0690s ]
+SQL: SELECT * FROM `lh_technology` WHERE `del_status` = 1 ORDER BY `id` DESC LIMIT 0,20   [ RunTime:0.0490s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.612035s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.614035s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009000s ]
+
+[ 2020-03-30T11:47:20+08:00 ] 127.0.0.1 /admin.php/Farmer/technology_operation?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+SQL: SHOW COLUMNS FROM `lh_auth_group_access` [ RunTime:0.0500s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM lh_auth_group_access a INNER JOIN lh_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0530s ]
+SQL: SHOW COLUMNS FROM `lh_auth_rule` [ RunTime:0.0500s ]
+SQL: SELECT `condition`,`name` FROM `lh_auth_rule` WHERE `id` IN ('3','348','50','349','350','351','359','360','361','362','363','364','365','379','427','435','366','367','371','376','377','378','380','381','382','383','384','385','396','428','429','430','431','432','433','434','437','369','370','386','387','388','389','390','391','392','393','394','395','397','398','399','400','401','402','403','404','405','406','407','408','410','411','412','413','414','416','417','418','448','372','373','419','420','421','422','374','375','423','424','425','426','438','439','440','441','442','443','444','445','446','447') AND `type` = 1 AND `status` = 1  [ RunTime:0.0480s ]
+SQL: SHOW COLUMNS FROM `lh_province` [ RunTime:0.0850s ]
+SQL: SELECT * FROM `lh_province`  [ RunTime:0.0490s ]
+SQL: SHOW COLUMNS FROM `lh_city` [ RunTime:0.0510s ]
+SQL: SELECT * FROM `lh_city`  [ RunTime:0.0500s ]
+SQL: SHOW COLUMNS FROM `lh_area` [ RunTime:0.0690s ]
+SQL: SELECT * FROM `lh_area`  [ RunTime:0.0530s ]
+SQL: SHOW COLUMNS FROM `lh_technology` [ RunTime:0.0500s ]
+SQL: SELECT * FROM `lh_technology` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0480s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005000s ]
+NOTIC: [8] Undefined index: password G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 400 行.
+NOTIC: [8] Undefined index: password G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 404 行.
+NOTIC: [8] Undefined index: icon G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 446 行.
+NOTIC: [8] Undefined index: icon G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 458 行.
+NOTIC: [8] Undefined variable: auth_group G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 480 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.671038s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.674038s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007001s ]
+
+[ 2020-03-30T11:47:30+08:00 ] 127.0.0.1 /admin.php/Farmer/technology_edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010001s ]
+SQL: SHOW COLUMNS FROM `lh_auth_group_access` [ RunTime:0.0500s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM lh_auth_group_access a INNER JOIN lh_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0860s ]
+SQL: SHOW COLUMNS FROM `lh_auth_rule` [ RunTime:0.0460s ]
+SQL: SELECT `condition`,`name` FROM `lh_auth_rule` WHERE `id` IN ('3','348','50','349','350','351','359','360','361','362','363','364','365','379','427','435','366','367','371','376','377','378','380','381','382','383','384','385','396','428','429','430','431','432','433','434','437','369','370','386','387','388','389','390','391','392','393','394','395','397','398','399','400','401','402','403','404','405','406','407','408','410','411','412','413','414','416','417','418','448','372','373','419','420','421','422','374','375','423','424','425','426','438','439','440','441','442','443','444','445','446','447') AND `type` = 1 AND `status` = 1  [ RunTime:0.0460s ]
+SQL: SHOW COLUMNS FROM `lh_technology` [ RunTime:0.0460s ]
+SQL: UPDATE `lh_technology` SET `id`='2',`name`='石头村测试三',`province_id`='1',`city_id`='1',`area_id`='3',`address`='海垦街道123号',`phone`='15298921808' WHERE `id` = 2 [ RunTime:0.1530s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006001s ]
+
+[ 2020-03-30T11:47:33+08:00 ] 127.0.0.1 /admin.php/Farmer/technology_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008000s ]
+SQL: SHOW COLUMNS FROM `lh_auth_group_access` [ RunTime:0.0650s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM lh_auth_group_access a INNER JOIN lh_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0480s ]
+SQL: SHOW COLUMNS FROM `lh_auth_rule` [ RunTime:0.0480s ]
+SQL: SELECT `condition`,`name` FROM `lh_auth_rule` WHERE `id` IN ('3','348','50','349','350','351','359','360','361','362','363','364','365','379','427','435','366','367','371','376','377','378','380','381','382','383','384','385','396','428','429','430','431','432','433','434','437','369','370','386','387','388','389','390','391','392','393','394','395','397','398','399','400','401','402','403','404','405','406','407','408','410','411','412','413','414','416','417','418','448','372','373','419','420','421','422','374','375','423','424','425','426','438','439','440','441','442','443','444','445','446','447') AND `type` = 1 AND `status` = 1  [ RunTime:0.0570s ]
+SQL: SHOW COLUMNS FROM `lh_technology` [ RunTime:0.0500s ]
+SQL: SELECT * FROM `lh_technology` WHERE `del_status` = 1  [ RunTime:0.0510s ]
+SQL: SELECT * FROM `lh_technology` WHERE `del_status` = 1 ORDER BY `id` DESC LIMIT 0,20   [ RunTime:0.1410s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.525030s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.528031s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007000s ]
+
+[ 2020-03-30T11:47:38+08:00 ] 127.0.0.1 /admin.php/Farmer/technology_operation?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `lh_auth_group_access` [ RunTime:0.0810s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM lh_auth_group_access a INNER JOIN lh_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0860s ]
+SQL: SHOW COLUMNS FROM `lh_auth_rule` [ RunTime:0.0560s ]
+SQL: SELECT `condition`,`name` FROM `lh_auth_rule` WHERE `id` IN ('3','348','50','349','350','351','359','360','361','362','363','364','365','379','427','435','366','367','371','376','377','378','380','381','382','383','384','385','396','428','429','430','431','432','433','434','437','369','370','386','387','388','389','390','391','392','393','394','395','397','398','399','400','401','402','403','404','405','406','407','408','410','411','412','413','414','416','417','418','448','372','373','419','420','421','422','374','375','423','424','425','426','438','439','440','441','442','443','444','445','446','447') AND `type` = 1 AND `status` = 1  [ RunTime:0.0630s ]
+SQL: SHOW COLUMNS FROM `lh_province` [ RunTime:0.1290s ]
+SQL: SELECT * FROM `lh_province`  [ RunTime:0.0740s ]
+SQL: SHOW COLUMNS FROM `lh_city` [ RunTime:0.1180s ]
+SQL: SELECT * FROM `lh_city`  [ RunTime:0.0480s ]
+SQL: SHOW COLUMNS FROM `lh_area` [ RunTime:0.0710s ]
+SQL: SELECT * FROM `lh_area`  [ RunTime:0.0510s ]
+SQL: SHOW COLUMNS FROM `lh_technology` [ RunTime:0.0490s ]
+SQL: SELECT * FROM `lh_technology` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0490s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005000s ]
+NOTIC: [8] Undefined index: password G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 400 行.
+NOTIC: [8] Undefined index: password G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 404 行.
+NOTIC: [8] Undefined index: icon G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 446 行.
+NOTIC: [8] Undefined index: icon G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 458 行.
+NOTIC: [8] Undefined variable: auth_group G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 480 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.611035s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.615035s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.013001s ]
+
+[ 2020-03-30T11:48:47+08:00 ] 127.0.0.1 /admin.php/Farmer/technology_operation?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `lh_auth_group_access` [ RunTime:0.0480s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM lh_auth_group_access a INNER JOIN lh_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.1080s ]
+SQL: SHOW COLUMNS FROM `lh_auth_rule` [ RunTime:0.0550s ]
+SQL: SELECT `condition`,`name` FROM `lh_auth_rule` WHERE `id` IN ('3','348','50','349','350','351','359','360','361','362','363','364','365','379','427','435','366','367','371','376','377','378','380','381','382','383','384','385','396','428','429','430','431','432','433','434','437','369','370','386','387','388','389','390','391','392','393','394','395','397','398','399','400','401','402','403','404','405','406','407','408','410','411','412','413','414','416','417','418','448','372','373','419','420','421','422','374','375','423','424','425','426','438','439','440','441','442','443','444','445','446','447') AND `type` = 1 AND `status` = 1  [ RunTime:0.0510s ]
+SQL: SHOW COLUMNS FROM `lh_province` [ RunTime:0.0530s ]
+SQL: SELECT * FROM `lh_province`  [ RunTime:0.0460s ]
+SQL: SHOW COLUMNS FROM `lh_city` [ RunTime:0.0580s ]
+SQL: SELECT * FROM `lh_city`  [ RunTime:0.0600s ]
+SQL: SHOW COLUMNS FROM `lh_area` [ RunTime:0.0450s ]
+SQL: SELECT * FROM `lh_area`  [ RunTime:0.0580s ]
+SQL: SHOW COLUMNS FROM `lh_technology` [ RunTime:0.0480s ]
+SQL: SELECT * FROM `lh_technology` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0550s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005000s ]
+NOTIC: [8] Undefined index: password G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 413 行.
+NOTIC: [8] Undefined index: password G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 417 行.
+NOTIC: [8] Undefined index: icon G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 459 行.
+NOTIC: [8] Undefined index: icon G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 471 行.
+NOTIC: [8] Undefined variable: auth_group G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\87d600fc36ce9724c54790451ccfc09d.php 第 493 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.686039s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.688039s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007001s ]
+
+[ 2020-03-30T11:48:56+08:00 ] 127.0.0.1 /admin.php/Farmer/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010000s ]
+SQL: SHOW COLUMNS FROM `lh_auth_group_access` [ RunTime:0.0530s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM lh_auth_group_access a INNER JOIN lh_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0650s ]
+SQL: SHOW COLUMNS FROM `lh_auth_rule` [ RunTime:0.0530s ]
+SQL: SELECT `condition`,`name` FROM `lh_auth_rule` WHERE `id` IN ('3','348','50','349','350','351','359','360','361','362','363','364','365','379','427','435','366','367','371','376','377','378','380','381','382','383','384','385','396','428','429','430','431','432','433','434','437','369','370','386','387','388','389','390','391','392','393','394','395','397','398','399','400','401','402','403','404','405','406','407','408','410','411','412','413','414','416','417','418','448','372','373','419','420','421','422','374','375','423','424','425','426','438','439','440','441','442','443','444','445','446','447') AND `type` = 1 AND `status` = 1  [ RunTime:0.0630s ]
+SQL: SHOW COLUMNS FROM `lh_farmer` [ RunTime:0.0690s ]
+SQL: SELECT * FROM `lh_farmer` WHERE `del_status` = 1  [ RunTime:0.0740s ]
+SQL: SELECT * FROM `lh_farmer` WHERE `del_status` = 1 ORDER BY `id` DESC LIMIT 0,20   [ RunTime:0.0630s ]
+SQL: SHOW COLUMNS FROM `lh_technology` [ RunTime:0.0680s ]
+SQL: SELECT * FROM `lh_technology` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0810s ]
+SQL: SHOW COLUMNS FROM `lh_commodity` [ RunTime:0.0480s ]
+SQL: SELECT * FROM `lh_commodity` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0670s ]
+SQL: SHOW COLUMNS FROM `lh_commodity_sort` [ RunTime:0.0680s ]
+SQL: SELECT * FROM `lh_commodity_sort` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0650s ]
+SQL: SELECT * FROM `lh_commodity` WHERE `id` = 14 LIMIT 1   [ RunTime:0.0760s ]
+SQL: SELECT * FROM `lh_commodity_sort` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0770s ]
+SQL: SHOW COLUMNS FROM `lh_province` [ RunTime:0.0510s ]
+SQL: SELECT * FROM `lh_province` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0490s ]
+SQL: SHOW COLUMNS FROM `lh_city` [ RunTime:0.0560s ]
+SQL: SELECT * FROM `lh_city` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0860s ]
+SQL: SHOW COLUMNS FROM `lh_area` [ RunTime:0.0770s ]
+SQL: SELECT * FROM `lh_area` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0700s ]
+SQL: SELECT * FROM `lh_technology` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0490s ]
+SQL: SELECT * FROM `lh_commodity` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0860s ]
+SQL: SELECT * FROM `lh_commodity_sort` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0460s ]
+SQL: SELECT * FROM `lh_commodity` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0780s ]
+SQL: SELECT * FROM `lh_commodity_sort` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0530s ]
+SQL: SELECT * FROM `lh_province` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0520s ]
+SQL: SELECT * FROM `lh_city` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0930s ]
+SQL: SELECT * FROM `lh_area` WHERE `id` = 5 LIMIT 1   [ RunTime:0.1470s ]
+SQL: SELECT * FROM `lh_technology` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0530s ]
+SQL: SELECT * FROM `lh_commodity` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0540s ]
+SQL: SELECT * FROM `lh_commodity_sort` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0780s ]
+SQL: SELECT * FROM `lh_province` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0610s ]
+SQL: SELECT * FROM `lh_city` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0680s ]
+SQL: SELECT * FROM `lh_area` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0460s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.655037s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.658038s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007000s ]
+
+[ 2020-03-30T11:49:14+08:00 ] 127.0.0.1 /admin.php/Farmer/farmer_operation
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+SQL: SHOW COLUMNS FROM `lh_auth_group_access` [ RunTime:0.0680s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM lh_auth_group_access a INNER JOIN lh_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0510s ]
+SQL: SHOW COLUMNS FROM `lh_auth_rule` [ RunTime:0.0560s ]
+SQL: SELECT `condition`,`name` FROM `lh_auth_rule` WHERE `id` IN ('3','348','50','349','350','351','359','360','361','362','363','364','365','379','427','435','366','367','371','376','377','378','380','381','382','383','384','385','396','428','429','430','431','432','433','434','437','369','370','386','387','388','389','390','391','392','393','394','395','397','398','399','400','401','402','403','404','405','406','407','408','410','411','412','413','414','416','417','418','448','372','373','419','420','421','422','374','375','423','424','425','426','438','439','440','441','442','443','444','445','446','447') AND `type` = 1 AND `status` = 1  [ RunTime:0.0760s ]
+SQL: SHOW COLUMNS FROM `lh_technology` [ RunTime:0.0550s ]
+SQL: SELECT * FROM `lh_technology` WHERE `del_status` = 1  [ RunTime:0.0640s ]
+SQL: SHOW COLUMNS FROM `lh_commodity` [ RunTime:0.0840s ]
+SQL: SELECT * FROM `lh_commodity` WHERE `status` = 1 AND `del_status` = 1  [ RunTime:0.0590s ]
+SQL: SHOW COLUMNS FROM `lh_province` [ RunTime:0.0530s ]
+SQL: SELECT * FROM `lh_province`  [ RunTime:0.0580s ]
+SQL: SHOW COLUMNS FROM `lh_city` [ RunTime:0.0560s ]
+SQL: SELECT * FROM `lh_city`  [ RunTime:0.0640s ]
+SQL: SHOW COLUMNS FROM `lh_area` [ RunTime:0.0570s ]
+SQL: SELECT * FROM `lh_area`  [ RunTime:0.0700s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005000s ]
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 219 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 231 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 267 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 301 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 327 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 327 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 327 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 327 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 343 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 357 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 368 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 375 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 382 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 382 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 388 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 388 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 388 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 388 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 388 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 399 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 411 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 425 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 438 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 451 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 455 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 455 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 455 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 455 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 455 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 455 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 455 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 455 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 455 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 455 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 455 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 455 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 455 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 455 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 480 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 484 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 500 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 516 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 526 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 538 行.
+NOTIC: [8] Undefined variable: auth_group G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 560 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 584 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 586 行.
+NOTIC: [8] Undefined index: id G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 687 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.781044s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.783044s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.012000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.017001s ]
+
+[ 2020-03-30T11:49:47+08:00 ] 127.0.0.1 /admin.php/Farmer/farmer_operation
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.022001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012001s ]
+SQL: SHOW COLUMNS FROM `lh_auth_group_access` [ RunTime:0.0730s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM lh_auth_group_access a INNER JOIN lh_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0550s ]
+SQL: SHOW COLUMNS FROM `lh_auth_rule` [ RunTime:0.0690s ]
+SQL: SELECT `condition`,`name` FROM `lh_auth_rule` WHERE `id` IN ('3','348','50','349','350','351','359','360','361','362','363','364','365','379','427','435','366','367','371','376','377','378','380','381','382','383','384','385','396','428','429','430','431','432','433','434','437','369','370','386','387','388','389','390','391','392','393','394','395','397','398','399','400','401','402','403','404','405','406','407','408','410','411','412','413','414','416','417','418','448','372','373','419','420','421','422','374','375','423','424','425','426','438','439','440','441','442','443','444','445','446','447') AND `type` = 1 AND `status` = 1  [ RunTime:0.0550s ]
+SQL: SHOW COLUMNS FROM `lh_technology` [ RunTime:0.0640s ]
+SQL: SELECT * FROM `lh_technology` WHERE `del_status` = 1  [ RunTime:0.0660s ]
+SQL: SHOW COLUMNS FROM `lh_commodity` [ RunTime:0.0490s ]
+SQL: SELECT * FROM `lh_commodity` WHERE `status` = 1 AND `del_status` = 1  [ RunTime:0.0750s ]
+SQL: SHOW COLUMNS FROM `lh_province` [ RunTime:0.0620s ]
+SQL: SELECT * FROM `lh_province`  [ RunTime:0.0610s ]
+SQL: SHOW COLUMNS FROM `lh_city` [ RunTime:0.0930s ]
+SQL: SELECT * FROM `lh_city`  [ RunTime:0.0710s ]
+SQL: SHOW COLUMNS FROM `lh_area` [ RunTime:0.0500s ]
+SQL: SELECT * FROM `lh_area`  [ RunTime:0.0810s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 219 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 231 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 267 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 301 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 327 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 327 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 327 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 327 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 343 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 355 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 369 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 380 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 387 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 394 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 394 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 400 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 400 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 400 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 400 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 400 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 411 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 423 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 437 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 450 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 463 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 467 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 467 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 467 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 467 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 467 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 467 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 467 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 467 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 467 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 467 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 467 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 467 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 467 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 467 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 492 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 496 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 512 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 528 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 538 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 550 行.
+NOTIC: [8] Undefined variable: auth_group G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 572 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 596 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 598 行.
+NOTIC: [8] Undefined index: id G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\0b70b484bfd3049b708a062b8df88383.php 第 699 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.753043s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.757044s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008000s ]
+

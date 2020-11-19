@@ -1,0 +1,188 @@
+[ 2020-05-21T10:23:05+08:00 ] 127.0.0.1 /api.php/My/add_project?name=22&phone=15298921808
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.021001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.025002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.028002s ]
+ERR: ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+
+
+[ 2020-05-21T10:23:41+08:00 ] 127.0.0.1 /api.php/My/add_project?name=22&phone=15298921808
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `kq_user` [ RunTime:0.0600s ]
+SQL: SELECT * FROM `kq_user` WHERE `phone` = '15298921808' LIMIT 1   [ RunTime:0.0610s ]
+
+[ 2020-05-21T12:49:11+08:00 ] 127.0.0.1 /api.php/My/add_project?name=22&phone=15298921808
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.032002s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.024002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.028002s ]
+
+[ 2020-05-21T12:50:42+08:00 ] 127.0.0.1 /api.php/My/get_update_attendance?user_id=9
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008000s ]
+SQL: SHOW COLUMNS FROM `kq_user` [ RunTime:0.0570s ]
+SQL: SELECT * FROM `kq_user` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0580s ]
+SQL: SHOW COLUMNS FROM `kq_project` [ RunTime:0.0820s ]
+SQL: SELECT * FROM `kq_project` WHERE `id` = 0 AND `del_status` = 1 LIMIT 1   [ RunTime:0.0570s ]
+NOTIC: [8] Undefined index: project_id xdebug://debug-eval(1) : eval()'d code ç¬¬ 1 è¡Œ.
+
+[ 2020-05-21T12:51:40+08:00 ] 127.0.0.1 /api.php/My/get_update_attendance?user_id=9
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.028002s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `kq_user` [ RunTime:0.0770s ]
+SQL: SELECT * FROM `kq_user` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0990s ]
+SQL: SHOW COLUMNS FROM `kq_project` [ RunTime:0.1750s ]
+SQL: SELECT * FROM `kq_project` WHERE `id` = 0 AND `del_status` = 1 LIMIT 1   [ RunTime:0.1100s ]
+SQL: SHOW COLUMNS FROM `kq_update_attendance` [ RunTime:0.0660s ]
+SQL: SELECT * FROM `kq_update_attendance` WHERE `del_status` = 1 AND `status` = 1 AND `project_id` = null AND `update_phone` = '15298921802' ORDER BY `id` DESC  [ RunTime:0.0630s ]
+
+[ 2020-05-21T12:52:15+08:00 ] 127.0.0.1 /api.php/My/add_project?name=22&phone=15298921808
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008001s ]
+
+[ 2020-05-21T12:53:09+08:00 ] 127.0.0.1 /api.php/My/get_update_attendance?user_id=9
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `kq_user` [ RunTime:0.0670s ]
+SQL: SELECT * FROM `kq_user` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0620s ]
+SQL: SHOW COLUMNS FROM `kq_project` [ RunTime:0.0750s ]
+SQL: SELECT * FROM `kq_project` WHERE `id` = 0 AND `del_status` = 1 LIMIT 1   [ RunTime:0.0610s ]
+SQL: SHOW COLUMNS FROM `kq_update_attendance` [ RunTime:0.0650s ]
+SQL: SELECT * FROM `kq_update_attendance` WHERE `del_status` = 1 AND `status` = 1 AND `project_id` = null AND `update_phone` = '15298921802' ORDER BY `id` DESC  [ RunTime:0.0630s ]
+
+[ 2020-05-21T12:53:28+08:00 ] 127.0.0.1 /api.php/My/get_update_attendance?user_id=9
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011001s ]
+SQL: SHOW COLUMNS FROM `kq_user` [ RunTime:0.0530s ]
+SQL: SELECT * FROM `kq_user` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0600s ]
+SQL: SHOW COLUMNS FROM `kq_project` [ RunTime:0.1250s ]
+SQL: SELECT * FROM `kq_project` WHERE `id` = 0 AND `del_status` = 1 LIMIT 1   [ RunTime:0.0520s ]
+
+[ 2020-05-21T12:53:40+08:00 ] 127.0.0.1 /api.php/My/get_update_attendance?user_id=9
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.020001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008000s ]
+SQL: SHOW COLUMNS FROM `kq_user` [ RunTime:0.0650s ]
+SQL: SELECT * FROM `kq_user` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0630s ]
+SQL: SHOW COLUMNS FROM `kq_project` [ RunTime:0.1370s ]
+SQL: SELECT * FROM `kq_project` WHERE `id` = 0 AND `del_status` = 1 LIMIT 1   [ RunTime:0.0670s ]
+SQL: SHOW COLUMNS FROM `kq_update_attendance` [ RunTime:0.0630s ]
+SQL: SELECT * FROM `kq_update_attendance` WHERE `del_status` = 1 AND `status` = 1 AND `update_phone` = '15298921802' ORDER BY `id` DESC  [ RunTime:0.0630s ]
+SQL: SHOW COLUMNS FROM `kq_attendance` [ RunTime:0.0640s ]
+SQL: SELECT * FROM `kq_attendance` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0620s ]
+SQL: SELECT * FROM `kq_attendance` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0650s ]
+SQL: SELECT * FROM `kq_attendance` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0610s ]
+SQL: SELECT * FROM `kq_attendance` WHERE `id` = 37 LIMIT 1   [ RunTime:0.0620s ]
+SQL: SELECT * FROM `kq_attendance` WHERE `id` = 37 LIMIT 1   [ RunTime:0.0680s ]
+
+[ 2020-05-21T15:44:49+08:00 ] 127.0.0.1 /api.php/My/get_update_attendance?user_id=9
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.065004s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.027002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.029002s ]
+SQL: SHOW COLUMNS FROM `kq_user` [ RunTime:0.0590s ]
+SQL: SELECT * FROM `kq_user` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0580s ]
+SQL: SHOW COLUMNS FROM `kq_project` [ RunTime:0.0580s ]
+SQL: SELECT * FROM `kq_project` WHERE `id` = 0 AND `del_status` = 1 LIMIT 1   [ RunTime:0.0560s ]
+SQL: SELECT `id` FROM `kq_project` WHERE `del_status` = 1  [ RunTime:0.0670s ]
+SQL: SHOW COLUMNS FROM `kq_update_attendance` [ RunTime:0.0570s ]
+SQL: SELECT * FROM `kq_update_attendance` WHERE `del_status` = 1 AND `status` = 1 AND `project_id` IN ('33') AND `update_phone` = '15298921802' ORDER BY `id` DESC  [ RunTime:0.0630s ]
+
+[ 2020-05-21T15:46:53+08:00 ] 127.0.0.1 /api.php/My/get_update_attendance?user_id=9
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `kq_user` [ RunTime:0.0620s ]
+SQL: SELECT * FROM `kq_user` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0580s ]
+SQL: SHOW COLUMNS FROM `kq_project` [ RunTime:0.0590s ]
+SQL: SELECT * FROM `kq_project` WHERE `id` = 0 AND `del_status` = 1 LIMIT 1   [ RunTime:0.0750s ]
+SQL: SELECT `id` FROM `kq_project` WHERE `del_status` = 1  [ RunTime:0.1290s ]
+SQL: SHOW COLUMNS FROM `kq_update_attendance` [ RunTime:0.0760s ]
+SQL: SELECT * FROM `kq_update_attendance` WHERE `del_status` = 1 AND `status` = 1 AND `project_id` IN ('33') AND `update_phone` = '15298921802' ORDER BY `id` DESC  [ RunTime:0.0680s ]
+
+[ 2020-05-21T15:47:12+08:00 ] 127.0.0.1 /api.php/My/get_update_attendance?user_id=13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+SQL: SHOW COLUMNS FROM `kq_user` [ RunTime:0.0780s ]
+SQL: SELECT * FROM `kq_user` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0560s ]
+SQL: SHOW COLUMNS FROM `kq_project` [ RunTime:0.0560s ]
+SQL: SELECT * FROM `kq_project` WHERE `id` = 34 AND `del_status` = 1 LIMIT 1   [ RunTime:0.0550s ]
+SQL: SELECT `id` FROM `kq_project` WHERE `del_status` = 1  [ RunTime:0.0560s ]
+SQL: SHOW COLUMNS FROM `kq_update_attendance` [ RunTime:0.0570s ]
+SQL: SELECT * FROM `kq_update_attendance` WHERE `del_status` = 1 AND `status` = 1 AND `project_id` IN ('34') AND `update_phone` = '1008611' ORDER BY `id` DESC  [ RunTime:0.0560s ]
+
+[ 2020-05-21T15:49:05+08:00 ] 127.0.0.1 /api.php/My/get_update_attendance?user_id=13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008000s ]
+SQL: SHOW COLUMNS FROM `kq_user` [ RunTime:0.0520s ]
+SQL: SELECT * FROM `kq_user` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0520s ]
+SQL: SHOW COLUMNS FROM `kq_project` [ RunTime:0.1410s ]
+SQL: SELECT * FROM `kq_project` WHERE `id` = 34 AND `del_status` = 1 LIMIT 1   [ RunTime:0.0700s ]
+SQL: SELECT `id` FROM `kq_project` WHERE `del_status` = 1  [ RunTime:0.1000s ]
+SQL: SHOW COLUMNS FROM `kq_update_attendance` [ RunTime:0.0670s ]
+SQL: SELECT * FROM `kq_update_attendance` WHERE `del_status` = 1 AND `status` = 1 AND `project_id` IN ('34') AND `update_phone` = '1008611' ORDER BY `id` DESC  [ RunTime:0.0610s ]
+SQL: SHOW COLUMNS FROM `kq_attendance` [ RunTime:0.0610s ]
+SQL: SELECT * FROM `kq_attendance` WHERE `id` = 47 LIMIT 1   [ RunTime:0.0580s ]
+
+[ 2020-05-21T15:50:26+08:00 ] 127.0.0.1 /api.php/My/get_update_attendance?user_id=13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008001s ]
+SQL: SHOW COLUMNS FROM `kq_user` [ RunTime:0.0760s ]
+SQL: SELECT * FROM `kq_user` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0560s ]
+SQL: SHOW COLUMNS FROM `kq_project` [ RunTime:0.0640s ]
+SQL: SELECT * FROM `kq_project` WHERE `id` = 34 AND `del_status` = 1 LIMIT 1   [ RunTime:0.0990s ]
+SQL: SELECT `id` FROM `kq_project` WHERE `del_status` = 1  [ RunTime:0.0710s ]
+SQL: SHOW COLUMNS FROM `kq_update_attendance` [ RunTime:0.0800s ]
+SQL: SELECT * FROM `kq_update_attendance` WHERE `del_status` = 1 AND `status` = 1 AND `project_id` IN ('34') AND `update_phone` = '1008611' ORDER BY `id` DESC  [ RunTime:0.0540s ]
+SQL: SHOW COLUMNS FROM `kq_attendance` [ RunTime:0.0530s ]
+SQL: SELECT * FROM `kq_attendance` WHERE `id` = 47 LIMIT 1   [ RunTime:0.0540s ]
+

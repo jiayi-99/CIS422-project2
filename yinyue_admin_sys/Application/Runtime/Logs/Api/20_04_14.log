@@ -1,0 +1,53 @@
+[ 2020-04-14T17:19:44+08:00 ] 127.0.0.1 /api.php/My/update_user_info?user_id=10&name=%E5%B0%8F%E8%BE%89&address_copy=%5B%22%E6%B5%B7%E5%8D%97%E7%9C%81%22%2C%22%E6%B5%B7%E5%8F%A3%E5%B8%82%22%2C%22%E9%BE%99%E5%8D%8E%E5%8C%BA%22%5D&address=%E6%BB%A8%E6%B5%B7%E5%A4%A7%E9%81%93&phone=15298921808
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.020001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.020001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.022001s ]
+SQL: SHOW COLUMNS FROM `lh_province` [ RunTime:0.0500s ]
+SQL: SELECT * FROM `lh_province` WHERE `name` = '海南省' LIMIT 1   [ RunTime:0.0530s ]
+SQL: SHOW COLUMNS FROM `lh_city` [ RunTime:0.0510s ]
+SQL: SELECT * FROM `lh_city` WHERE `name` = '海口市' LIMIT 1   [ RunTime:0.0500s ]
+SQL: SHOW COLUMNS FROM `lh_area` [ RunTime:0.0520s ]
+SQL: SELECT * FROM `lh_area` WHERE `name` = '龙华区' LIMIT 1   [ RunTime:0.0460s ]
+SQL: SHOW COLUMNS FROM `lh_technology` [ RunTime:0.0500s ]
+SQL: SELECT * FROM `lh_technology` WHERE `user_id` = 10 AND `del_status` = 1 LIMIT 1   [ RunTime:0.0510s ]
+SQL: SHOW COLUMNS FROM `lh_farmer` [ RunTime:0.0560s ]
+SQL: SELECT * FROM `lh_farmer` WHERE `user_id` = 10 AND `del_status` = 1 LIMIT 1   [ RunTime:0.0510s ]
+SQL: UPDATE `lh_farmer` SET `name`='小辉',`province_id`='1',`city_id`='1',`area_id`='1',`address`='滨海大道',`phone`='15298921808' WHERE `id` = 108 [ RunTime:0.1120s ]
+
+[ 2020-04-14T17:21:57+08:00 ] 127.0.0.1 /api.php/My/get_user_info_data?user_id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.021001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.024001s ]
+SQL: SHOW COLUMNS FROM `lh_technology` [ RunTime:0.0490s ]
+SQL: SELECT * FROM `lh_technology` WHERE `user_id` = 10 AND `del_status` = 1 LIMIT 1   [ RunTime:0.0400s ]
+SQL: SHOW COLUMNS FROM `lh_farmer` [ RunTime:0.0430s ]
+SQL: SELECT * FROM `lh_farmer` WHERE `user_id` = 10 AND `del_status` = 1 LIMIT 1   [ RunTime:0.0420s ]
+SQL: SHOW COLUMNS FROM `lh_province` [ RunTime:0.0450s ]
+SQL: SELECT * FROM `lh_province` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0410s ]
+SQL: SHOW COLUMNS FROM `lh_city` [ RunTime:0.0430s ]
+SQL: SELECT * FROM `lh_city` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0420s ]
+SQL: SHOW COLUMNS FROM `lh_area` [ RunTime:0.0420s ]
+SQL: SELECT * FROM `lh_area` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0410s ]
+
+[ 2020-04-14T21:57:18+08:00 ] 127.0.0.1 /api.php/My/update_user_info?user_id=10&name=%E5%B0%8F%E8%BE%89&address_copy=%5B%22%E6%B5%B7%E5%8D%97%E7%9C%81%22%2C%22%E6%B5%B7%E5%8F%A3%E5%B8%82%22%2C%22%E9%BE%99%E5%8D%8E%E5%8C%BA%22%5D&address=%E6%BB%A8%E6%B5%B7%E5%A4%A7%E9%81%93&phone=15298921808
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.027002s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.020001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.023001s ]
+
+[ 2020-04-14T21:57:20+08:00 ] 127.0.0.1 /api.php/My/get_user_info_data?user_id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.017001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.018001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.021001s ]
+

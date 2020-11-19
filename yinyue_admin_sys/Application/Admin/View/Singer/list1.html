@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html>
+
+<include file="Common:head" />
+
+<body>
+
+<include file="Common:nav" />
+
+
+
+<div id="page-wrapper" class="gray-bg" style="min-height: 720px;">
+
+
+
+    <include file="Common:header" />
+
+
+
+    <div class="row wrapper border-bottom white-bg page-heading">
+
+        <div class="col-lg-12">
+
+            <h2>
+
+                Singer list
+
+                <a href="__URL__/Singer_operation" class="btn btn-primary pull-right">Add to</a>
+
+            </h2>
+
+            <ol class="breadcrumb">
+
+
+
+                <li>
+
+                    Singer management
+
+                </li>
+
+                <li>
+
+                    <a>Singer list</a>
+
+                </li>
+
+            </ol>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="row wrapper border-bottom white-bg page-heading">
+
+        <form action="" method="post" class="col-lg-12 form-horizontal" style="line-height: 48px;">
+
+            <input id="name" name="name" value="{$name}" class="form-control layer-date" placeholder="name" />
+
+            <button class="btn btn-primary m-t m-l-sm">search for</button>
+
+        </form>
+
+    </div>
+
+
+
+    <div class="wrapper wrapper-content animated fadeIn">
+
+        <div class="row">
+
+
+
+            <div class="col-lg-12">
+
+
+
+                <div class="ibox float-e-margins">
+
+
+
+                    <div class="ibox-title">
+
+                        <h5>Singer list</h5>
+
+                    </div>
+
+
+
+                    <div class="ibox-content" style="display: block;">
+
+                        <table class="table table-hover">
+
+                            <thead>
+
+                            <tr>
+
+                                <th>ID</th>
+
+                                <th>Artist name</th>
+
+                                <th>Creation time</th>
+
+                                <th>operating</th>
+
+                            </tr>
+
+                            </thead>
+
+                            <tbody>
+
+                            <volist name="list" id="vo" empty="暂无数据">
+
+                                <tr>
+
+                                    <td>{$vo['id']}</td>
+
+                                    <td>{$vo['name']}</td>
+
+                                    <td>{$vo['createtime']}</td>
+
+                                    <td>
+
+                                        <a href="__URL__/Singer_operation?id={$vo.id}" class="btn btn-xs btn-success"> edit</a>
+
+                                        <a href="__URL__/del_Singer?id={$vo.id}" class="btn btn-xs btn-success"> delete</a>
+
+                                    </td>
+
+                                </tr>
+
+                            </volist>
+
+                            </tbody>
+
+                        </table>
+
+
+
+
+
+                        <div style="text-align: right;">
+
+                            {$page}
+
+                        </div>
+
+
+
+                    </div>
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    <include file="Common:footer" />
+
+
+
+</div>
+
+
+
+<include file="Common:js" />
+
+<script src="__PUBLIC__/hplus/static/js/plugins/layer/laydate/laydate.js"></script>
+<script src="__PUBLIC__/sheetjs/shim.min.js"></script>
+<script src="__PUBLIC__/sheetjs/xlsx.full.min.js"></script>
+
+
+
+</body>
+
+
+
+</html>

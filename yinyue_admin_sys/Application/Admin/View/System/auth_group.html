@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<include file="Common:head" />
+<body>
+	<include file="Common:nav" />
+        
+        <div id="page-wrapper" class="gray-bg" style="min-height: 720px;">
+        
+			<include file="Common:header" />    
+
+<div class="row wrapper border-bottom white-bg page-heading">
+	<div class="col-lg-12">
+		<h2>
+			角色管理
+			<a href="__URL__/auth_group_operation" class="btn btn-primary pull-right">添加角色</a>
+		</h2>
+		<ol class="breadcrumb">
+
+		<li>
+			系统管理
+		</li>
+		<li>
+			<a>角色管理</a>
+		</li>		
+		</ol>
+	</div>
+</div>
+
+
+
+<div class="wrapper wrapper-content animated fadeIn">
+	<div class="row">
+		
+<div class="col-lg-12">
+	
+	<div class="ibox float-e-margins">
+		
+		<div class="ibox-title">
+			<h5>角色管理</h5>
+		</div>
+				
+		<div class="ibox-content" style="display: block;">
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						
+						<th>名称标题</th>
+						<th>操作</th>
+					</tr>
+				</thead>
+		 		<tbody>
+		 			<volist name="list" id="vo" empty="暂无数据">
+		 			<tr>
+		 				
+						<td>{$vo['title']}</td>
+						<td>
+							<a href="__URL__/auth_group_operation?id={$vo.id}" class="btn btn-xs btn-primary">编辑</a>
+						</td>
+					</tr>
+				 	</volist>
+				</tbody>
+			</table>
+				
+
+			<div style="text-align: right;">
+				{$page}
+			</div>
+		
+		</div>
+		              
+	</div>
+	
+</div>
+
+	</div>
+</div>
+
+
+
+
+			<include file="Common:footer" />  
+            
+        </div>
+
+	<include file="Common:js" />
+<script src="__PUBLIC__/hplus/static/js/plugins/layer/laydate/laydate.js"></script>
+<script>
+function del(del){
+	if(window.confirm('您确定要删除吗？')){
+        window.location.href=del;
+        return true;
+     }else{
+        return false;
+    }
+}
+</script>
+</body>
+
+</html>

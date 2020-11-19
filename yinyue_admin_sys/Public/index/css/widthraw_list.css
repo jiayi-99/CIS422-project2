@@ -1,0 +1,56 @@
+.section{
+    padding:13px 18px;
+  }
+  .section-li{
+    position: relative;
+    font-size: 15px;
+    color:#323232;
+    padding:10px 0px;
+    line-height: 20px;
+  
+  }
+  .section-li:after{
+    content: " ";
+    visibility: hidden;
+    display: block;
+    clear: both;
+  }
+  .section-l{
+    display: inline-block;
+  }
+  .section-r{
+    float: right;
+    text-align: right;
+  }
+  .line{
+    height:13px;
+    width:1px;
+    background:#cccccc;
+    display:inline-block;
+    margin:0px 5px;
+  }
+  .datatime{
+    color:#aeaeae;
+    font-size:12px;
+    line-height:20px;
+  
+  }
+  
+  .money{
+    display:inline-block;
+    width:88px;
+    text-align:right;
+  
+  }
+  .status{
+    font-size: 12px;
+    color:#FFA200;
+  }
+  .status1{
+    font-size: 12px;
+    color:rgb(47, 255, 168);
+  }
+  .status2{
+    font-size: 12px;
+    color:#FF5F78;
+  }

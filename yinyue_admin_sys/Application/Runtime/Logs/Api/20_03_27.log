@@ -1,0 +1,54 @@
+[ 2020-03-27T14:16:38+08:00 ] 127.0.0.1 /api.php/My/get_already_sales?id=2&user_id=13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.023001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.021001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.024001s ]
+ERR: 由于目标计算机积极拒绝，无法连接。
+
+
+[ 2020-03-27T14:19:24+08:00 ] 127.0.0.1 /api.php/My/get_already_sales?id=2&user_id=13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008001s ]
+SQL: SHOW COLUMNS FROM `lh_farmer_commodity` [ RunTime:0.0550s ]
+SQL: SELECT `id` FROM `lh_farmer_commodity` WHERE `farmer_id` = 2  [ RunTime:0.0450s ]
+SQL: SHOW COLUMNS FROM `lh_farmer_commodity_sales` [ RunTime:0.0420s ]
+SQL: SELECT `id` FROM `lh_farmer_commodity_sales` WHERE `del_status` = 1 AND `farmer_commodity_id` IN ('15','16')  [ RunTime:0.0550s ]
+
+[ 2020-03-27T14:20:09+08:00 ] 127.0.0.1 /api.php/My/get_already_sales?id=2&user_id=13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `lh_farmer_commodity` [ RunTime:0.0530s ]
+SQL: SELECT `id` FROM `lh_farmer_commodity` WHERE `farmer_id` = 2  [ RunTime:0.0440s ]
+SQL: SHOW COLUMNS FROM `lh_farmer_commodity_sales` [ RunTime:0.0570s ]
+SQL: SELECT `farmer_commodity_id` FROM `lh_farmer_commodity_sales` WHERE `del_status` = 1 AND `farmer_commodity_id` IN ('15','16')  [ RunTime:0.0580s ]
+ERR: 1054:Unknown column 'farmer_commodity_id' in 'where clause'
+ [ SQL璇彞 ] : SELECT * FROM `lh_farmer_commodity` WHERE `del_status` = 1 AND `farmer_commodity_id` IN ('15','16') 
+ERR: 1054:Unknown column 'farmer_commodity_id' in 'where clause'
+ [ SQL璇彞 ] : SELECT * FROM `lh_farmer_commodity` WHERE `del_status` = 1 AND `farmer_commodity_id` IN ('15','16') 
+
+[ 2020-03-27T14:20:45+08:00 ] 127.0.0.1 /api.php/My/get_already_sales?id=2&user_id=13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `lh_farmer_commodity` [ RunTime:0.0440s ]
+SQL: SELECT `id` FROM `lh_farmer_commodity` WHERE `farmer_id` = 2  [ RunTime:0.0420s ]
+SQL: SHOW COLUMNS FROM `lh_farmer_commodity_sales` [ RunTime:0.0870s ]
+SQL: SELECT `farmer_commodity_id` FROM `lh_farmer_commodity_sales` WHERE `del_status` = 1 AND `farmer_commodity_id` IN ('15','16')  [ RunTime:0.0430s ]
+ERR: 1054:Unknown column 'farmer_commodity_id' in 'where clause'
+ [ SQL璇彞 ] : SELECT * FROM `lh_farmer_commodity` WHERE `del_status` = 1 AND `farmer_commodity_id` IN ('15','16') 
+ERR: 1054:Unknown column 'farmer_commodity_id' in 'where clause'
+ [ SQL璇彞 ] : SELECT * FROM `lh_farmer_commodity` WHERE `del_status` = 1 AND `farmer_commodity_id` IN ('15','16') 
+

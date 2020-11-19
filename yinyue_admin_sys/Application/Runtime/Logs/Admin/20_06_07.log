@@ -1,0 +1,28 @@
+[ 2020-06-07T01:02:50+08:00 ] 127.0.0.1 /admin.php/Project/project_options
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008000s ]
+SQL: SHOW COLUMNS FROM `jw_auth_group_access` [ RunTime:0.0730s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM jw_auth_group_access a INNER JOIN jw_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0690s ]
+SQL: SHOW COLUMNS FROM `jw_auth_rule` [ RunTime:0.0720s ]
+SQL: SELECT `condition`,`name` FROM `jw_auth_rule` WHERE `id` IN ('50','349','350','351','359','360','361','362','363','364','486','527','530','496','497','522','523','524','525','526','498','499','517','518','519','520','521','500','501','514','515','516','502','503','504','505','506','507','508','509','531','532','533','534','535') AND `type` = 1 AND `status` = 1  [ RunTime:0.0710s ]
+SQL: SHOW COLUMNS FROM `jw_project_options` [ RunTime:0.0690s ]
+SQL: SELECT * FROM `jw_project_options` WHERE `del_status` = 1  [ RunTime:0.0690s ]
+SQL: SELECT * FROM `jw_project_options` WHERE `del_status` = 1 ORDER BY `id` DESC LIMIT 0,20   [ RunTime:0.0690s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined variable: name G:\phpStudy\PHPTutorial\WWW\family_education\Application\Runtime\Cache\Admin\537734bd41f3101b4723169e3b89b279.php 第 239 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.545031s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.547031s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.016001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.019001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.027001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.029001s ]
+

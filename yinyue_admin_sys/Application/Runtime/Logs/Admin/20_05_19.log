@@ -1,0 +1,190 @@
+[ 2020-05-19T11:13:49+08:00 ] 127.0.0.1 /admin.php/Goods/goods_operation
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.018001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.021001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.019001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.021001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.221013s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.224013s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.020001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.024001s ]
+
+[ 2020-05-19T11:13:53+08:00 ] 127.0.0.1 /admin.php/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.083005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.086005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.035002s ]
+INFO: [ app_end ] --END-- [ RunTime:0.038002s ]
+
+[ 2020-05-19T11:13:54+08:00 ] 127.0.0.1 /admin.php/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007000s ]
+
+[ 2020-05-19T11:14:22+08:00 ] 127.0.0.1 /admin.php/Login/ajax_login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `kq_admin` [ RunTime:0.0740s ]
+SQL: SELECT * FROM `kq_admin` WHERE `account` = 'admin' AND `password` = 'fcea920f7412b5da7be0cf42b8c93759' AND `status` = 0 LIMIT 1   [ RunTime:0.1070s ]
+SQL: SHOW COLUMNS FROM `kq_log_admin` [ RunTime:0.0780s ]
+SQL: INSERT INTO `kq_log_admin` (`ip`,`admin_id`,`login_time`) VALUES ('127.0.0.1','14','2020-05-19 11:14:21') [ RunTime:0.5160s ]
+
+[ 2020-05-19T11:14:25+08:00 ] 127.0.0.1 /admin.php/User/list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+SQL: SHOW COLUMNS FROM `kq_auth_group_access` [ RunTime:0.0820s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM kq_auth_group_access a INNER JOIN kq_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0830s ]
+SQL: SHOW COLUMNS FROM `kq_auth_rule` [ RunTime:0.0980s ]
+SQL: SELECT `condition`,`name` FROM `kq_auth_rule` WHERE `id` IN ('3','348','50','349','350','351','359','360','361','362','363','364','482','483','507','508','509','510','495','496','497','498','499','500','501','502','503','504','506','511','512','515','516','517','518','513','514','519','520','521','522') AND `type` = 1 AND `status` = 1  [ RunTime:0.1330s ]
+SQL: SHOW COLUMNS FROM `kq_user` [ RunTime:0.1570s ]
+SQL: SELECT * FROM `kq_user`  [ RunTime:0.1140s ]
+SQL: SELECT * FROM `kq_user` ORDER BY `id` DESC LIMIT 0,20   [ RunTime:0.1370s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined variable: nickname G:\phpStudy\PHPTutorial\WWW\kq_admin\Application\Runtime\Cache\Admin\348efd2a0dd83b3e88e89458f20a0b1c.php 第 235 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.511030s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.513030s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009001s ]
+
+[ 2020-05-19T11:14:35+08:00 ] 127.0.0.1 /admin.php/User/attendance_info?id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `kq_auth_group_access` [ RunTime:0.0600s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM kq_auth_group_access a INNER JOIN kq_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0600s ]
+SQL: SHOW COLUMNS FROM `kq_auth_rule` [ RunTime:0.0630s ]
+SQL: SELECT `condition`,`name` FROM `kq_auth_rule` WHERE `id` IN ('3','348','50','349','350','351','359','360','361','362','363','364','482','483','507','508','509','510','495','496','497','498','499','500','501','502','503','504','506','511','512','515','516','517','518','513','514','519','520','521','522') AND `type` = 1 AND `status` = 1  [ RunTime:0.0610s ]
+SQL: SHOW COLUMNS FROM `kq_user` [ RunTime:0.0860s ]
+SQL: SELECT * FROM `kq_user` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0660s ]
+SQL: SHOW COLUMNS FROM `kq_attendance` [ RunTime:0.0610s ]
+SQL: SELECT * FROM `kq_attendance` WHERE `del_status` = 1 AND `phone` = null  [ RunTime:0.0600s ]
+SQL: SELECT * FROM `kq_attendance` WHERE `del_status` = 1 AND `phone` = null ORDER BY `id` DESC LIMIT 0,20   [ RunTime:0.0610s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003001s ]
+NOTIC: [8] Undefined variable: name G:\phpStudy\PHPTutorial\WWW\kq_admin\Application\Runtime\Cache\Admin\bb8fb920a954ce11c2262519e3ae70c6.php 第 236 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.285016s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.287016s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007000s ]
+
+[ 2020-05-19T11:14:44+08:00 ] 127.0.0.1 /admin.php/Goods/list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+SQL: SHOW COLUMNS FROM `kq_auth_group_access` [ RunTime:0.0610s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM kq_auth_group_access a INNER JOIN kq_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0730s ]
+SQL: SHOW COLUMNS FROM `kq_auth_rule` [ RunTime:0.0640s ]
+SQL: SELECT `condition`,`name` FROM `kq_auth_rule` WHERE `id` IN ('3','348','50','349','350','351','359','360','361','362','363','364','482','483','507','508','509','510','495','496','497','498','499','500','501','502','503','504','506','511','512','515','516','517','518','513','514','519','520','521','522') AND `type` = 1 AND `status` = 1  [ RunTime:0.0560s ]
+SQL: SHOW COLUMNS FROM `kq_goods` [ RunTime:0.0600s ]
+SQL: SELECT * FROM `kq_goods` WHERE `del_status` = 1  [ RunTime:0.0890s ]
+SQL: SELECT * FROM `kq_goods` WHERE `del_status` = 1 ORDER BY `id` DESC LIMIT 0,20   [ RunTime:0.0800s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined variable: nickname G:\phpStudy\PHPTutorial\WWW\kq_admin\Application\Runtime\Cache\Admin\8fdb97cf043964c8b0ad702be278d296.php 第 236 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.286017s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.289017s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007001s ]
+
+[ 2020-05-19T11:14:48+08:00 ] 127.0.0.1 /admin.php/Goods/goods_operation
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `kq_auth_group_access` [ RunTime:0.0840s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM kq_auth_group_access a INNER JOIN kq_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0710s ]
+SQL: SHOW COLUMNS FROM `kq_auth_rule` [ RunTime:0.0870s ]
+SQL: SELECT `condition`,`name` FROM `kq_auth_rule` WHERE `id` IN ('3','348','50','349','350','351','359','360','361','362','363','364','482','483','507','508','509','510','495','496','497','498','499','500','501','502','503','504','506','511','512','515','516','517','518','513','514','519','520','521','522') AND `type` = 1 AND `status` = 1  [ RunTime:0.0630s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004001s ]
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\kq_admin\Application\Runtime\Cache\Admin\c5f8a3e0283498eec193fd50c524bcb7.php 第 170 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\kq_admin\Application\Runtime\Cache\Admin\c5f8a3e0283498eec193fd50c524bcb7.php 第 182 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\kq_admin\Application\Runtime\Cache\Admin\c5f8a3e0283498eec193fd50c524bcb7.php 第 218 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\kq_admin\Application\Runtime\Cache\Admin\c5f8a3e0283498eec193fd50c524bcb7.php 第 252 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\kq_admin\Application\Runtime\Cache\Admin\c5f8a3e0283498eec193fd50c524bcb7.php 第 271 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\kq_admin\Application\Runtime\Cache\Admin\c5f8a3e0283498eec193fd50c524bcb7.php 第 277 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\kq_admin\Application\Runtime\Cache\Admin\c5f8a3e0283498eec193fd50c524bcb7.php 第 290 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\kq_admin\Application\Runtime\Cache\Admin\c5f8a3e0283498eec193fd50c524bcb7.php 第 305 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\kq_admin\Application\Runtime\Cache\Admin\c5f8a3e0283498eec193fd50c524bcb7.php 第 403 行.
+NOTIC: [8] Undefined index: id G:\phpStudy\PHPTutorial\WWW\kq_admin\Application\Runtime\Cache\Admin\c5f8a3e0283498eec193fd50c524bcb7.php 第 409 行.
+NOTIC: [8] Undefined variable: form G:\phpStudy\PHPTutorial\WWW\kq_admin\Application\Runtime\Cache\Admin\c5f8a3e0283498eec193fd50c524bcb7.php 第 427 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.270016s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.271016s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008000s ]
+

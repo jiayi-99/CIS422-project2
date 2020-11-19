@@ -1,0 +1,75 @@
+[ 2020-05-09T10:03:21+08:00 ] 127.0.0.1 /api.php/Purchaser/buy_require_list?user_id=10&type=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.030002s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.024001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.026001s ]
+ERR: 由于目标计算机积极拒绝，无法连接。
+
+
+[ 2020-05-09T10:04:10+08:00 ] 127.0.0.1 /api.php/Purchaser/buy_require_list?user_id=10&type=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.018001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `lh_user` [ RunTime:0.0500s ]
+SQL: SELECT * FROM `lh_user` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0400s ]
+SQL: SHOW COLUMNS FROM `lh_purchaser` [ RunTime:0.0420s ]
+SQL: SELECT * FROM `lh_purchaser` WHERE `phone` = '15298921808' AND `del_status` = 1 LIMIT 1   [ RunTime:0.0580s ]
+SQL: SHOW COLUMNS FROM `lh_buy_require` [ RunTime:0.0530s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=>1 )' at line 1
+ [ SQL璇彞 ] : SELECT * FROM `lh_buy_require` WHERE `buy_require_id` = 28 AND `del_status` = 1 AND (  status=>1 ) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=>1 )' at line 1
+ [ SQL璇彞 ] : SELECT * FROM `lh_buy_require` WHERE `buy_require_id` = 28 AND `del_status` = 1 AND (  status=>1 ) 
+
+[ 2020-05-09T10:04:44+08:00 ] 127.0.0.1 /api.php/Purchaser/buy_require_list?user_id=10&type=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+SQL: SHOW COLUMNS FROM `lh_user` [ RunTime:0.0480s ]
+SQL: SELECT * FROM `lh_user` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0460s ]
+SQL: SHOW COLUMNS FROM `lh_purchaser` [ RunTime:0.0480s ]
+SQL: SELECT * FROM `lh_purchaser` WHERE `phone` = '15298921808' AND `del_status` = 1 LIMIT 1   [ RunTime:0.0480s ]
+SQL: SHOW COLUMNS FROM `lh_buy_require` [ RunTime:0.0480s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=>1 )' at line 1
+ [ SQL璇彞 ] : SELECT * FROM `lh_buy_require` WHERE `buy_require_id` = 28 AND `del_status` = 1 AND (  status=>1 ) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=>1 )' at line 1
+ [ SQL璇彞 ] : SELECT * FROM `lh_buy_require` WHERE `buy_require_id` = 28 AND `del_status` = 1 AND (  status=>1 ) 
+
+[ 2020-05-09T10:05:48+08:00 ] 127.0.0.1 /api.php/Purchaser/buy_require_list?user_id=10&type=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.024002s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+SQL: SHOW COLUMNS FROM `lh_user` [ RunTime:0.0450s ]
+SQL: SELECT * FROM `lh_user` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0490s ]
+SQL: SHOW COLUMNS FROM `lh_purchaser` [ RunTime:0.0510s ]
+SQL: SELECT * FROM `lh_purchaser` WHERE `phone` = '15298921808' AND `del_status` = 1 LIMIT 1   [ RunTime:0.0440s ]
+SQL: SHOW COLUMNS FROM `lh_buy_require` [ RunTime:0.0460s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=>1 )' at line 1
+ [ SQL璇彞 ] : SELECT * FROM `lh_buy_require` WHERE `buy_require_id` = 28 AND `del_status` = 1 AND (  status=>1 ) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=>1 )' at line 1
+ [ SQL璇彞 ] : SELECT * FROM `lh_buy_require` WHERE `buy_require_id` = 28 AND `del_status` = 1 AND (  status=>1 ) 
+
+[ 2020-05-09T10:07:07+08:00 ] 127.0.0.1 /api.php/Purchaser/buy_require_list?user_id=10&type=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `lh_user` [ RunTime:0.0520s ]
+SQL: SELECT * FROM `lh_user` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0440s ]
+SQL: SHOW COLUMNS FROM `lh_purchaser` [ RunTime:0.0480s ]
+SQL: SELECT * FROM `lh_purchaser` WHERE `phone` = '15298921808' AND `del_status` = 1 LIMIT 1   [ RunTime:0.0430s ]
+SQL: SHOW COLUMNS FROM `lh_buy_require` [ RunTime:0.0480s ]
+SQL: SELECT * FROM `lh_buy_require` WHERE `buy_require_id` = 28 AND `del_status` = 1 AND `status` = 1  [ RunTime:0.0450s ]
+

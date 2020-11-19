@@ -1,0 +1,24 @@
+[ 2020-04-27T16:00:15+08:00 ] 127.0.0.1 /api.php/My/get_in_produce?user_id=10&farmer_id=145
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.025001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.020001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.025001s ]
+ERR: 由于目标计算机积极拒绝，无法连接。
+
+
+[ 2020-04-27T16:01:21+08:00 ] 127.0.0.1 /api.php/My/get_in_produce?user_id=10&farmer_id=145
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+SQL: SHOW COLUMNS FROM `lh_user` [ RunTime:0.0750s ]
+SQL: SELECT `phone` FROM `lh_user` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0780s ]
+SQL: SHOW COLUMNS FROM `lh_farmer` [ RunTime:0.0880s ]
+SQL: SELECT * FROM `lh_farmer` WHERE `phone` = '15298921808' AND `del_status` = 1 LIMIT 1   [ RunTime:0.1490s ]
+SQL: SHOW COLUMNS FROM `lh_farmer_commodity` [ RunTime:0.1520s ]
+SQL: SELECT * FROM `lh_farmer_commodity` WHERE `farmer_id` = 143 AND `del_status` = 1 AND `end_time` > 1587974480 ORDER BY `id` DESC  [ RunTime:0.0780s ]
+

@@ -1,0 +1,90 @@
+[ 2020-04-28T09:50:29+08:00 ] 127.0.0.1 /api.php/Farmer/get_technology_farmer_list?user_id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.020002s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.021001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.024001s ]
+SQL: SHOW COLUMNS FROM `lh_user` [ RunTime:0.0950s ]
+SQL: SELECT * FROM `lh_user` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0710s ]
+SQL: SHOW COLUMNS FROM `lh_technology` [ RunTime:0.0670s ]
+SQL: SELECT * FROM `lh_technology` WHERE `phone` = '' AND `del_status` = 1 LIMIT 1   [ RunTime:0.0830s ]
+NOTIC: [8] Undefined index: id G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Api\Controller\FarmerController.class.php 第 393 行.
+NOTIC: [8] Undefined index: name G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Api\Controller\FarmerController.class.php 第 395 行.
+SQL: SHOW COLUMNS FROM `lh_farmer` [ RunTime:0.0750s ]
+SQL: SELECT * FROM `lh_farmer` WHERE `technology_id` = null AND `del_status` = 1 ORDER BY `id` DESC  [ RunTime:0.0950s ]
+
+[ 2020-04-28T09:51:18+08:00 ] 127.0.0.1 /api.php/Farmer/get_technology_farmer_list?user_id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `lh_user` [ RunTime:0.0650s ]
+SQL: SELECT * FROM `lh_user` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0750s ]
+SQL: SHOW COLUMNS FROM `lh_technology` [ RunTime:0.0930s ]
+SQL: SELECT * FROM `lh_technology` WHERE `phone` = '' AND `del_status` = 1 LIMIT 1   [ RunTime:0.0850s ]
+NOTIC: [8] Undefined index: id G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Api\Controller\FarmerController.class.php 第 393 行.
+NOTIC: [8] Undefined index: name G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Api\Controller\FarmerController.class.php 第 395 行.
+SQL: SHOW COLUMNS FROM `lh_farmer` [ RunTime:0.0700s ]
+SQL: SELECT * FROM `lh_farmer` WHERE `technology_id` = null AND `del_status` = 1 ORDER BY `id` DESC  [ RunTime:0.0810s ]
+
+[ 2020-04-28T09:54:53+08:00 ] 127.0.0.1 /api.php/My/check_user?user_id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011001s ]
+SQL: SHOW COLUMNS FROM `lh_user` [ RunTime:0.0670s ]
+SQL: SELECT * FROM `lh_user` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0830s ]
+SQL: SHOW COLUMNS FROM `lh_technology` [ RunTime:0.0610s ]
+SQL: SELECT * FROM `lh_technology` WHERE `user_id` = 10 AND `del_status` = 1 LIMIT 1   [ RunTime:0.0740s ]
+
+[ 2020-04-28T09:55:30+08:00 ] 127.0.0.1 /api.php/My/check_user?user_id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008000s ]
+SQL: SHOW COLUMNS FROM `lh_user` [ RunTime:0.0650s ]
+SQL: SELECT * FROM `lh_user` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0780s ]
+SQL: SHOW COLUMNS FROM `lh_technology` [ RunTime:0.0750s ]
+SQL: SELECT * FROM `lh_technology` WHERE `user_id` = 10 AND `del_status` = 1 LIMIT 1   [ RunTime:0.0820s ]
+
+[ 2020-04-28T09:57:28+08:00 ] 127.0.0.1 /api.php/My/check_user?user_id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `lh_user` [ RunTime:0.0860s ]
+SQL: SELECT * FROM `lh_user` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0870s ]
+SQL: SHOW COLUMNS FROM `lh_technology` [ RunTime:0.0680s ]
+SQL: SELECT * FROM `lh_technology` WHERE `phone` = '' AND `del_status` = 1 LIMIT 1   [ RunTime:0.0820s ]
+SQL: SHOW COLUMNS FROM `lh_farmer` [ RunTime:0.0650s ]
+SQL: SELECT * FROM `lh_farmer` WHERE `phone` = '' AND `del_status` = 1 LIMIT 1   [ RunTime:0.0740s ]
+SQL: SHOW COLUMNS FROM `lh_purchaser` [ RunTime:0.0850s ]
+SQL: SELECT * FROM `lh_purchaser` WHERE `phone` = '' AND `del_status` = 1 LIMIT 1   [ RunTime:0.1000s ]
+SQL: SHOW COLUMNS FROM `lh_company` [ RunTime:0.0830s ]
+SQL: SELECT * FROM `lh_company` WHERE `phone` = '' AND `del_status` = 1 LIMIT 1   [ RunTime:0.0880s ]
+
+[ 2020-04-28T10:20:34+08:00 ] 127.0.0.1 /api.php/Farmer/get_technology_farmer_list?user_id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.020001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.021001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.024001s ]
+SQL: SHOW COLUMNS FROM `lh_user` [ RunTime:0.0820s ]
+SQL: SELECT * FROM `lh_user` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0810s ]
+SQL: SHOW COLUMNS FROM `lh_technology` [ RunTime:0.0920s ]
+SQL: SELECT * FROM `lh_technology` WHERE `phone` = '' AND `del_status` = 1 LIMIT 1   [ RunTime:0.0900s ]
+NOTIC: [8] Undefined index: id G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Api\Controller\FarmerController.class.php 第 393 行.
+NOTIC: [8] Undefined index: name G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Api\Controller\FarmerController.class.php 第 395 行.
+SQL: SHOW COLUMNS FROM `lh_farmer` [ RunTime:0.0770s ]
+SQL: SELECT * FROM `lh_farmer` WHERE `technology_id` = null AND `del_status` = 1 ORDER BY `id` DESC  [ RunTime:0.0940s ]
+

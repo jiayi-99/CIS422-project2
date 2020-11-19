@@ -1,0 +1,119 @@
+
+/* tab切换 */
+.tab-box{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    font-size: 15px;
+    height: 45px;
+    line-height: 45px;
+    padding:0px 60px 10px;
+}
+.tab-box-l{
+    position: relative;
+    width:50%;
+    text-align: center;
+    height: 35px;
+}
+.tab-box-r{
+    position: relative;
+    width:50%;
+    text-align:center;
+    height: 35px;
+}
+.tab-item{
+    position: relative;
+    color:#DADADA;
+}
+.active{
+    color:#000000;
+}
+.active-line{
+    background: #FF5F78;
+    position: absolute;
+    bottom: -2px;
+    left: 0px;
+    width: 24px;
+    height: 2px;
+    left: 50%;
+    margin-left: -12px;
+}
+.tab-title{
+    display: none;
+    font-size:13px;
+    text-align:center;
+    line-height:26px;
+    letter-spacing:2px;
+}
+.content-box{
+    padding:13px 18px;
+    display: none;
+}
+.section-li{
+  position: relative;
+  font-size: 15px;
+  color:#323232;
+  padding:10px 0px;
+
+}
+.section-li:after{
+  content: " ";
+  visibility: hidden;
+  display: block;
+  clear: both;
+}
+.section-l{
+  display: inline-block;
+  float:left;
+  padding-top:1px;
+  text-align:center;
+}
+
+.section-r{
+  float: left;
+  color:#aeaeae;
+  font-size: 12px;
+  padding-left:8px;
+  line-height: 22px;
+
+}
+.section-r1{
+  float: right;
+  color:#323232;
+  font-size: 14px;
+  line-height: 33px;
+}
+.header-img{
+  width:42px;
+  height:42px;
+  border-radius:50%;
+  overflow:hidden;
+  display:inline-block;
+  vertical-align:middle;
+}
+.section-name{
+  display: inline-block;
+  vertical-align:middle;
+  color:#323232;
+  line-height:0px;
+}
+
+.show{
+    display: block;
+}
+/* 没有内容的情况 */
+.section-null{
+    /* display: none; */
+    text-align: center;
+    padding-top:70px;
+}
+.image-null{
+    width:200px;
+    height: 148px;
+}
+.text-null{
+    text-align: center;
+    font-size: 13px;
+    line-height: 32px;
+    color:#666666;
+}

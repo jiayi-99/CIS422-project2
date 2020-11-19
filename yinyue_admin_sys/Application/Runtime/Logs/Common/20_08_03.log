@@ -1,0 +1,5 @@
+[ 2020-08-03T14:40:01+08:00 ] 127.0.0.1 /Public/image/l.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+

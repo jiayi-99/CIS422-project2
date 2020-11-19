@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ce4de2b6-72d6-4c6f-be0a-937feed0a648" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="gxdc_admin" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpServers">
+    <servers>
+      <server host="www.longhuanongye.com.cn" id="8f5c9057-957e-4fa6-ba19-7b99e66eac9c" name="www.longhuanongye.com.cn" />
+      <server host="www.quanxiaoyun.com.cn" id="411b4365-bb39-4997-9821-27e0cd19fe54" name="www.quanxiaoyun.com.cn" use_path_mappings="true">
+        <path_mappings>
+          <mapping local-root="$PROJECT_DIR$" remote-root="G:/phpStudy/PHPTutorial/WWW/quanxiaoyun" />
+        </path_mappings>
+      </server>
+      <server host="www.gxdc.com.cn" id="57b62005-d684-4d79-b1eb-425929d0d508" name="www.gxdc.com.cn" />
+      <server host="miniapp.mandyapp.com.cn" id="4679dec8-825c-4648-acd7-50b2cae4cec4" name="miniapp.mandyapp.com.cn" port="88" />
+      <server host="www.quanxiaoyun.com.cn" id="eb6ccf00-f8ba-497e-a457-98bc342bb14a" name="www.quanxiaoyun.com.cn (1)" port="88" />
+      <server host="www.longhuanongye.com.cn" id="4c39386f-67a5-4d20-8ae0-9c9890e7031d" name="www.longhuanongye.com.cn (1)" port="88" use_path_mappings="true">
+        <path_mappings>
+          <mapping local-root="$PROJECT_DIR$" remote-root="G:/phpStudy/PHPTutorial/WWW/longhuanongye" />
+        </path_mappings>
+      </server>
+      <server host="family.com.cn" id="03984048-1190-41e7-827d-e15076d36d51" name="family.com.cn" port="88" />
+      <server host="w.com.cn" id="51eb9d19-be76-4a17-b3b9-5ded97e8a7d4" name="w.com.cn" port="88" />
+      <server host="sys.com.cn" id="3d371d88-b4ba-4813-bc36-35b4d663e3eb" name="sys.com.cn" port="88" />
+      <server host="lifa_sys.com.cn" id="0c36bb01-ca96-4df8-8389-fce149fb9575" name="lifa_sys.com.cn" port="88" />
+      <server host="guanjia_sys.com.cn" id="53cd9e6a-c607-46be-8c07-4dfdbe6cbd0d" name="guanjia_sys.com.cn" port="88" />
+      <server host="xinxi_admin_sys.com.cn" id="baee6f31-ac99-4e87-a892-022ccd790833" name="xinxi_admin_sys.com.cn" port="88" />
+    </servers>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/aliyuncs/oss-sdk-php" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1Ys6rr7ENKKbjILVolrtYTz3D5r" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\phpStudy\PHPTutorial\WWW\longhuanongye\Public" />
+      <recent name="G:\phpStudy\PHPTutorial\WWW\longhuanongye" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\sheying_admin_sys\Public\image" />
+      <recent name="E:\sheying_admin_sys\Application\Api\Controller" />
+      <recent name="E:\sheying_admin_sys" />
+      <recent name="E:\xinxi_admin_sys\ThinkPHP\Library\Vendor" />
+      <recent name="E:\xinxi_admin_sys\Application\Admin\View\Xinxi" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="$project_options" />
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ce4de2b6-72d6-4c6f-be0a-937feed0a648" name="Default Changelist" comment="" />
+      <created>1583719156192</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583719156192</updated>
+      <workItem from="1583719163664" duration="21704000" />
+      <workItem from="1583747034519" duration="7161000" />
+      <workItem from="1583803757119" duration="30248000" />
+      <workItem from="1583889802269" duration="35180000" />
+      <workItem from="1583976115491" duration="26201000" />
+      <workItem from="1584061661040" duration="311000" />
+      <workItem from="1584062011875" duration="25120000" />
+      <workItem from="1584196248838" duration="594000" />
+      <workItem from="1584240321007" duration="9139000" />
+      <workItem from="1584321190508" duration="23670000" />
+      <workItem from="1584408592598" duration="37018000" />
+      <workItem from="1584497933179" duration="27622000" />
+      <workItem from="1584583281574" duration="23383000" />
+      <workItem from="1584668348382" duration="41096000" />
+      <workItem from="1584789440201" duration="13639000" />
+      <workItem from="1584926711390" duration="30551000" />
+      <workItem from="1584980267589" duration="4221000" />
+      <workItem from="1585013281146" duration="15908000" />
+      <workItem from="1585040756012" duration="6884000" />
+      <workItem from="1585099255363" duration="23526000" />
+      <workItem from="1585149511341" duration="7321000" />
+      <workItem from="1585185327098" duration="19637000" />
+      <workItem from="1585271925237" duration="69000" />
+      <workItem from="1585272973002" duration="19652000" />
+      <workItem from="1585531601934" duration="6988000" />
+      <workItem from="1585618314160" duration="6717000" />
+      <workItem from="1585635771088" duration="19681000" />
+      <workItem from="1585705019845" duration="228000" />
+      <workItem from="1585705326951" duration="20369000" />
+      <workItem from="1585790787474" duration="20553000" />
+      <workItem from="1585876711404" duration="783000" />
+      <workItem from="1585877629320" duration="14844000" />
+      <workItem from="1586223235975" duration="3758000" />
+      <workItem from="1586309555350" duration="19228000" />
+      <workItem from="1586396686063" duration="18736000" />
+      <workItem from="1586482514541" duration="3971000" />
+      <workItem from="1586487749243" duration="22746000" />
+      <workItem from="1586741011769" duration="55887000" />
+      <workItem from="1587000364141" duration="17657000" />
+      <workItem from="1587086429374" duration="30661000" />
+      <workItem from="1587177324246" duration="21384000" />
+      <workItem from="1587217947809" duration="13688000" />
+      <workItem from="1587345527821" duration="19240000" />
+      <workItem from="1587390410497" duration="8553000" />
+      <workItem from="1587433693380" duration="8757000" />
+      <workItem from="1587460796253" duration="8536000" />
+      <workItem from="1587518560298" duration="5448000" />
+      <workItem from="1587570115309" duration="600000" />
+      <workItem from="1587631731158" duration="1200000" />
+      <workItem from="1587692836144" duration="6310000" />
+      <workItem from="1587720677326" duration="4959000" />
+      <workItem from="1587831037911" duration="4806000" />
+      <workItem from="1587867781229" duration="10080000" />
+      <workItem from="1587951587271" duration="17195000" />
+      <workItem from="1587993455724" duration="11631000" />
+      <workItem from="1588010568618" duration="134000" />
+      <workItem from="1588038269738" duration="2983000" />
+      <workItem from="1588041618950" duration="18008000" />
+      <workItem from="1588124293591" duration="16309000" />
+      <workItem from="1588209065535" duration="1605000" />
+      <workItem from="1588408283825" duration="4760000" />
+      <workItem from="1588728701810" duration="630000" />
+      <workItem from="1588734402680" duration="4822000" />
+      <workItem from="1588831283772" duration="5448000" />
+      <workItem from="1588900772647" duration="19128000" />
+      <workItem from="1588945908236" duration="829000" />
+      <workItem from="1588987907957" duration="18391000" />
+      <workItem from="1589077770681" duration="2882000" />
+      <workItem from="1589161694271" duration="11757000" />
+      <workItem from="1589189815065" duration="6383000" />
+      <workItem from="1589207452425" duration="1598000" />
+      <workItem from="1589337358291" duration="27718000" />
+      <workItem from="1589421168728" duration="1837000" />
+      <workItem from="1589509870194" duration="1556000" />
+      <workItem from="1589543354160" duration="2560000" />
+      <workItem from="1589640107282" duration="597000" />
+      <workItem from="1589646911354" duration="1204000" />
+      <workItem from="1589650576993" duration="75000" />
+      <workItem from="1589683246522" duration="21479000" />
+      <workItem from="1589776824430" duration="16512000" />
+      <workItem from="1589814070631" duration="14630000" />
+      <workItem from="1589851461333" duration="16207000" />
+      <workItem from="1589896578196" duration="2770000" />
+      <workItem from="1589937318287" duration="143000" />
+      <workItem from="1589979582082" duration="4962000" />
+      <workItem from="1590025038258" duration="16587000" />
+      <workItem from="1591364833235" duration="36677000" />
+      <workItem from="1591621004206" duration="2660000" />
+      <workItem from="1591711299224" duration="10838000" />
+      <workItem from="1591764367798" duration="7162000" />
+      <workItem from="1591854219570" duration="617000" />
+      <workItem from="1592398932623" duration="10677000" />
+      <workItem from="1592545461494" duration="1818000" />
+      <workItem from="1592576693690" duration="10584000" />
+      <workItem from="1592734052118" duration="7162000" />
+      <workItem from="1593590201938" duration="8638000" />
+      <workItem from="1593611768227" duration="2548000" />
+      <workItem from="1593794888896" duration="15818000" />
+      <workItem from="1593917569564" duration="4383000" />
+      <workItem from="1596435948791" duration="8914000" />
+      <workItem from="1596505394712" duration="131000" />
+      <workItem from="1597065517333" duration="4161000" />
+      <workItem from="1597109023565" duration="16120000" />
+      <workItem from="1597456707898" duration="12653000" />
+      <workItem from="1597471009331" duration="559000" />
+      <workItem from="1597555778299" duration="17202000" />
+      <workItem from="1597629330333" duration="4277000" />
+      <workItem from="1597733474011" duration="2293000" />
+      <workItem from="1604389280963" duration="7664000" />
+      <workItem from="1604412626748" duration="3633000" />
+      <workItem from="1604453508965" duration="9145000" />
+      <workItem from="1604496128709" duration="1219000" />
+      <workItem from="1604586475197" duration="2899000" />
+      <workItem from="1604715973136" duration="3635000" />
+      <workItem from="1604885461047" duration="768000" />
+      <workItem from="1604927375738" duration="1275000" />
+      <workItem from="1605186223797" duration="5560000" />
+      <workItem from="1605230623507" duration="1613000" />
+      <workItem from="1605319652000" duration="27885000" />
+      <workItem from="1605412330876" duration="19902000" />
+      <workItem from="1605502022238" duration="1885000" />
+      <workItem from="1605678336482" duration="996000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="535" height="466" key="DebuggerActiveHint" timestamp="1597589137712">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="535" height="466" key="DebuggerActiveHint/0.0.1366.728@0.0.1366.728" timestamp="1597589137712" />
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1605407034503">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1605407034503" />
+    <state width="1322" height="95" key="GridCell.Tab.0.bottom" timestamp="1604486922726">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="95" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1604486922726" />
+    <state width="1322" height="95" key="GridCell.Tab.0.center" timestamp="1604486922725">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="95" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1604486922725" />
+    <state width="1322" height="95" key="GridCell.Tab.0.left" timestamp="1604486922724">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="95" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1604486922724" />
+    <state width="1322" height="95" key="GridCell.Tab.0.right" timestamp="1604486922726">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="95" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1604486922726" />
+    <state width="1322" height="95" key="GridCell.Tab.1.bottom" timestamp="1604486922727">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="95" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1604486922727" />
+    <state width="1322" height="95" key="GridCell.Tab.1.center" timestamp="1604486922726">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="95" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1604486922726" />
+    <state width="1322" height="95" key="GridCell.Tab.1.left" timestamp="1604486922726">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="95" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1604486922726" />
+    <state width="1322" height="95" key="GridCell.Tab.1.right" timestamp="1604486922726">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="95" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1604486922726" />
+    <state width="1322" height="95" key="GridCell.Tab.2.bottom" timestamp="1604486922728">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="95" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1604486922728" />
+    <state width="1322" height="95" key="GridCell.Tab.2.center" timestamp="1604486922727">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="95" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1604486922727" />
+    <state width="1322" height="95" key="GridCell.Tab.2.left" timestamp="1604486922727">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="95" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1604486922727" />
+    <state width="1322" height="95" key="GridCell.Tab.2.right" timestamp="1604486922727">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="95" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1604486922727" />
+    <state x="453" y="247" key="NewPhpClassDialog" timestamp="1605414288855">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="453" y="247" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1605414288855" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1605432779538">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1605432779538" />
+  </component>
+</project>

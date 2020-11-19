@@ -1,0 +1,89 @@
+[ 2020-03-26T00:57:24+08:00 ] 127.0.0.1 /api.php/My/add_commodity?user_id=10&commodity_name=%E9%BB%84%E7%93%9C&output=&produce=&area=&feature=%5B%5D&address=&output_unit_name=kg&area_unit_name=kg&produce_unit_name=undefined&start_time=undefined&end_time=undefined&address_copy=&explanation=&images=%5B%22https%3A%2F%2Fimg.quanquanyouli.cn%2F2020-03-26%2F5e7b8ce71f914.jpg%22%5D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.018001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.022001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.024001s ]
+ERR: ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+
+
+[ 2020-03-26T00:57:43+08:00 ] 127.0.0.1 /api.php/My/add_commodity?user_id=10&commodity_name=%E9%BB%84%E7%93%9C&output=&produce=&area=&feature=%5B%5D&address=&output_unit_name=kg&area_unit_name=kg&produce_unit_name=undefined&start_time=undefined&end_time=undefined&address_copy=&explanation=&images=%5B%22https%3A%2F%2Fimg.quanquanyouli.cn%2F2020-03-26%2F5e7b8ce71f914.jpg%22%5D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+ERR: ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+
+
+[ 2020-03-26T01:08:37+08:00 ] 127.0.0.1 /api.php/My/add_commodity?user_id=10&commodity_name=%E9%BB%84%E7%93%9C&output=&produce=&area=&feature=%5B%5D&address=&output_unit_name=kg&area_unit_name=kg&produce_unit_name=undefined&start_time=undefined&end_time=undefined&address_copy=&explanation=&images=%5B%22https%3A%2F%2Fimg.quanquanyouli.cn%2F2020-03-26%2F5e7b8ce71f914.jpg%22%5D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `lh_farmer` [ RunTime:0.0420s ]
+SQL: SELECT * FROM `lh_farmer` WHERE `user_id` = 10 LIMIT 1   [ RunTime:0.0410s ]
+SQL: SHOW COLUMNS FROM `lh_commodity` [ RunTime:0.0420s ]
+SQL: SELECT * FROM `lh_commodity` WHERE `name` = 'é»„ç“œ' LIMIT 1   [ RunTime:0.0430s ]
+SQL: SHOW COLUMNS FROM `lh_unit` [ RunTime:0.0420s ]
+SQL: SELECT * FROM `lh_unit` WHERE `name` = 'kg' LIMIT 1   [ RunTime:0.0410s ]
+SQL: SELECT * FROM `lh_unit` WHERE `name` = 'kg' LIMIT 1   [ RunTime:0.0410s ]
+SQL: SELECT * FROM `lh_unit` WHERE `name` = 'undefined' LIMIT 1   [ RunTime:0.0430s ]
+SQL: SHOW COLUMNS FROM `lh_province` [ RunTime:0.0420s ]
+SQL: SELECT * FROM `lh_province` WHERE `name` = null LIMIT 1   [ RunTime:0.0410s ]
+SQL: SHOW COLUMNS FROM `lh_city` [ RunTime:0.0410s ]
+SQL: SELECT * FROM `lh_city` WHERE `name` = null LIMIT 1   [ RunTime:0.0410s ]
+SQL: SHOW COLUMNS FROM `lh_area` [ RunTime:0.0410s ]
+SQL: SELECT * FROM `lh_area` WHERE `name` = null LIMIT 1   [ RunTime:0.0430s ]
+NOTIC: [2] implode(): Invalid arguments passed G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Api\Controller\MyController.class.php ç¬¬ 523 è¡Œ.
+SQL: SHOW COLUMNS FROM `lh_farmer_commodity` [ RunTime:0.0420s ]
+SQL: INSERT INTO `lh_farmer_commodity` (`farmer_id`,`commodity_id`,`output`,`produce`,`area`,`feature`,`address`,`output_unit_id`,`area_unit_id`,`produce_unit_id`,`start_time`,`end_time`,`province_id`,`city_id`,`area_id`,`explanation`,`images`,`createtime`) VALUES ('4','0','','','','[]','','1','1',NULL,'0','0',NULL,NULL,NULL,'',NULL,'1585156117') [ RunTime:0.0540s ]
+
+[ 2020-03-26T01:09:20+08:00 ] 127.0.0.1 /api.php/My/add_commodity?user_id=10&commodity_name=%E9%BB%84%E7%93%9C&output=&produce=&area=&feature=%5B%5D&address=&output_unit_name=kg&area_unit_name=kg&produce_unit_name=undefined&start_time=undefined&end_time=undefined&address_copy=&explanation=&images=%5B%22https%3A%2F%2Fimg.quanquanyouli.cn%2F2020-03-26%2F5e7b8ce71f914.jpg%22%5D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `lh_farmer` [ RunTime:0.0430s ]
+SQL: SELECT * FROM `lh_farmer` WHERE `user_id` = 10 LIMIT 1   [ RunTime:0.0440s ]
+SQL: SHOW COLUMNS FROM `lh_commodity` [ RunTime:0.0440s ]
+SQL: SELECT * FROM `lh_commodity` WHERE `name` = 'é»„ç“œ' LIMIT 1   [ RunTime:0.0420s ]
+SQL: SHOW COLUMNS FROM `lh_unit` [ RunTime:0.0420s ]
+SQL: SELECT * FROM `lh_unit` WHERE `name` = 'kg' LIMIT 1   [ RunTime:0.0460s ]
+SQL: SELECT * FROM `lh_unit` WHERE `name` = 'kg' LIMIT 1   [ RunTime:0.0420s ]
+SQL: SELECT * FROM `lh_unit` WHERE `name` = 'undefined' LIMIT 1   [ RunTime:0.0420s ]
+SQL: SHOW COLUMNS FROM `lh_province` [ RunTime:0.0440s ]
+SQL: SELECT * FROM `lh_province` WHERE `name` = null LIMIT 1   [ RunTime:0.0430s ]
+SQL: SHOW COLUMNS FROM `lh_city` [ RunTime:0.0420s ]
+SQL: SELECT * FROM `lh_city` WHERE `name` = null LIMIT 1   [ RunTime:0.0400s ]
+SQL: SHOW COLUMNS FROM `lh_area` [ RunTime:0.0410s ]
+SQL: SELECT * FROM `lh_area` WHERE `name` = null LIMIT 1   [ RunTime:0.0410s ]
+
+[ 2020-03-26T01:09:42+08:00 ] 127.0.0.1 /api.php/My/add_commodity?user_id=10&commodity_name=%E9%BB%84%E7%93%9C&output=&produce=&area=&feature=%5B%5D&address=&output_unit_name=kg&area_unit_name=kg&produce_unit_name=undefined&start_time=undefined&end_time=undefined&address_copy=&explanation=&images=%5B%22https%3A%2F%2Fimg.quanquanyouli.cn%2F2020-03-26%2F5e7b8ce71f914.jpg%22%5D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `lh_farmer` [ RunTime:0.0450s ]
+SQL: SELECT * FROM `lh_farmer` WHERE `user_id` = 10 LIMIT 1   [ RunTime:0.0470s ]
+SQL: SHOW COLUMNS FROM `lh_commodity` [ RunTime:0.0440s ]
+SQL: SELECT * FROM `lh_commodity` WHERE `name` = 'é»„ç“œ' LIMIT 1   [ RunTime:0.0440s ]
+SQL: SHOW COLUMNS FROM `lh_unit` [ RunTime:0.0470s ]
+SQL: SELECT * FROM `lh_unit` WHERE `name` = 'kg' LIMIT 1   [ RunTime:0.0440s ]
+SQL: SELECT * FROM `lh_unit` WHERE `name` = 'kg' LIMIT 1   [ RunTime:0.0440s ]
+SQL: SELECT * FROM `lh_unit` WHERE `name` = 'undefined' LIMIT 1   [ RunTime:0.0430s ]
+SQL: SHOW COLUMNS FROM `lh_province` [ RunTime:0.0470s ]
+SQL: SELECT * FROM `lh_province` WHERE `name` = null LIMIT 1   [ RunTime:0.0450s ]
+SQL: SHOW COLUMNS FROM `lh_city` [ RunTime:0.0440s ]
+SQL: SELECT * FROM `lh_city` WHERE `name` = null LIMIT 1   [ RunTime:0.0440s ]
+SQL: SHOW COLUMNS FROM `lh_area` [ RunTime:0.0440s ]
+SQL: SELECT * FROM `lh_area` WHERE `name` = null LIMIT 1   [ RunTime:0.0440s ]
+

@@ -1,0 +1,96 @@
+<!--侧边栏导航开始-->
+<nav class="navbar-default navbar-static-side" role="navigation">
+	<div class="sidebar-collapse">
+		<ul class="nav" id="side-menu">
+			<li class="nav-header">
+
+				<div class="dropdown profile-element">
+					<span>
+			            <img alt="image" src="__PUBLIC__/image/logo.jpg" width="100%" />
+			       </span>
+				</div>
+				<div class="logo-element">
+					BMS
+				</div>
+
+			</li>
+
+
+            <if condition="auth_check('User',session('admin.id'))">
+                <li <eq name="CONTROLLER_NAME" value="User">class="active"</eq> >
+                <a><i class="fa fa-list"></i> <span class="nav-label">user Management</span> <span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level">
+                    <if condition="auth_check('User/list1',session('admin.id'))">
+                        <li <?php echo CONTROLLER_NAME=='User'&&ACTION_NAME=='list1' ? 'class="active"' : ""; ?> >
+                        <a href="__APP__/User/list1">user list</a>
+                        </li>
+                    </if>
+                </ul>
+                </li>
+            </if>
+
+
+            <if condition="auth_check('Singer',session('admin.id'))">
+                <li <eq name="CONTROLLER_NAME" value="Singer">class="active"</eq> >
+                <a><i class="fa fa-list"></i> <span class="nav-label">singer management</span> <span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level">
+                    <if condition="auth_check('Singer/list1',session('admin.id'))">
+                        <li <?php echo CONTROLLER_NAME=='Singer'&&ACTION_NAME=='list1' ? 'class="active"' : ""; ?> >
+                        <a href="__APP__/Singer/list1">singer list</a>
+                        </li>
+                    </if>
+                </ul>
+                </li>
+            </if>
+
+
+            <if condition="auth_check('Song',session('admin.id'))">
+                <li <eq name="CONTROLLER_NAME" value="Song">class="active"</eq> >
+                <a><i class="fa fa-list"></i> <span class="nav-label">song management</span> <span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level">
+                    <if condition="auth_check('Song/list1',session('admin.id'))">
+                        <li <?php echo CONTROLLER_NAME=='Song'&&ACTION_NAME=='list1' ? 'class="active"' : ""; ?> >
+                        <a href="__APP__/Song/list1">song list</a>
+                        </li>
+                    </if>
+                </ul>
+                </li>
+            </if>
+
+
+
+
+
+
+
+
+
+    <if condition="auth_check('System',session('admin.id'))">
+	<li <eq name="CONTROLLER_NAME" value="System">class="active"</eq> >
+		<a><i class="fa fa-list"></i> <span class="nav-label">system Management</span> <span class="fa arrow"></span></a>
+		<ul class="nav nav-second-level">
+			<if condition="auth_check('System/admin',session('admin.id'))">
+				<li <?php echo CONTROLLER_NAME=='System'&&ACTION_NAME=='admin' ? 'class="active"' : ""; ?> >
+					<a href="__APP__/System/admin">administrator list</a>
+				</li>
+			</if>
+<!--			<if condition="auth_check('System/auth_group',session('admin.id'))">-->
+<!--				<li <?php echo CONTROLLER_NAME=='System'&&ACTION_NAME=='auth_group' ? 'class="active"' : ""; ?> >-->
+<!--					<a href="__APP__/System/auth_group">角色列表</a>-->
+<!--				</li>-->
+<!--			</if>-->
+<!--			<if condition="auth_check('System/auth_rule',session('admin.id'))">-->
+<!--				<li <?php echo CONTROLLER_NAME=='System'&&ACTION_NAME=='auth_rule' ? 'class="active"' : ""; ?> >-->
+<!--				<a href="__APP__/System/auth_rule">规则列表</a>-->
+<!--				</li>-->
+<!--			</if>-->
+		</ul>
+	</li>
+</if>
+
+
+
+		</ul>
+	</div>
+</nav>
+<!--侧边栏导航结束-->

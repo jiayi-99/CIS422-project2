@@ -1,0 +1,484 @@
+[ 2020-06-10T01:53:34+08:00 ] 127.0.0.1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.027002s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.029002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.147008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.149008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.020001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.022002s ]
+
+[ 2020-06-10T01:53:38+08:00 ] 127.0.0.1 /admin.php/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.086005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.088005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.029002s ]
+INFO: [ app_end ] --END-- [ RunTime:0.031002s ]
+
+[ 2020-06-10T01:53:38+08:00 ] 127.0.0.1 /admin.php/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.012000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.006000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.009000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.104006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.107006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009001s ]
+
+[ 2020-06-10T01:53:44+08:00 ] 127.0.0.1 /admin.php/Login/ajax_login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+SQL: SHOW COLUMNS FROM `jw_admin` [ RunTime:0.0730s ]
+SQL: SELECT * FROM `jw_admin` WHERE `account` = 'admin' AND `password` = 'fcea920f7412b5da7be0cf42b8c93759' AND `status` = 0 LIMIT 1   [ RunTime:0.0730s ]
+SQL: SHOW COLUMNS FROM `jw_log_admin` [ RunTime:0.0760s ]
+SQL: INSERT INTO `jw_log_admin` (`ip`,`admin_id`,`login_time`) VALUES ('127.0.0.1','14','2020-06-10 01:53:44') [ RunTime:0.0770s ]
+
+[ 2020-06-10T01:53:46+08:00 ] 127.0.0.1 /admin.php/System/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+SQL: SHOW COLUMNS FROM `jw_auth_group_access` [ RunTime:0.0760s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM jw_auth_group_access a INNER JOIN jw_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0750s ]
+SQL: SHOW COLUMNS FROM `jw_auth_rule` [ RunTime:0.0750s ]
+SQL: SELECT `condition`,`name` FROM `jw_auth_rule` WHERE `id` IN ('50','349','350','351','359','360','361','362','363','364','486','527','530','496','497','522','523','524','525','526','498','499','517','518','519','520','521','500','501','514','515','516','502','503','504','505','506','507','508','509','531','532','533','534','535') AND `type` = 1 AND `status` = 1  [ RunTime:0.0760s ]
+ERR: ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+
+
+[ 2020-06-10T01:55:01+08:00 ] 127.0.0.1 /admin.php/System/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009001s ]
+SQL: SHOW COLUMNS FROM `jw_auth_group_access` [ RunTime:0.0760s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM jw_auth_group_access a INNER JOIN jw_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0770s ]
+SQL: SHOW COLUMNS FROM `jw_auth_rule` [ RunTime:0.0760s ]
+SQL: SELECT `condition`,`name` FROM `jw_auth_rule` WHERE `id` IN ('50','349','350','351','359','360','361','362','363','364','486','527','530','496','497','522','523','524','525','526','498','499','517','518','519','520','521','500','501','514','515','516','502','503','504','505','506','507','508','509','531','532','533','534','535') AND `type` = 1 AND `status` = 1  [ RunTime:0.0790s ]
+SQL: SHOW COLUMNS FROM `jw_admin` [ RunTime:0.0770s ]
+SQL: SELECT * FROM `jw_admin` WHERE `status` = 0 AND `type` = 0  [ RunTime:0.0760s ]
+SQL: SELECT * FROM `jw_admin` WHERE `status` = 0 AND `type` = 0 ORDER BY `id` DESC LIMIT 0,20   [ RunTime:0.0760s ]
+SQL: SHOW COLUMNS FROM `jw_auth_group` [ RunTime:0.0780s ]
+SQL: SELECT `title` FROM `jw_auth_group` WHERE ( id='20' ) LIMIT 1   [ RunTime:0.0780s ]
+SQL: SELECT `title` FROM `jw_auth_group` WHERE ( id='18' ) LIMIT 1   [ RunTime:0.0760s ]
+SQL: SELECT `title` FROM `jw_auth_group` WHERE ( id='15' ) LIMIT 1   [ RunTime:0.0760s ]
+SQL: SELECT `title` FROM `jw_auth_group` WHERE ( id='15' ) LIMIT 1   [ RunTime:0.0760s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.354020s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.356020s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.012001s ]
+
+[ 2020-06-10T01:55:09+08:00 ] 127.0.0.1 /admin.php/Approver/list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009001s ]
+SQL: SHOW COLUMNS FROM `jw_auth_group_access` [ RunTime:0.0740s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM jw_auth_group_access a INNER JOIN jw_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0730s ]
+SQL: SHOW COLUMNS FROM `jw_auth_rule` [ RunTime:0.0740s ]
+SQL: SELECT `condition`,`name` FROM `jw_auth_rule` WHERE `id` IN ('50','349','350','351','359','360','361','362','363','364','486','527','530','496','497','522','523','524','525','526','498','499','517','518','519','520','521','500','501','514','515','516','502','503','504','505','506','507','508','509','531','532','533','534','535') AND `type` = 1 AND `status` = 1  [ RunTime:0.0730s ]
+SQL: SHOW COLUMNS FROM `jw_admin` [ RunTime:0.0740s ]
+SQL: SELECT * FROM `jw_admin` WHERE `id` = 14 LIMIT 1   [ RunTime:0.0740s ]
+SQL: SHOW COLUMNS FROM `jw_approver` [ RunTime:0.0740s ]
+SQL: SELECT * FROM `jw_approver`  [ RunTime:0.0730s ]
+NOTIC: [8] Undefined index: approver_id G:\phpStudy\PHPTutorial\WWW\declare_sys\Application\Admin\Controller\ApproverController.class.php Á¨¨ 18 Ë°å.
+SQL: SELECT * FROM `jw_approver` ORDER BY `id` DESC LIMIT 0,20   [ RunTime:0.0730s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004001s ]
+NOTIC: [8] Undefined variable: name G:\phpStudy\PHPTutorial\WWW\declare_sys\Application\Runtime\Cache\Admin\3845ca618890409787eccb8938a5e372.php Á¨¨ 239 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.348020s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.350020s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007000s ]
+
+[ 2020-06-10T01:55:17+08:00 ] 127.0.0.1 /admin.php/Approver/await_project?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `jw_auth_group_access` [ RunTime:0.0710s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM jw_auth_group_access a INNER JOIN jw_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0700s ]
+SQL: SHOW COLUMNS FROM `jw_auth_rule` [ RunTime:0.0750s ]
+SQL: SELECT `condition`,`name` FROM `jw_auth_rule` WHERE `id` IN ('50','349','350','351','359','360','361','362','363','364','486','527','530','496','497','522','523','524','525','526','498','499','517','518','519','520','521','500','501','514','515','516','502','503','504','505','506','507','508','509','531','532','533','534','535') AND `type` = 1 AND `status` = 1  [ RunTime:0.0700s ]
+SQL: SHOW COLUMNS FROM `jw_approver` [ RunTime:0.0700s ]
+SQL: SELECT * FROM `jw_approver` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0700s ]
+SQL: SHOW COLUMNS FROM `jw_admin` [ RunTime:0.0730s ]
+SQL: SELECT * FROM `jw_admin` WHERE `id` = 14 LIMIT 1   [ RunTime:0.0720s ]
+NOTIC: [8] Undefined index: approver_type G:\phpStudy\PHPTutorial\WWW\declare_sys\Application\Admin\Controller\ApproverController.class.php Á¨¨ 45 Ë°å.
+NOTIC: [8] Undefined index: type G:\phpStudy\PHPTutorial\WWW\declare_sys\Application\Admin\Controller\ApproverController.class.php Á¨¨ 48 Ë°å.
+SQL: SHOW COLUMNS FROM `jw_approve_project` [ RunTime:0.0730s ]
+ERR: 1054:Unknown column 'type' in 'where clause'
+ [ SQLËØ≠Âè• ] : SELECT * FROM `jw_approve_project` WHERE `del_status` = 1 AND `status` = 1 AND `type` = null 
+ERR: 1054:Unknown column 'type' in 'where clause'
+ [ SQLËØ≠Âè• ] : SELECT * FROM `jw_approve_project` WHERE `del_status` = 1 AND `status` = 1 AND `type` = null 
+
+[ 2020-06-10T01:55:26+08:00 ] 127.0.0.1 /admin.php/Approver/list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `jw_auth_group_access` [ RunTime:0.0740s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM jw_auth_group_access a INNER JOIN jw_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0730s ]
+SQL: SHOW COLUMNS FROM `jw_auth_rule` [ RunTime:0.0760s ]
+SQL: SELECT `condition`,`name` FROM `jw_auth_rule` WHERE `id` IN ('50','349','350','351','359','360','361','362','363','364','486','527','530','496','497','522','523','524','525','526','498','499','517','518','519','520','521','500','501','514','515','516','502','503','504','505','506','507','508','509','531','532','533','534','535') AND `type` = 1 AND `status` = 1  [ RunTime:0.0740s ]
+SQL: SHOW COLUMNS FROM `jw_admin` [ RunTime:0.0730s ]
+SQL: SELECT * FROM `jw_admin` WHERE `id` = 14 LIMIT 1   [ RunTime:0.0730s ]
+SQL: SHOW COLUMNS FROM `jw_approver` [ RunTime:0.0740s ]
+SQL: SELECT * FROM `jw_approver`  [ RunTime:0.0730s ]
+NOTIC: [8] Undefined index: approver_id G:\phpStudy\PHPTutorial\WWW\declare_sys\Application\Admin\Controller\ApproverController.class.php Á¨¨ 18 Ë°å.
+SQL: SELECT * FROM `jw_approver` ORDER BY `id` DESC LIMIT 0,20   [ RunTime:0.0730s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined variable: name G:\phpStudy\PHPTutorial\WWW\declare_sys\Application\Runtime\Cache\Admin\3845ca618890409787eccb8938a5e372.php Á¨¨ 239 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.267015s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.269015s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008001s ]
+
+[ 2020-06-10T01:55:56+08:00 ] 127.0.0.1 /admin.php/Approver/list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+SQL: SHOW COLUMNS FROM `jw_auth_group_access` [ RunTime:0.0780s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM jw_auth_group_access a INNER JOIN jw_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0790s ]
+SQL: SHOW COLUMNS FROM `jw_auth_rule` [ RunTime:0.0790s ]
+SQL: SELECT `condition`,`name` FROM `jw_auth_rule` WHERE `id` IN ('50','349','350','351','359','360','361','362','363','364','486','527','530','496','497','522','523','524','525','526','498','499','517','518','519','520','521','500','501','514','515','516','502','503','504','505','506','507','508','509','531','532','533','534','535') AND `type` = 1 AND `status` = 1  [ RunTime:0.0780s ]
+SQL: SHOW COLUMNS FROM `jw_admin` [ RunTime:0.0780s ]
+SQL: SELECT * FROM `jw_admin` WHERE `id` = 14 LIMIT 1   [ RunTime:0.0780s ]
+SQL: SHOW COLUMNS FROM `jw_approver` [ RunTime:0.0810s ]
+SQL: SELECT * FROM `jw_approver`  [ RunTime:0.0770s ]
+NOTIC: [8] Undefined index: approver_id G:\phpStudy\PHPTutorial\WWW\declare_sys\Application\Admin\Controller\ApproverController.class.php Á¨¨ 18 Ë°å.
+SQL: SELECT * FROM `jw_approver` ORDER BY `id` DESC LIMIT 0,20   [ RunTime:0.0780s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined variable: name G:\phpStudy\PHPTutorial\WWW\declare_sys\Application\Runtime\Cache\Admin\3845ca618890409787eccb8938a5e372.php Á¨¨ 239 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.291017s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.293017s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008000s ]
+
+[ 2020-06-10T01:57:40+08:00 ] 127.0.0.1 /admin.php/Approver/list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008001s ]
+SQL: SHOW COLUMNS FROM `jw_auth_group_access` [ RunTime:0.0780s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM jw_auth_group_access a INNER JOIN jw_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0730s ]
+SQL: SHOW COLUMNS FROM `jw_auth_rule` [ RunTime:0.0750s ]
+SQL: SELECT `condition`,`name` FROM `jw_auth_rule` WHERE `id` IN ('50','349','350','351','359','360','361','362','363','364','486','527','530','496','497','522','523','524','525','526','498','499','517','518','519','520','521','500','501','514','515','516','502','503','504','505','506','507','508','509','531','532','533','534','535') AND `type` = 1 AND `status` = 1  [ RunTime:0.0770s ]
+SQL: SHOW COLUMNS FROM `jw_admin` [ RunTime:0.0800s ]
+SQL: SELECT * FROM `jw_admin` WHERE `id` = 14 LIMIT 1   [ RunTime:0.0730s ]
+SQL: SHOW COLUMNS FROM `jw_approver` [ RunTime:0.0750s ]
+SQL: SELECT * FROM `jw_approver`  [ RunTime:0.0740s ]
+NOTIC: [8] Undefined index: approver_id G:\phpStudy\PHPTutorial\WWW\declare_sys\Application\Admin\Controller\ApproverController.class.php Á¨¨ 18 Ë°å.
+SQL: SELECT * FROM `jw_approver` ORDER BY `id` DESC LIMIT 0,20   [ RunTime:0.0740s ]
+
+[ 2020-06-10T01:58:36+08:00 ] 127.0.0.1 /admin.php/Approver/list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+SQL: SHOW COLUMNS FROM `jw_auth_group_access` [ RunTime:0.0790s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM jw_auth_group_access a INNER JOIN jw_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0770s ]
+SQL: SHOW COLUMNS FROM `jw_auth_rule` [ RunTime:0.0800s ]
+SQL: SELECT `condition`,`name` FROM `jw_auth_rule` WHERE `id` IN ('50','349','350','351','359','360','361','362','363','364','486','527','530','496','497','522','523','524','525','526','498','499','517','518','519','520','521','500','501','514','515','516','502','503','504','505','506','507','508','509','531','532','533','534','535') AND `type` = 1 AND `status` = 1  [ RunTime:0.0770s ]
+SQL: SHOW COLUMNS FROM `jw_admin` [ RunTime:0.0770s ]
+SQL: SELECT * FROM `jw_admin` WHERE `id` = 14 LIMIT 1   [ RunTime:0.0770s ]
+NOTIC: [8] Undefined index: approver_id G:\phpStudy\PHPTutorial\WWW\declare_sys\Application\Admin\Controller\ApproverController.class.php Á¨¨ 16 Ë°å.
+SQL: SHOW COLUMNS FROM `jw_approver` [ RunTime:0.0770s ]
+SQL: SELECT * FROM `jw_approver`  [ RunTime:0.0780s ]
+SQL: SELECT * FROM `jw_approver` ORDER BY `id` DESC LIMIT 0,20   [ RunTime:0.0830s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005001s ]
+NOTIC: [8] Undefined variable: name G:\phpStudy\PHPTutorial\WWW\declare_sys\Application\Runtime\Cache\Admin\3845ca618890409787eccb8938a5e372.php Á¨¨ 239 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.305018s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.308018s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009000s ]
+
+[ 2020-06-10T02:00:19+08:00 ] 127.0.0.1 /admin.php/Approver/await_project?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+SQL: SHOW COLUMNS FROM `jw_auth_group_access` [ RunTime:0.0770s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM jw_auth_group_access a INNER JOIN jw_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0770s ]
+SQL: SHOW COLUMNS FROM `jw_auth_rule` [ RunTime:0.0780s ]
+SQL: SELECT `condition`,`name` FROM `jw_auth_rule` WHERE `id` IN ('50','349','350','351','359','360','361','362','363','364','486','527','530','496','497','522','523','524','525','526','498','499','517','518','519','520','521','500','501','514','515','516','502','503','504','505','506','507','508','509','531','532','533','534','535') AND `type` = 1 AND `status` = 1  [ RunTime:0.0760s ]
+SQL: SHOW COLUMNS FROM `jw_approver` [ RunTime:0.0760s ]
+SQL: SELECT * FROM `jw_approver` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0770s ]
+
+[ 2020-06-10T02:00:25+08:00 ] 127.0.0.1 /admin.php/Approver/await_project?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.004001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `jw_auth_group_access` [ RunTime:0.0690s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM jw_auth_group_access a INNER JOIN jw_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0710s ]
+SQL: SHOW COLUMNS FROM `jw_auth_rule` [ RunTime:0.0690s ]
+SQL: SELECT `condition`,`name` FROM `jw_auth_rule` WHERE `id` IN ('50','349','350','351','359','360','361','362','363','364','486','527','530','496','497','522','523','524','525','526','498','499','517','518','519','520','521','500','501','514','515','516','502','503','504','505','506','507','508','509','531','532','533','534','535') AND `type` = 1 AND `status` = 1  [ RunTime:0.0670s ]
+SQL: SHOW COLUMNS FROM `jw_approver` [ RunTime:0.0680s ]
+SQL: SELECT * FROM `jw_approver` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0700s ]
+SQL: SHOW COLUMNS FROM `jw_admin` [ RunTime:0.0680s ]
+SQL: SELECT * FROM `jw_admin` WHERE `id` = 14 LIMIT 1   [ RunTime:0.0680s ]
+SQL: SHOW COLUMNS FROM `jw_approve_project` [ RunTime:0.0680s ]
+SQL: SELECT * FROM `jw_approve_project` WHERE `del_status` = 1 AND `status` = 1 AND `type` = 1  [ RunTime:0.0680s ]
+SQL: SELECT * FROM `jw_approve_project` WHERE `del_status` = 1 AND `status` = 1 AND `type` = 1 ORDER BY `id` DESC LIMIT 0,20   [ RunTime:0.0680s ]
+SQL: SHOW COLUMNS FROM `jw_project_options` [ RunTime:0.0710s ]
+SQL: SELECT * FROM `jw_project_options` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0690s ]
+SQL: SHOW COLUMNS FROM `jw_student` [ RunTime:0.0680s ]
+SQL: SELECT * FROM `jw_student` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0680s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined variable: name G:\phpStudy\PHPTutorial\WWW\declare_sys\Application\Runtime\Cache\Admin\39e0a25122729c4ac213df962556214c.php Á¨¨ 239 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.353020s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.356020s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008000s ]
+
+[ 2020-06-10T02:00:31+08:00 ] 127.0.0.1 /admin.php/Approver/list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `jw_auth_group_access` [ RunTime:0.0720s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM jw_auth_group_access a INNER JOIN jw_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0700s ]
+SQL: SHOW COLUMNS FROM `jw_auth_rule` [ RunTime:0.0700s ]
+SQL: SELECT `condition`,`name` FROM `jw_auth_rule` WHERE `id` IN ('50','349','350','351','359','360','361','362','363','364','486','527','530','496','497','522','523','524','525','526','498','499','517','518','519','520','521','500','501','514','515','516','502','503','504','505','506','507','508','509','531','532','533','534','535') AND `type` = 1 AND `status` = 1  [ RunTime:0.0710s ]
+SQL: SHOW COLUMNS FROM `jw_admin` [ RunTime:0.0710s ]
+SQL: SELECT * FROM `jw_admin` WHERE `id` = 14 LIMIT 1   [ RunTime:0.0700s ]
+SQL: SHOW COLUMNS FROM `jw_approver` [ RunTime:0.0690s ]
+SQL: SELECT * FROM `jw_approver`  [ RunTime:0.0690s ]
+SQL: SELECT * FROM `jw_approver` ORDER BY `id` DESC LIMIT 0,20   [ RunTime:0.0690s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004001s ]
+NOTIC: [8] Undefined variable: name G:\phpStudy\PHPTutorial\WWW\declare_sys\Application\Runtime\Cache\Admin\3845ca618890409787eccb8938a5e372.php Á¨¨ 239 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.259015s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.262015s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007000s ]
+
+[ 2020-06-10T02:00:37+08:00 ] 127.0.0.1 /admin.php/Approver/await_project?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+SQL: SHOW COLUMNS FROM `jw_auth_group_access` [ RunTime:0.0760s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM jw_auth_group_access a INNER JOIN jw_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0800s ]
+SQL: SHOW COLUMNS FROM `jw_auth_rule` [ RunTime:0.0760s ]
+SQL: SELECT `condition`,`name` FROM `jw_auth_rule` WHERE `id` IN ('50','349','350','351','359','360','361','362','363','364','486','527','530','496','497','522','523','524','525','526','498','499','517','518','519','520','521','500','501','514','515','516','502','503','504','505','506','507','508','509','531','532','533','534','535') AND `type` = 1 AND `status` = 1  [ RunTime:0.0760s ]
+SQL: SHOW COLUMNS FROM `jw_approver` [ RunTime:0.0750s ]
+SQL: SELECT * FROM `jw_approver` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0750s ]
+SQL: SHOW COLUMNS FROM `jw_admin` [ RunTime:0.0760s ]
+SQL: SELECT * FROM `jw_admin` WHERE `id` = 14 LIMIT 1   [ RunTime:0.0750s ]
+SQL: SHOW COLUMNS FROM `jw_approve_project` [ RunTime:0.0770s ]
+SQL: SELECT * FROM `jw_approve_project` WHERE `del_status` = 1 AND `status` = 1 AND `type` = 3  [ RunTime:0.0780s ]
+SQL: SELECT * FROM `jw_approve_project` WHERE `del_status` = 1 AND `status` = 1 AND `type` = 3 ORDER BY `id` DESC LIMIT 0,20   [ RunTime:0.0770s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004001s ]
+NOTIC: [8] Undefined variable: name G:\phpStudy\PHPTutorial\WWW\declare_sys\Application\Runtime\Cache\Admin\39e0a25122729c4ac213df962556214c.php Á¨¨ 239 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.261015s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.264015s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008001s ]
+
+[ 2020-06-10T02:00:43+08:00 ] 127.0.0.1 /admin.php/Approver/list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+SQL: SHOW COLUMNS FROM `jw_auth_group_access` [ RunTime:0.0710s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM jw_auth_group_access a INNER JOIN jw_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0700s ]
+SQL: SHOW COLUMNS FROM `jw_auth_rule` [ RunTime:0.0720s ]
+SQL: SELECT `condition`,`name` FROM `jw_auth_rule` WHERE `id` IN ('50','349','350','351','359','360','361','362','363','364','486','527','530','496','497','522','523','524','525','526','498','499','517','518','519','520','521','500','501','514','515','516','502','503','504','505','506','507','508','509','531','532','533','534','535') AND `type` = 1 AND `status` = 1  [ RunTime:0.0720s ]
+SQL: SHOW COLUMNS FROM `jw_admin` [ RunTime:0.0710s ]
+SQL: SELECT * FROM `jw_admin` WHERE `id` = 14 LIMIT 1   [ RunTime:0.0700s ]
+SQL: SHOW COLUMNS FROM `jw_approver` [ RunTime:0.0740s ]
+SQL: SELECT * FROM `jw_approver`  [ RunTime:0.0690s ]
+SQL: SELECT * FROM `jw_approver` ORDER BY `id` DESC LIMIT 0,20   [ RunTime:0.0700s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined variable: name G:\phpStudy\PHPTutorial\WWW\declare_sys\Application\Runtime\Cache\Admin\3845ca618890409787eccb8938a5e372.php Á¨¨ 239 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.302018s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.306018s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.012001s ]
+
+[ 2020-06-10T02:01:03+08:00 ] 127.0.0.1 /admin.php/Approver/await_project?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `jw_auth_group_access` [ RunTime:0.0700s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM jw_auth_group_access a INNER JOIN jw_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0730s ]
+SQL: SHOW COLUMNS FROM `jw_auth_rule` [ RunTime:0.0700s ]
+SQL: SELECT `condition`,`name` FROM `jw_auth_rule` WHERE `id` IN ('50','349','350','351','359','360','361','362','363','364','486','527','530','496','497','522','523','524','525','526','498','499','517','518','519','520','521','500','501','514','515','516','502','503','504','505','506','507','508','509','531','532','533','534','535') AND `type` = 1 AND `status` = 1  [ RunTime:0.0700s ]
+SQL: SHOW COLUMNS FROM `jw_approver` [ RunTime:0.0700s ]
+SQL: SELECT * FROM `jw_approver` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0690s ]
+SQL: SHOW COLUMNS FROM `jw_admin` [ RunTime:0.0700s ]
+SQL: SELECT * FROM `jw_admin` WHERE `id` = 14 LIMIT 1   [ RunTime:0.0700s ]
+SQL: SHOW COLUMNS FROM `jw_approve_project` [ RunTime:0.0710s ]
+SQL: SELECT * FROM `jw_approve_project` WHERE `del_status` = 1 AND `status` = 1 AND `type` = 3  [ RunTime:0.0700s ]
+SQL: SELECT * FROM `jw_approve_project` WHERE `del_status` = 1 AND `status` = 1 AND `type` = 3 ORDER BY `id` DESC LIMIT 0,20   [ RunTime:0.0720s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004001s ]
+NOTIC: [8] Undefined variable: name G:\phpStudy\PHPTutorial\WWW\declare_sys\Application\Runtime\Cache\Admin\39e0a25122729c4ac213df962556214c.php Á¨¨ 239 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.325018s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.328019s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009001s ]
+
+[ 2020-06-10T02:01:15+08:00 ] 127.0.0.1 /admin.php/Approver/list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008001s ]
+SQL: SHOW COLUMNS FROM `jw_auth_group_access` [ RunTime:0.0710s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM jw_auth_group_access a INNER JOIN jw_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0710s ]
+SQL: SHOW COLUMNS FROM `jw_auth_rule` [ RunTime:0.0710s ]
+SQL: SELECT `condition`,`name` FROM `jw_auth_rule` WHERE `id` IN ('50','349','350','351','359','360','361','362','363','364','486','527','530','496','497','522','523','524','525','526','498','499','517','518','519','520','521','500','501','514','515','516','502','503','504','505','506','507','508','509','531','532','533','534','535') AND `type` = 1 AND `status` = 1  [ RunTime:0.0780s ]
+SQL: SHOW COLUMNS FROM `jw_admin` [ RunTime:0.0720s ]
+SQL: SELECT * FROM `jw_admin` WHERE `id` = 14 LIMIT 1   [ RunTime:0.0720s ]
+SQL: SHOW COLUMNS FROM `jw_approver` [ RunTime:0.0720s ]
+SQL: SELECT * FROM `jw_approver`  [ RunTime:0.0730s ]
+SQL: SELECT * FROM `jw_approver` ORDER BY `id` DESC LIMIT 0,20   [ RunTime:0.0720s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.006000s ]
+NOTIC: [8] Undefined variable: name G:\phpStudy\PHPTutorial\WWW\declare_sys\Application\Runtime\Cache\Admin\3845ca618890409787eccb8938a5e372.php Á¨¨ 239 Ë°å.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.301017s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.303017s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008001s ]
+

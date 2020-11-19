@@ -1,0 +1,49 @@
+[ 2020-05-08T16:46:55+08:00 ] 127.0.0.1 /api.php/My/get_user_info_data?user_id=10&farmer_id=undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.019001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.030002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.032002s ]
+SQL: SHOW COLUMNS FROM `lh_user` [ RunTime:0.0470s ]
+SQL: SELECT * FROM `lh_user` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0420s ]
+SQL: SHOW COLUMNS FROM `lh_technology` [ RunTime:0.0480s ]
+SQL: SELECT * FROM `lh_technology` WHERE `phone` = '15298921808' AND `del_status` = 1 LIMIT 1   [ RunTime:0.0530s ]
+SQL: SHOW COLUMNS FROM `lh_farmer` [ RunTime:0.0440s ]
+SQL: SELECT * FROM `lh_farmer` WHERE `phone` = '15298921808' AND `del_status` = 1 LIMIT 1   [ RunTime:0.0480s ]
+SQL: SHOW COLUMNS FROM `lh_purchaser` [ RunTime:0.0460s ]
+SQL: SELECT * FROM `lh_purchaser` WHERE `phone` = '15298921808' AND `del_status` = 1 LIMIT 1   [ RunTime:0.1780s ]
+
+[ 2020-05-08T16:47:59+08:00 ] 127.0.0.1 /api.php/My/get_user_info_data?user_id=10&farmer_id=undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `lh_user` [ RunTime:0.0530s ]
+SQL: SELECT * FROM `lh_user` WHERE `id` = 10 LIMIT 1   [ RunTime:0.1420s ]
+SQL: SHOW COLUMNS FROM `lh_technology` [ RunTime:0.0650s ]
+SQL: SELECT * FROM `lh_technology` WHERE `phone` = '15298921808' AND `del_status` = 1 LIMIT 1   [ RunTime:0.1770s ]
+SQL: SHOW COLUMNS FROM `lh_farmer` [ RunTime:0.0570s ]
+SQL: SELECT * FROM `lh_farmer` WHERE `phone` = '15298921808' AND `del_status` = 1 LIMIT 1   [ RunTime:0.0600s ]
+SQL: SHOW COLUMNS FROM `lh_purchaser` [ RunTime:0.0480s ]
+SQL: SELECT * FROM `lh_purchaser` WHERE `phone` = '15298921808' AND `del_status` = 1 LIMIT 1   [ RunTime:0.0530s ]
+
+[ 2020-05-08T18:27:17+08:00 ] 127.0.0.1 /api.php/Purchaser/add_buy_require?user_id=10&type=3&num=6767&num_unit_name=%E5%85%AC%E6%96%A4&commodity_name=%E8%8A%A5%E8%8F%9C&end_time=2020-5-8&region_id_list=%5B%221%22%2C%222%22%2C%223%22%5D&describe=676
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.020001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.029002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.033002s ]
+SQL: SHOW COLUMNS FROM `lh_user` [ RunTime:0.0410s ]
+SQL: SELECT * FROM `lh_user` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0520s ]
+SQL: SHOW COLUMNS FROM `lh_purchaser` [ RunTime:0.0420s ]
+SQL: SELECT * FROM `lh_purchaser` WHERE `phone` = '15298921808' AND `del_status` = 1 LIMIT 1   [ RunTime:0.0390s ]
+SQL: SHOW COLUMNS FROM `lh_unit` [ RunTime:0.0390s ]
+SQL: SELECT * FROM `lh_unit` WHERE `name` = '公斤' LIMIT 1   [ RunTime:0.0420s ]
+SQL: SHOW COLUMNS FROM `lh_commodity` [ RunTime:0.0520s ]
+SQL: SELECT * FROM `lh_commodity` WHERE `name` = '芥菜' LIMIT 1   [ RunTime:0.0390s ]
+NOTIC: [2] implode(): Invalid arguments passed G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Api\Controller\PurchaserController.class.php 第 38 行.
+

@@ -1,0 +1,73 @@
+[ 2020-03-31T14:20:57+08:00 ] 127.0.0.1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.014001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.016001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.136008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.140008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.020002s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.022002s ]
+
+[ 2020-03-31T14:21:01+08:00 ] 127.0.0.1 /admin.php/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006000s ]
+
+[ 2020-03-31T15:42:31+08:00 ] 127.0.0.1 /admin.php/Login/ajax_login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.025002s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.018001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.021001s ]
+SQL: SHOW COLUMNS FROM `lh_admin` [ RunTime:0.0970s ]
+SQL: SELECT * FROM `lh_admin` WHERE `account` = 'admin' AND `password` = 'fcea920f7412b5da7be0cf42b8c93759' AND `status` = 0 LIMIT 1   [ RunTime:0.0760s ]
+SQL: SHOW COLUMNS FROM `lh_log_admin` [ RunTime:0.0990s ]
+SQL: INSERT INTO `lh_log_admin` (`ip`,`admin_id`,`login_time`) VALUES ('127.0.0.1','14','2020-03-31 15:42:31') [ RunTime:0.2400s ]
+
+[ 2020-03-31T15:42:34+08:00 ] 127.0.0.1 /admin.php/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `lh_auth_group_access` [ RunTime:0.0790s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM lh_auth_group_access a INNER JOIN lh_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0930s ]
+SQL: SHOW COLUMNS FROM `lh_auth_rule` [ RunTime:0.0850s ]
+SQL: SELECT `condition`,`name` FROM `lh_auth_rule` WHERE `id` IN ('3','348','50','349','350','351','359','360','361','362','363','364','365','379','427','435','366','367','371','376','377','378','380','381','382','383','384','385','396','428','429','430','431','432','433','434','437','369','370','386','387','388','389','390','391','392','393','394','395','397','398','399','400','401','402','403','404','405','406','407','408','410','411','412','413','414','416','417','418','448','372','373','419','420','421','422','374','375','423','424','425','426','438','439','440','441','442','443','444','445','446','447') AND `type` = 1 AND `status` = 1  [ RunTime:0.0950s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.021001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.024001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.758043s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.763044s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.018001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.021001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.020001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.023001s ]
+

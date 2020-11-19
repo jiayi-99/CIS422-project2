@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+
+<html>
+
+<include file="Common:head" />
+
+
+
+<link href="__PUBLIC__/webuploader/webuploader.css" rel="stylesheet">
+
+<body>
+
+<include file="Common:nav" />
+
+
+
+<div id="page-wrapper" class="gray-bg" style="min-height: 720px;">
+
+
+
+    <include file="Common:header" />
+
+
+
+    <div class="row wrapper border-bottom white-bg page-heading">
+
+        <div class="col-lg-12">
+
+            <if condition="$form['id'] neq null">
+
+                <h2>Edit song</h2>
+
+                <else />
+
+                <h2>Add song</h2>
+
+            </if>
+
+            <ol class="breadcrumb">
+
+
+
+                <li>
+
+                    <if condition="$form['id'] neq null">
+
+                        <strong>Edit song</strong>
+
+                        <else />
+
+                        <strong>Add song</strong>
+
+                    </if>
+
+                </li>
+
+            </ol>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <div class="wrapper wrapper-content animated">
+
+        <div class="row">
+
+
+
+            <div class="col-lg-12">
+
+
+
+                <div class="ibox float-e-margins">
+
+
+
+                    <div class="ibox-title">
+
+                        <if condition="$form['id'] neq null">
+
+                            <h5>Edit song</h5>
+
+                            <else />
+
+                            <h5>Add song</h5>
+
+                        </if>
+
+
+
+
+
+                        <div class="ibox-tools">
+
+                            <a class="collapse-link">
+
+                                <i class="fa fa-chevron-up"></i>
+
+                            </a>
+
+
+
+                            <a class="close-link">
+
+                                <i class="fa fa-times"></i>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="ibox-content layui-form" style="display: block;">
+
+                        <if condition="$form['id'] neq null">
+
+
+
+                            <form autocomplete="off" action="__URL__/edit_Song" method="post" class="form-horizontal">
+
+                                <input type="hidden" name="id" value="{$form.id}" />
+
+
+
+                                <else />
+
+
+
+                                <form autocomplete="off" action="__URL__/add_Song" method="post" class="form-horizontal">
+
+
+
+                        </if>
+
+
+
+                                                <div class="form-group layui-form">
+
+                                                    <label class="col-sm-2 control-label">singer</label>
+
+                                                    <div class="col-sm-10 col-lg-3">
+
+                                                        <select name="singer_id" class="form-control" lay-search="" lay-filter="select">
+                                                            <option value="">Direct selection or search selection</option>
+                                                            <volist name="singer_list" id="vo">
+
+                                                                <option value="{$vo['id']}" <eq name="form['singer_id']" value="$vo['id']">selected="selected"</eq> >{$vo["name"]}</option>
+
+                                                            </volist>
+
+                                                        </select>
+
+
+                                                    </div>
+
+                                                </div>
+
+
+                        <div class="form-group">
+
+                            <label class="col-sm-2 control-label">name</label>
+
+                            <div class="col-sm-10 col-lg-3">
+
+                                <input name="name" id="" type="text" value="{$form['name']}" class="form-control"  placeholder="Please enter a name" />
+
+                            </div>
+
+                        </div>
+
+
+
+
+
+
+                        <div class="hr-line-dashed"></div>
+
+
+
+                        <div class="form-group">
+
+                            <div class="col-sm-4 col-sm-offset-2">
+
+                                <button class="btn btn-primary" type="submit">提交</button>
+
+                                <span class="btn btn-white" onclick="window.location.reload()">取消</span>
+
+                            </div>
+
+                        </div>
+
+
+
+
+
+                        </form>
+
+                    </div>
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+
+    <include file="Common:footer" />
+
+
+
+</div>
+
+
+
+<include file="Common:js" />
+
+
+
+<script type="text/javascript" src="__PUBLIC__/webuploader/webuploader.js"></script>
+<script src="__PUBLIC__/hplus/static/js/plugins/layer/laydate/laydate.js"></script>
+<script src="__PUBLIC__/hplus/static/js/plugins/layer/laydate/laydate.js"></script>
+<script src="__PUBLIC__/hplus/static/js/plugins/layer/laydate/laydate.js"></script>
+<script src="__PUBLIC__/hplus/static/js/plugins/layer/laydate/laydate.js"></script>
+<script src="__PUBLIC__/hplus/static/js/plugins/layer/laydate/laydate.js"></script>
+
+<script>
+
+    layui.use('form',function(){
+        var form = layui.form;
+    });
+
+    upimg('logo_btn','logo_img','logo_progressbar','logo');
+    function upimg(upbuttonid,showimgid,progressbar,inputimage){
+
+
+
+        // Web Uploader实例
+
+        var uploader;
+
+
+
+        // 初始化Web Uploader
+
+        uploader = WebUploader.create({
+
+
+
+            // 自动上传。
+
+            auto : true,
+
+
+
+            // swf文件路径
+
+            swf : '__PUBLIC__/webuploader/Uploader.swf',
+
+
+
+            // 文件接收服务端。
+
+            server : '__APP__/Common/uploadimg',
+
+
+
+            // 选择文件的按钮。可选。
+
+            // 内部根据当前运行是创建，可能是input元素，也可能是flash.
+
+            pick : "#"+upbuttonid,
+
+
+
+            // 只允许选择文件，可选。
+
+            accept : {
+
+                title : 'Images',
+
+                extensions : 'gif,jpg,jpeg,bmp,png',
+
+                mimeTypes : 'image/*'
+
+            },
+
+
+
+        });
+
+
+
+        // 当有文件添加进来的时候
+
+        uploader.on('fileQueued', function(file) {
+
+            var $img = $('#'+showimgid);
+
+            // 创建缩略图
+
+            uploader.makeThumb(file, function(error, src) {
+
+                if (error) {
+
+                    $img.replaceWith('<span>不能预览</span>');
+
+                    return;
+
+                }
+
+                $img.attr('src', src);
+
+                //缩略图显示大小
+
+            }, 100, 100);
+
+        });
+
+
+
+        // 文件上传过程中创建进度条实时显示。
+
+        uploader.on('uploadProgress', function(file, percentage) {
+
+            var $li = $('#'+progressbar), $percent = $li.find('.progress span');
+
+
+
+            // 避免重复创建
+
+            if (!$percent.length) {
+
+                $percent = $('<p class="progress"><span></span></p>').appendTo(
+
+                    $li).find('span');
+
+            }
+
+
+
+            $percent.css('width', percentage * 100 + '%');
+
+        });
+
+
+
+        // 文件上传成功，给item添加成功class, 用样式标记上传成功。
+
+        uploader.on('uploadSuccess', function(file,response) {
+
+            $('#'+progressbar).addClass('upload-state-done');
+
+            if(response.status == 200){
+
+                $("#"+inputimage).val(response.pic_url);
+
+                //设置图片新地址
+
+                $("#"+showimgid).attr("src",response.pic_url);
+
+
+
+                $("#"+inputimage).val(response.pic_url);
+
+            }else{
+
+
+
+            }
+
+        });
+
+
+
+        // 文件上传失败，现实上传出错。
+
+        uploader.on('uploadError', function(file) {
+
+            var $li = $('#'+progressbar), $error = $li.find('div.error');
+
+            // 避免重复创建
+
+            if (!$error.length) {
+
+                $error = $('<div class="error"></div>').appendTo($li);
+
+            }
+
+            $error.text('上传失败');
+
+        });
+
+
+
+        // 完成上传完了，成功或者失败，先删除进度条。
+
+        uploader.on('uploadComplete', function(file) {
+
+            $('#'+progressbar).find('.progress').remove();
+
+        });
+
+    }
+
+    layui.use('upload', function(){
+        var $ = layui.jquery
+            ,upload = layui.upload;
+
+        //普通图片上传
+        var uploadInst = upload.render({
+            elem: '#tubiao'
+            ,url: '__APP__/Common/uploadimg' //改成您自己的上传接口
+            ,before: function(obj){
+                //预读本地文件示例，不支持ie8
+                obj.preview(function(index, file, result){
+                    $('#new_logo').attr('src', result); //图片链接（base64）
+                });
+            }
+            ,done: function(res){
+                //如果上传失败
+                layer.msg(res.msg);
+                if(res.status ==200){
+                    $('#demoText').hide();
+                    $("#logo_div").show();
+                    $("#logo").val(res.pic_url);
+                }
+                //上传成功
+            }
+            ,error: function(){
+                //演示失败状态，并实现重传
+                var demoText = $('#demoText');
+                demoText.html('<span style="color: #FF5722;">上传失败</span> <a class="layui-btn layui-btn-xs demo-reload">重试</a>');
+                demoText.find('.demo-reload').on('click', function(){
+                    uploadInst.upload();
+                });
+            }
+        });
+
+    });
+
+
+</script>
+
+</body>
+
+
+
+</html>

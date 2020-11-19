@@ -1,0 +1,628 @@
+[ 2020-03-23T10:15:44+08:00 ] 127.0.0.1 /api.php/Farmer/already_farmer_commodity_sales
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.026001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.020001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.023002s ]
+ERR: ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+
+
+[ 2020-03-23T10:15:52+08:00 ] 127.0.0.1 /api.php/Farmer/already_farmer_commodity_sales
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+ERR: ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+
+
+[ 2020-03-23T10:16:10+08:00 ] 127.0.0.1 /api.php/Farmer/already_farmer_commodity_sales
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+ERR: ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+
+
+[ 2020-03-23T10:16:23+08:00 ] 127.0.0.1 /api.php/Farmer/already_farmer_commodity_sales
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008001s ]
+ERR: ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+
+
+[ 2020-03-23T10:16:36+08:00 ] 127.0.0.1 /api.php/Farmer/already_farmer_commodity_sales?id
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+ERR: ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+
+
+[ 2020-03-23T10:18:09+08:00 ] 127.0.0.1 /api.php/Farmer/already_farmer_commodity_sales?id
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+SQL: SHOW COLUMNS FROM `lh_farmer_commodity` [ RunTime:0.0730s ]
+SQL: SELECT `id` FROM `lh_farmer_commodity` WHERE `farmer_id` = 0  [ RunTime:0.0690s ]
+NOTIC: [2] implode(): Invalid arguments passed G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Api\Controller\FarmerController.class.php Á¨¨ 73 Ë°å.
+SQL: SHOW COLUMNS FROM `lh_farmer_commodity_sales` [ RunTime:0.0570s ]
+NOTIC: [2] implode(): Invalid arguments passed G:\phpStudy\PHPTutorial\WWW\longhuanongye\ThinkPHP\Library\Think\Db\Driver.class.php Á¨¨ 644 Ë°å.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') GROUP BY farmer_commodity_id' at line 1
+ [ SQLËØ≠Âè• ] : SELECT * FROM `lh_farmer_commodity_sales` WHERE `del_status` = 1 AND `farmer_commodity_id` IN () GROUP BY farmer_commodity_id 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') GROUP BY farmer_commodity_id' at line 1
+ [ SQLËØ≠Âè• ] : SELECT * FROM `lh_farmer_commodity_sales` WHERE `del_status` = 1 AND `farmer_commodity_id` IN () GROUP BY farmer_commodity_id 
+
+[ 2020-03-23T10:19:35+08:00 ] 127.0.0.1 /api.php/Farmer/already_farmer_commodity_sales?id
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+SQL: SHOW COLUMNS FROM `lh_farmer_commodity` [ RunTime:0.0690s ]
+SQL: SELECT `id` FROM `lh_farmer_commodity` WHERE `farmer_id` = 0  [ RunTime:0.0730s ]
+NOTIC: [2] implode(): Invalid arguments passed G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Api\Controller\FarmerController.class.php Á¨¨ 73 Ë°å.
+SQL: SHOW COLUMNS FROM `lh_farmer_commodity_sales` [ RunTime:0.0700s ]
+NOTIC: [2] implode(): Invalid arguments passed G:\phpStudy\PHPTutorial\WWW\longhuanongye\ThinkPHP\Library\Think\Db\Driver.class.php Á¨¨ 644 Ë°å.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') GROUP BY farmer_commodity_id' at line 1
+ [ SQLËØ≠Âè• ] : SELECT * FROM `lh_farmer_commodity_sales` WHERE `del_status` = 1 AND `farmer_commodity_id` IN () GROUP BY farmer_commodity_id 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') GROUP BY farmer_commodity_id' at line 1
+ [ SQLËØ≠Âè• ] : SELECT * FROM `lh_farmer_commodity_sales` WHERE `del_status` = 1 AND `farmer_commodity_id` IN () GROUP BY farmer_commodity_id 
+
+[ 2020-03-23T10:19:43+08:00 ] 127.0.0.1 /api.php/Farmer/already_farmer_commodity_sales?id
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `lh_farmer_commodity` [ RunTime:0.0580s ]
+SQL: SELECT `id` FROM `lh_farmer_commodity` WHERE `farmer_id` = 0  [ RunTime:0.0760s ]
+
+[ 2020-03-23T10:20:36+08:00 ] 127.0.0.1 /api.php/Farmer/already_farmer_commodity_sales?id
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+
+[ 2020-03-23T10:20:40+08:00 ] 127.0.0.1 /api.php/Farmer/already_farmer_commodity_sales?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+
+[ 2020-03-23T10:20:57+08:00 ] 127.0.0.1 /api.php/Farmer/already_farmer_commodity_sales?id
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+
+[ 2020-03-23T10:21:08+08:00 ] 127.0.0.1 /api.php/Farmer/already_farmer_commodity_sales?id=%22%22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+
+[ 2020-03-23T10:21:47+08:00 ] 127.0.0.1 /api.php/Farmer/already_farmer_commodity_sales?id=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `lh_farmer_commodity` [ RunTime:0.0520s ]
+SQL: SELECT `id` FROM `lh_farmer_commodity` WHERE `farmer_id` = 4  [ RunTime:0.0620s ]
+SQL: SHOW COLUMNS FROM `lh_farmer_commodity_sales` [ RunTime:0.0740s ]
+SQL: SELECT * FROM `lh_farmer_commodity_sales` WHERE `del_status` = 1 AND `farmer_commodity_id` IN ('21','22','23') GROUP BY farmer_commodity_id  [ RunTime:0.1050s ]
+SQL: SELECT * FROM `lh_farmer_commodity` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0890s ]
+SQL: SHOW COLUMNS FROM `lh_commodity` [ RunTime:0.0790s ]
+SQL: SELECT * FROM `lh_commodity` WHERE `id` = 14 LIMIT 1   [ RunTime:0.1160s ]
+SQL: SHOW COLUMNS FROM `lh_unit` [ RunTime:0.0720s ]
+SQL: SELECT * FROM `lh_unit` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0840s ]
+SQL: SELECT * FROM `lh_farmer_commodity_sales` WHERE `farmer_commodity_id` = 23  [ RunTime:0.0700s ]
+SQL: SHOW COLUMNS FROM `lh_farmer_commodity_evaluate` [ RunTime:0.0630s ]
+SQL: SELECT * FROM `lh_farmer_commodity_evaluate` WHERE `farmer_commodity_id` = 23  [ RunTime:0.0760s ]
+
+[ 2020-03-23T10:37:29+08:00 ] 127.0.0.1 /api.php/Farmer/already_farmer_commodity_sales?id=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.021001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.018001s ]
+SQL: SHOW COLUMNS FROM `lh_farmer_commodity` [ RunTime:0.0650s ]
+SQL: SELECT `id` FROM `lh_farmer_commodity` WHERE `farmer_id` = 4  [ RunTime:0.0790s ]
+SQL: SHOW COLUMNS FROM `lh_farmer_commodity_sales` [ RunTime:0.0760s ]
+SQL: SELECT * FROM `lh_farmer_commodity_sales` WHERE `del_status` = 1 AND `farmer_commodity_id` IN ('21','22','23') GROUP BY farmer_commodity_id  [ RunTime:0.0800s ]
+SQL: SELECT * FROM `lh_farmer_commodity` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0980s ]
+SQL: SHOW COLUMNS FROM `lh_commodity` [ RunTime:0.0680s ]
+SQL: SELECT * FROM `lh_commodity` WHERE `id` = 14 LIMIT 1   [ RunTime:0.0790s ]
+SQL: SHOW COLUMNS FROM `lh_unit` [ RunTime:0.0600s ]
+SQL: SELECT * FROM `lh_unit` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0720s ]
+SQL: SELECT * FROM `lh_farmer_commodity_sales` WHERE `farmer_commodity_id` = 23  [ RunTime:0.1140s ]
+SQL: SHOW COLUMNS FROM `lh_farmer_commodity_evaluate` [ RunTime:0.0730s ]
+SQL: SELECT * FROM `lh_farmer_commodity_evaluate` WHERE `farmer_commodity_id` = 23  [ RunTime:0.0690s ]
+
+[ 2020-03-23T11:04:08+08:00 ] 127.0.0.1 /api.php/Farmer/farmer_commodity_produce_info?id=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.022001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.017001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.020001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007001s ]
+
+[ 2020-03-23T11:30:28+08:00 ] 127.0.0.1 /api.php/Farmer/farmer_commodity_produce_info?id=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `lh_farmer_commodity` [ RunTime:0.0770s ]
+SQL: SELECT `id` FROM `lh_farmer_commodity` WHERE `farmer_id` = 4  [ RunTime:0.0670s ]
+SQL: SHOW COLUMNS FROM `lh_farmer_commodity_produce` [ RunTime:0.0740s ]
+SQL: SELECT * FROM `lh_farmer_commodity_produce` WHERE `del_status` = 1 AND `farmer_commodity_id` IN ('21','22','23') GROUP BY farmer_commodity_id  [ RunTime:0.0740s ]
+SQL: SELECT * FROM `lh_farmer_commodity` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0750s ]
+SQL: SHOW COLUMNS FROM `lh_commodity` [ RunTime:0.0640s ]
+SQL: SELECT * FROM `lh_commodity` WHERE `id` = 14 LIMIT 1   [ RunTime:0.0700s ]
+SQL: SHOW COLUMNS FROM `lh_unit` [ RunTime:0.0650s ]
+SQL: SELECT * FROM `lh_unit` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0790s ]
+NOTIC: [8] Undefined index: output G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Api\Controller\FarmerController.class.php Á¨¨ 141 Ë°å.
+NOTIC: [8] Undefined index: output_unit_id G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Api\Controller\FarmerController.class.php Á¨¨ 141 Ë°å.
+SQL: SELECT * FROM `lh_unit` WHERE `id` = null LIMIT 1   [ RunTime:0.0690s ]
+SQL: SELECT * FROM `lh_farmer_commodity_produce` WHERE `farmer_commodity_id` = 23  [ RunTime:0.0800s ]
+NOTIC: [2] Illegal offset type G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Api\Controller\FarmerController.class.php Á¨¨ 147 Ë°å.
+SQL: SHOW COLUMNS FROM `lh_event` [ RunTime:0.0550s ]
+SQL: SELECT * FROM `lh_event` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0600s ]
+SQL: SELECT * FROM `lh_unit` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0610s ]
+NOTIC: [2] Illegal offset type G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Api\Controller\FarmerController.class.php Á¨¨ 147 Ë°å.
+SQL: SELECT * FROM `lh_event` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0660s ]
+SQL: SELECT * FROM `lh_unit` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0740s ]
+
+[ 2020-03-23T11:35:38+08:00 ] 127.0.0.1 /api.php/Farmer/farmer_commodity_produce_info?id=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `lh_farmer_commodity` [ RunTime:0.0610s ]
+SQL: SELECT `id` FROM `lh_farmer_commodity` WHERE `farmer_id` = 4  [ RunTime:0.0590s ]
+SQL: SHOW COLUMNS FROM `lh_farmer_commodity_produce` [ RunTime:0.0630s ]
+SQL: SELECT * FROM `lh_farmer_commodity_produce` WHERE `del_status` = 1 AND `farmer_commodity_id` IN ('21','22','23') GROUP BY farmer_commodity_id  [ RunTime:0.0710s ]
+SQL: SELECT * FROM `lh_farmer_commodity` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0690s ]
+SQL: SHOW COLUMNS FROM `lh_commodity` [ RunTime:0.0620s ]
+SQL: SELECT * FROM `lh_commodity` WHERE `id` = 14 LIMIT 1   [ RunTime:0.0960s ]
+SQL: SHOW COLUMNS FROM `lh_unit` [ RunTime:0.0880s ]
+SQL: SELECT * FROM `lh_unit` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0580s ]
+NOTIC: [8] Undefined index: output_unit_id G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Api\Controller\FarmerController.class.php Á¨¨ 141 Ë°å.
+SQL: SELECT * FROM `lh_unit` WHERE `id` = null LIMIT 1   [ RunTime:0.0600s ]
+SQL: SELECT * FROM `lh_farmer_commodity_produce` WHERE `farmer_commodity_id` = 23  [ RunTime:0.0720s ]
+NOTIC: [2] Illegal offset type G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Api\Controller\FarmerController.class.php Á¨¨ 147 Ë°å.
+SQL: SHOW COLUMNS FROM `lh_event` [ RunTime:0.0770s ]
+SQL: SELECT * FROM `lh_event` WHERE `id` = 1 LIMIT 1   [ RunTime:0.1270s ]
+SQL: SELECT * FROM `lh_unit` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0600s ]
+NOTIC: [2] Illegal offset type G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Api\Controller\FarmerController.class.php Á¨¨ 147 Ë°å.
+SQL: SELECT * FROM `lh_event` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0670s ]
+SQL: SELECT * FROM `lh_unit` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0620s ]
+
+[ 2020-03-23T16:22:35+08:00 ] 127.0.0.1 /api.php/Farmer/add_farmer_info?name=%E6%9D%8E%E4%B8%89%E5%96%9C&phone=15298921808&address_info=%5B%22%E6%B5%B7%E5%8D%97%E7%9C%81%22%2C%22%E6%B5%B7%E5%8F%A3%E5%B8%82%22%2C%22%E9%BE%99%E5%8D%8E%E5%8C%BA%22%5D&address=%E6%B5%B7%E5%9E%A6%E8%A1%97%E9%81%9352%E5%8F%B7&user_id=10&commodity_name=%E7%A0%80%E5%B1%B1%E8%B4%A1%E6%A2%A8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.020001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.021001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.024001s ]
+
+[ 2020-03-23T16:23:12+08:00 ] 127.0.0.1 /api.php/Farmer/add_farmer_info?name=%E6%9D%8E%E4%B8%89%E5%96%9C&phone=15298921808&address_info=%5B%22%E6%B5%B7%E5%8D%97%E7%9C%81%22%2C%22%E6%B5%B7%E5%8F%A3%E5%B8%82%22%2C%22%E9%BE%99%E5%8D%8E%E5%8C%BA%22%5D&address=%E6%B5%B7%E5%9E%A6%E8%A1%97%E9%81%9352%E5%8F%B7&user_id=10&commodity_name=%E7%A0%80%E5%B1%B1%E8%B4%A1%E6%A2%A8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008000s ]
+
+[ 2020-03-23T16:23:40+08:00 ] 127.0.0.1 /api.php/Farmer/add_farmer_info?name=%E6%9D%8E%E4%B8%89%E5%96%9C&phone=15298921808&address_info=%5B%22%E6%B5%B7%E5%8D%97%E7%9C%81%22%2C%22%E6%B5%B7%E5%8F%A3%E5%B8%82%22%2C%22%E9%BE%99%E5%8D%8E%E5%8C%BA%22%5D&address=%E6%B5%B7%E5%9E%A6%E8%A1%97%E9%81%9352%E5%8F%B7&user_id=10&commodity_name=%E7%A0%80%E5%B1%B1%E8%B4%A1%E6%A2%A8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+NOTIC: [8] Undefined index: address_info G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Api\Controller\FarmerController.class.php Á¨¨ 187 Ë°å.
+
+[ 2020-03-23T16:24:07+08:00 ] 127.0.0.1 /api.php/Farmer/add_farmer_info?name=%E6%9D%8E%E4%B8%89%E5%96%9C&phone=15298921808&address_info=%5B%22%E6%B5%B7%E5%8D%97%E7%9C%81%22%2C%22%E6%B5%B7%E5%8F%A3%E5%B8%82%22%2C%22%E9%BE%99%E5%8D%8E%E5%8C%BA%22%5D&address=%E6%B5%B7%E5%9E%A6%E8%A1%97%E9%81%9352%E5%8F%B7&user_id=10&commodity_name=%E7%A0%80%E5%B1%B1%E8%B4%A1%E6%A2%A8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009001s ]
+
+[ 2020-03-23T16:24:32+08:00 ] 127.0.0.1 /api.php/Farmer/add_farmer_info?name=%E6%9D%8E%E4%B8%89%E5%96%9C&phone=15298921808&address_info=%5B%22%E6%B5%B7%E5%8D%97%E7%9C%81%22%2C%22%E6%B5%B7%E5%8F%A3%E5%B8%82%22%2C%22%E9%BE%99%E5%8D%8E%E5%8C%BA%22%5D&address=%E6%B5%B7%E5%9E%A6%E8%A1%97%E9%81%9352%E5%8F%B7&user_id=10&commodity_name=%E7%A0%80%E5%B1%B1%E8%B4%A1%E6%A2%A8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011000s ]
+SQL: SHOW COLUMNS FROM `lh_province` [ RunTime:0.0680s ]
+SQL: SELECT `id` FROM `lh_province` WHERE `name` = 'Êµ∑ÂçóÁúÅ' LIMIT 1   [ RunTime:0.0770s ]
+
+[ 2020-03-23T17:28:21+08:00 ] 127.0.0.1 /api.php/Farmer/farmer_commodity_produce_info?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.013001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016001s ]
+SQL: SHOW COLUMNS FROM `lh_farmer_commodity` [ RunTime:0.0650s ]
+SQL: SELECT `id` FROM `lh_farmer_commodity` WHERE `farmer_id` = 2  [ RunTime:0.0690s ]
+SQL: SHOW COLUMNS FROM `lh_farmer_commodity_produce` [ RunTime:0.0750s ]
+SQL: SELECT * FROM `lh_farmer_commodity_produce` WHERE `del_status` = 1 AND `farmer_commodity_id` IN ('15','16') GROUP BY farmer_commodity_id  [ RunTime:0.2030s ]
+
+[ 2020-03-23T17:29:25+08:00 ] 127.0.0.1 /api.php/Farmer/farmer_commodity_produce_info?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008000s ]
+SQL: SHOW COLUMNS FROM `lh_farmer_commodity` [ RunTime:0.0710s ]
+SQL: SELECT `id` FROM `lh_farmer_commodity` WHERE `farmer_id` = 2  [ RunTime:0.0510s ]
+SQL: SHOW COLUMNS FROM `lh_farmer_commodity_produce` [ RunTime:0.0580s ]
+SQL: SELECT * FROM `lh_farmer_commodity_produce` WHERE `del_status` = 1 AND `farmer_commodity_id` IN ('15','16') GROUP BY farmer_commodity_id  [ RunTime:0.0780s ]
+
+[ 2020-03-23T17:29:36+08:00 ] 127.0.0.1 /api.php/Farmer/farmer_commodity_produce_info?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011000s ]
+SQL: SHOW COLUMNS FROM `lh_farmer_commodity` [ RunTime:0.0730s ]
+SQL: SELECT `id` FROM `lh_farmer_commodity` WHERE `farmer_id` = 2  [ RunTime:0.0710s ]
+SQL: SHOW COLUMNS FROM `lh_farmer_commodity_produce` [ RunTime:0.0740s ]
+SQL: SELECT * FROM `lh_farmer_commodity_produce` WHERE `del_status` = 1 AND `farmer_commodity_id` IN ('15','16') GROUP BY farmer_commodity_id  [ RunTime:0.0740s ]
+
+[ 2020-03-23T17:30:33+08:00 ] 127.0.0.1 /api.php/Farmer/get_technology_farmer_list?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+SQL: SHOW COLUMNS FROM `lh_technology` [ RunTime:0.0790s ]
+SQL: SELECT * FROM `lh_technology` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0930s ]
+SQL: SHOW COLUMNS FROM `lh_farmer` [ RunTime:0.0770s ]
+SQL: SELECT * FROM `lh_farmer` WHERE `technology_id` = 2 AND `status` = 1 AND `del_status` = 1  [ RunTime:0.0740s ]
+SQL: SHOW COLUMNS FROM `lh_user` [ RunTime:0.1050s ]
+SQL: SELECT * FROM `lh_user` WHERE `phone` = '15298921805' LIMIT 1   [ RunTime:0.0930s ]
+SQL: SHOW COLUMNS FROM `lh_province` [ RunTime:0.0760s ]
+SQL: SELECT * FROM `lh_province` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0700s ]
+SQL: SHOW COLUMNS FROM `lh_city` [ RunTime:0.0780s ]
+SQL: SELECT * FROM `lh_city` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0570s ]
+SQL: SHOW COLUMNS FROM `lh_area` [ RunTime:0.0860s ]
+SQL: SELECT * FROM `lh_area` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0730s ]
+SQL: SHOW COLUMNS FROM `lh_farmer_commodity` [ RunTime:0.0900s ]
+NOTIC: [8] Undefined index: farmer_id G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Api\Controller\FarmerController.class.php Á¨¨ 248 Ë°å.
+SQL: SELECT * FROM `lh_farmer_commodity` WHERE `farmer_id` = null AND `del_status` = 1  [ RunTime:0.0820s ]
+NOTIC: [8] Undefined index: farmer_id xdebug://debug-eval(1) : eval()'d code Á¨¨ 1 Ë°å.
+
+[ 2020-03-23T20:33:48+08:00 ] 127.0.0.1 /api.php/My/check_user?user_id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.019001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.018001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.021001s ]
+SQL: SHOW COLUMNS FROM `lh_user` [ RunTime:0.0550s ]
+SQL: SELECT * FROM `lh_user` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0740s ]
+SQL: SHOW COLUMNS FROM `lh_technology` [ RunTime:0.0510s ]
+SQL: SELECT * FROM `lh_technology` WHERE `phone` = '15298921808' LIMIT 1   [ RunTime:0.0660s ]
+
+[ 2020-03-23T20:33:59+08:00 ] 127.0.0.1 /api.php/My/check_user?user_id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011001s ]
+SQL: SHOW COLUMNS FROM `lh_user` [ RunTime:0.0610s ]
+SQL: SELECT * FROM `lh_user` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0560s ]
+SQL: SHOW COLUMNS FROM `lh_technology` [ RunTime:0.0690s ]
+SQL: SELECT * FROM `lh_technology` WHERE `phone` = '15298921808' LIMIT 1   [ RunTime:0.0760s ]
+
+[ 2020-03-23T20:34:31+08:00 ] 127.0.0.1 /api.php/My/check_user?user_id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008001s ]
+SQL: SHOW COLUMNS FROM `lh_user` [ RunTime:0.0590s ]
+SQL: SELECT * FROM `lh_user` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0640s ]
+SQL: SHOW COLUMNS FROM `lh_technology` [ RunTime:0.0690s ]
+SQL: SELECT * FROM `lh_technology` WHERE `phone` = '15298921808' LIMIT 1   [ RunTime:0.0670s ]
+
+[ 2020-03-23T20:35:08+08:00 ] 127.0.0.1 /api.php/My/check_user?user_id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009001s ]
+SQL: SHOW COLUMNS FROM `lh_user` [ RunTime:0.0550s ]
+SQL: SELECT * FROM `lh_user` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0720s ]
+SQL: SHOW COLUMNS FROM `lh_technology` [ RunTime:0.0880s ]
+SQL: SELECT * FROM `lh_technology` WHERE `phone` = '15298921808' LIMIT 1   [ RunTime:0.0700s ]
+
+[ 2020-03-23T20:35:41+08:00 ] 127.0.0.1 /api.php/My/check_user?user_id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010001s ]
+SQL: SHOW COLUMNS FROM `lh_user` [ RunTime:0.0640s ]
+SQL: SELECT * FROM `lh_user` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0670s ]
+SQL: SHOW COLUMNS FROM `lh_technology` [ RunTime:0.0720s ]
+SQL: SELECT * FROM `lh_technology` WHERE `phone` = '15298921808' LIMIT 1   [ RunTime:0.0690s ]
+
+[ 2020-03-23T20:36:07+08:00 ] 127.0.0.1 /api.php/My/check_user?user_id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008000s ]
+SQL: SHOW COLUMNS FROM `lh_user` [ RunTime:0.0550s ]
+SQL: SELECT * FROM `lh_user` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0730s ]
+SQL: SHOW COLUMNS FROM `lh_technology` [ RunTime:0.0730s ]
+SQL: SELECT * FROM `lh_technology` WHERE `phone` = '15298921808' LIMIT 1   [ RunTime:0.0700s ]
+
+[ 2020-03-23T20:37:25+08:00 ] 127.0.0.1 /api.php/My/check_user?user_id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `lh_user` [ RunTime:0.0600s ]
+SQL: SELECT * FROM `lh_user` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0630s ]
+SQL: SHOW COLUMNS FROM `lh_technology` [ RunTime:0.0670s ]
+SQL: SELECT * FROM `lh_technology` WHERE `phone` = '15298921808' LIMIT 1   [ RunTime:0.0680s ]
+
+[ 2020-03-23T20:39:03+08:00 ] 127.0.0.1 /api.php/My/check_user?user_id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011001s ]
+SQL: SHOW COLUMNS FROM `lh_user` [ RunTime:0.0680s ]
+SQL: SELECT * FROM `lh_user` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0740s ]
+SQL: SHOW COLUMNS FROM `lh_technology` [ RunTime:0.0800s ]
+SQL: SELECT * FROM `lh_technology` WHERE `phone` = '15298921808' LIMIT 1   [ RunTime:0.0670s ]
+
+[ 2020-03-23T20:40:39+08:00 ] 127.0.0.1 /api.php/My/check_user?user_id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008001s ]
+SQL: SHOW COLUMNS FROM `lh_user` [ RunTime:0.0780s ]
+SQL: SELECT * FROM `lh_user` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0610s ]
+SQL: SHOW COLUMNS FROM `lh_technology` [ RunTime:0.0670s ]
+SQL: SELECT * FROM `lh_technology` WHERE `phone` = '15298921808' LIMIT 1   [ RunTime:0.0700s ]
+
+[ 2020-03-23T20:40:54+08:00 ] 127.0.0.1 /api.php/My/check_user?user_id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008000s ]
+SQL: SHOW COLUMNS FROM `lh_user` [ RunTime:0.0760s ]
+SQL: SELECT * FROM `lh_user` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0760s ]
+SQL: SHOW COLUMNS FROM `lh_technology` [ RunTime:0.0680s ]
+SQL: SELECT * FROM `lh_technology` WHERE `phone` = '15298921808' LIMIT 1   [ RunTime:0.0640s ]
+
+[ 2020-03-23T20:41:56+08:00 ] 127.0.0.1 /api.php/Farmer/get_technology_farmer_list?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+
+[ 2020-03-23T20:44:16+08:00 ] 127.0.0.1 /api.php/Farmer/get_technology_farmer_list?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+
+[ 2020-03-23T20:44:49+08:00 ] 127.0.0.1 /api.php/Farmer/get_technology_farmer_list?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+
+[ 2020-03-23T20:45:32+08:00 ] 127.0.0.1 /api.php/Farmer/get_technology_farmer_list?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008001s ]
+
+[ 2020-03-23T20:45:47+08:00 ] 127.0.0.1 /api.php/Farmer/get_technology_farmer_list?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+
+[ 2020-03-23T20:45:54+08:00 ] 127.0.0.1 /api.php/Farmer/get_technology_farmer_list?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+
+[ 2020-03-23T20:46:02+08:00 ] 127.0.0.1 /api.php/Farmer/get_technology_farmer_list?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+
+[ 2020-03-23T20:46:29+08:00 ] 127.0.0.1 /api.php/Farmer/get_technology_farmer_list?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+
+[ 2020-03-23T20:46:54+08:00 ] 127.0.0.1 /api.php/Farmer/get_technology_farmer_list?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+
+[ 2020-03-23T20:47:02+08:00 ] 127.0.0.1 /api.php/Farmer/get_technology_farmer_list?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+
+[ 2020-03-23T20:47:49+08:00 ] 127.0.0.1 /api.php/My/check_user?user_id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+
+[ 2020-03-23T20:48:28+08:00 ] 127.0.0.1 /api.php/My/check_user?user_id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `lh_user` [ RunTime:0.0690s ]
+SQL: SELECT * FROM `lh_user` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0600s ]
+SQL: SHOW COLUMNS FROM `lh_technology` [ RunTime:0.0540s ]
+SQL: SELECT * FROM `lh_technology` WHERE `phone` = '15298921808' LIMIT 1   [ RunTime:0.0660s ]
+
+[ 2020-03-23T20:49:21+08:00 ] 127.0.0.1 /api.php/My/check_user?user_id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009001s ]
+SQL: SHOW COLUMNS FROM `lh_user` [ RunTime:0.0690s ]
+SQL: SELECT * FROM `lh_user` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0630s ]
+SQL: SHOW COLUMNS FROM `lh_technology` [ RunTime:0.0650s ]
+SQL: SELECT * FROM `lh_technology` WHERE `phone` = '15298921808' LIMIT 1   [ RunTime:0.0800s ]
+
+[ 2020-03-23T20:49:30+08:00 ] 127.0.0.1 /api.php/My/check_user?user_id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+SQL: SHOW COLUMNS FROM `lh_user` [ RunTime:0.0570s ]
+SQL: SELECT * FROM `lh_user` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0600s ]
+SQL: SHOW COLUMNS FROM `lh_technology` [ RunTime:0.0640s ]
+SQL: SELECT * FROM `lh_technology` WHERE `phone` = '15298921808' LIMIT 1   [ RunTime:0.0720s ]
+ERR: Too few arguments to function Api\Controller\MyController::get_tabbar_init(), 0 passed in G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Api\Controller\MyController.class.php on line 48 and exactly 1 expected
+
+[ 2020-03-23T20:49:58+08:00 ] 127.0.0.1 /api.php/My/check_user?user_id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `lh_user` [ RunTime:0.0560s ]
+SQL: SELECT * FROM `lh_user` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0730s ]
+SQL: SHOW COLUMNS FROM `lh_technology` [ RunTime:0.0620s ]
+SQL: SELECT * FROM `lh_technology` WHERE `phone` = '15298921808' LIMIT 1   [ RunTime:0.0690s ]
+
+[ 2020-03-23T20:50:40+08:00 ] 127.0.0.1 /api.php/My/check_user?user_id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008001s ]
+SQL: SHOW COLUMNS FROM `lh_user` [ RunTime:0.0610s ]
+SQL: SELECT * FROM `lh_user` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0700s ]
+SQL: SHOW COLUMNS FROM `lh_technology` [ RunTime:0.0640s ]
+SQL: SELECT * FROM `lh_technology` WHERE `phone` = '15298921808' LIMIT 1   [ RunTime:0.0680s ]
+
+[ 2020-03-23T20:51:04+08:00 ] 127.0.0.1 /api.php/My/check_user?user_id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+SQL: SHOW COLUMNS FROM `lh_user` [ RunTime:0.0780s ]
+SQL: SELECT * FROM `lh_user` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0680s ]
+SQL: SHOW COLUMNS FROM `lh_technology` [ RunTime:0.0700s ]
+SQL: SELECT * FROM `lh_technology` WHERE `phone` = '15298921808' LIMIT 1   [ RunTime:0.0840s ]
+
+[ 2020-03-23T20:52:26+08:00 ] 127.0.0.1 /api.php/My/check_user?user_id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008000s ]
+SQL: SHOW COLUMNS FROM `lh_user` [ RunTime:0.0550s ]
+SQL: SELECT * FROM `lh_user` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0730s ]
+SQL: SHOW COLUMNS FROM `lh_technology` [ RunTime:0.0660s ]
+SQL: SELECT * FROM `lh_technology` WHERE `phone` = '15298921808' LIMIT 1   [ RunTime:0.0650s ]
+

@@ -1,0 +1,15 @@
+[ 2020-05-18T00:13:36+08:00 ] 127.0.0.1 /Public/image/mobai.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+
+[ 2020-05-18T00:13:41+08:00 ] 127.0.0.1 /Public/image/mobai.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011001s ]
+
+[ 2020-05-18T18:19:06+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.005001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.017001s ]
+

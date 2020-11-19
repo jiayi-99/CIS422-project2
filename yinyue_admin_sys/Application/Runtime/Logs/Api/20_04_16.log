@@ -1,0 +1,84 @@
+[ 2020-04-16T09:56:49+08:00 ] 127.0.0.1 /api.php/My/check_technology?user_id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.020001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.021001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.023001s ]
+ERR: 由于目标计算机积极拒绝，无法连接。
+
+
+[ 2020-04-16T09:57:11+08:00 ] 127.0.0.1 /api.php/My/check_technology?user_id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+SQL: SHOW COLUMNS FROM `lh_user` [ RunTime:0.0820s ]
+SQL: SELECT * FROM `lh_user` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0830s ]
+SQL: SHOW COLUMNS FROM `lh_technology` [ RunTime:0.0780s ]
+SQL: SELECT * FROM `lh_technology` WHERE `phone` = '15298921808' LIMIT 1   [ RunTime:0.0870s ]
+
+[ 2020-04-16T09:58:50+08:00 ] 127.0.0.1 /api.php/My/check_technology?user_id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+SQL: SHOW COLUMNS FROM `lh_user` [ RunTime:0.0820s ]
+SQL: SELECT * FROM `lh_user` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0980s ]
+SQL: SHOW COLUMNS FROM `lh_technology` [ RunTime:0.4630s ]
+SQL: SELECT * FROM `lh_technology` WHERE `phone` = '15298921808' LIMIT 1   [ RunTime:0.0920s ]
+
+[ 2020-04-16T09:59:32+08:00 ] 127.0.0.1 /api.php/My/check_technology?user_id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008000s ]
+SQL: SHOW COLUMNS FROM `lh_user` [ RunTime:0.0700s ]
+SQL: SELECT * FROM `lh_user` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0750s ]
+SQL: SHOW COLUMNS FROM `lh_technology` [ RunTime:0.0730s ]
+SQL: SELECT * FROM `lh_technology` WHERE `phone` = '15298921808' AND `status` = 1 AND `del_status` = 1 LIMIT 1   [ RunTime:0.0740s ]
+
+[ 2020-04-16T18:28:06+08:00 ] 127.0.0.1 /api.php/My/get_in_produce?user_id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.021002s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.021001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.023001s ]
+ERR: 由于目标计算机积极拒绝，无法连接。
+
+
+[ 2020-04-16T18:28:37+08:00 ] 127.0.0.1 /api.php/My/get_in_produce?user_id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `lh_user` [ RunTime:0.0890s ]
+SQL: SELECT `phone` FROM `lh_user` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0800s ]
+SQL: SHOW COLUMNS FROM `lh_farmer` [ RunTime:0.0890s ]
+SQL: SELECT * FROM `lh_farmer` WHERE `phone` = '15298921808' AND `del_status` = 1 LIMIT 1   [ RunTime:0.0930s ]
+SQL: SHOW COLUMNS FROM `lh_farmer_commodity` [ RunTime:0.0770s ]
+SQL: SELECT * FROM `lh_farmer_commodity` WHERE `farmer_id` = 127 AND `del_status` = 1 AND `end_time` > 1587032917 ORDER BY `id` DESC  [ RunTime:0.1350s ]
+
+[ 2020-04-16T18:30:55+08:00 ] 127.0.0.1 /api.php/My/get_in_produce?user_id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008001s ]
+SQL: SHOW COLUMNS FROM `lh_user` [ RunTime:0.0840s ]
+SQL: SELECT `phone` FROM `lh_user` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0800s ]
+SQL: SHOW COLUMNS FROM `lh_farmer` [ RunTime:0.0970s ]
+SQL: SELECT * FROM `lh_farmer` WHERE `phone` = '15298921808' AND `del_status` = 1 LIMIT 1   [ RunTime:0.0990s ]
+SQL: SHOW COLUMNS FROM `lh_farmer_commodity` [ RunTime:0.0830s ]
+SQL: SELECT * FROM `lh_farmer_commodity` WHERE `farmer_id` = 127 AND `del_status` = 1 AND `end_time` > 1587033008 ORDER BY `id` DESC  [ RunTime:0.1130s ]
+

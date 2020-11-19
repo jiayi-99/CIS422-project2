@@ -1,0 +1,232 @@
+[ 2020-04-30T00:17:15+08:00 ] 127.0.0.1 /admin.php/Farmer/purchaser_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.038002s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.037002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.040002s ]
+SQL: SHOW COLUMNS FROM `lh_auth_group_access` [ RunTime:0.0750s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM lh_auth_group_access a INNER JOIN lh_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0470s ]
+SQL: SHOW COLUMNS FROM `lh_auth_rule` [ RunTime:0.0530s ]
+SQL: SELECT `condition`,`name` FROM `lh_auth_rule` WHERE `id` IN ('3','348','50','349','350','351','359','360','361','362','363','364','365','379','427','435','366','367','371','376','377','378','380','381','382','383','384','385','396','428','429','430','431','432','433','434','437','463','464','369','370','386','387','388','389','390','391','392','393','394','395','397','398','399','400','401','402','403','404','405','406','407','408','410','411','412','413','414','416','417','418','448','455','456','457','458','459','462','465','466','472','473','474','475','476','477','478','479','480','372','373','419','420','421','422','374','375','423','424','425','426','438','439','440','441','442','443','444','445','446','447','460','461','467','468','469','470','471','449','450','451','452','453','454') AND `type` = 1 AND `status` = 1  [ RunTime:0.0530s ]
+SQL: SHOW COLUMNS FROM `lh_purchaser` [ RunTime:0.0960s ]
+SQL: SELECT * FROM `lh_purchaser` WHERE `del_status` = 1  [ RunTime:0.0550s ]
+SQL: SELECT * FROM `lh_purchaser` WHERE `del_status` = 1 ORDER BY `id` DESC LIMIT 0,20   [ RunTime:0.0480s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined variable: name G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\79616fe629c200282f9832ef14856068.php 第 282 行.
+NOTIC: [8] Undefined variable: phone G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\79616fe629c200282f9832ef14856068.php 第 284 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:2.101120s ]
+INFO: [ view_parse ] --END-- [ RunTime:2.104120s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.090005s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.093005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.021001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.024001s ]
+
+[ 2020-04-30T00:17:25+08:00 ] 127.0.0.1 /admin.php/Farmer/buy_require?buy_require_id=6&type=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `lh_auth_group_access` [ RunTime:0.0480s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM lh_auth_group_access a INNER JOIN lh_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0530s ]
+SQL: SHOW COLUMNS FROM `lh_auth_rule` [ RunTime:0.0530s ]
+SQL: SELECT `condition`,`name` FROM `lh_auth_rule` WHERE `id` IN ('3','348','50','349','350','351','359','360','361','362','363','364','365','379','427','435','366','367','371','376','377','378','380','381','382','383','384','385','396','428','429','430','431','432','433','434','437','463','464','369','370','386','387','388','389','390','391','392','393','394','395','397','398','399','400','401','402','403','404','405','406','407','408','410','411','412','413','414','416','417','418','448','455','456','457','458','459','462','465','466','472','473','474','475','476','477','478','479','480','372','373','419','420','421','422','374','375','423','424','425','426','438','439','440','441','442','443','444','445','446','447','460','461','467','468','469','470','471','449','450','451','452','453','454') AND `type` = 1 AND `status` = 1  [ RunTime:0.0490s ]
+SQL: SHOW COLUMNS FROM `lh_buy_require` [ RunTime:0.0510s ]
+SQL: SELECT * FROM `lh_buy_require` WHERE `del_status` = 1 AND `buy_require_id` = 6 AND `type` = 3  [ RunTime:0.0490s ]
+SQL: SELECT * FROM `lh_buy_require` WHERE `del_status` = 1 AND `buy_require_id` = 6 AND `type` = 3 ORDER BY `id` DESC LIMIT 0,20   [ RunTime:0.0480s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined variable: farmer_name G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\35caddb60f28984916ac2d14bc30c99d.php 第 282 行.
+NOTIC: [8] Undefined variable: commodity_name G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\35caddb60f28984916ac2d14bc30c99d.php 第 284 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.930053s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.932053s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007000s ]
+
+[ 2020-04-30T00:17:40+08:00 ] 127.0.0.1 /admin.php/Farmer/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `lh_auth_group_access` [ RunTime:0.0500s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM lh_auth_group_access a INNER JOIN lh_auth_group g on a.group_id=g.id  WHERE ( a.uid='14' and g.status='1' )  [ RunTime:0.0510s ]
+SQL: SHOW COLUMNS FROM `lh_auth_rule` [ RunTime:0.0490s ]
+SQL: SELECT `condition`,`name` FROM `lh_auth_rule` WHERE `id` IN ('3','348','50','349','350','351','359','360','361','362','363','364','365','379','427','435','366','367','371','376','377','378','380','381','382','383','384','385','396','428','429','430','431','432','433','434','437','463','464','369','370','386','387','388','389','390','391','392','393','394','395','397','398','399','400','401','402','403','404','405','406','407','408','410','411','412','413','414','416','417','418','448','455','456','457','458','459','462','465','466','472','473','474','475','476','477','478','479','480','372','373','419','420','421','422','374','375','423','424','425','426','438','439','440','441','442','443','444','445','446','447','460','461','467','468','469','470','471','449','450','451','452','453','454') AND `type` = 1 AND `status` = 1  [ RunTime:0.0540s ]
+SQL: SHOW COLUMNS FROM `lh_farmer` [ RunTime:0.0490s ]
+SQL: SELECT * FROM `lh_farmer` WHERE `del_status` = 1  [ RunTime:0.0500s ]
+SQL: SELECT * FROM `lh_farmer` WHERE `del_status` = 1 ORDER BY `id` DESC LIMIT 0,20   [ RunTime:0.0480s ]
+SQL: SHOW COLUMNS FROM `lh_technology` [ RunTime:0.0500s ]
+SQL: SELECT * FROM `lh_technology` WHERE `id` = 78 LIMIT 1   [ RunTime:0.0530s ]
+SQL: SHOW COLUMNS FROM `lh_farmer_commodity` [ RunTime:0.0480s ]
+SQL: SELECT `commodity_id` FROM `lh_farmer_commodity` WHERE `farmer_id` = 285 AND `del_status` = 1  [ RunTime:0.0500s ]
+SQL: SHOW COLUMNS FROM `lh_province` [ RunTime:0.0560s ]
+SQL: SELECT * FROM `lh_province` WHERE `id` = null LIMIT 1   [ RunTime:0.0480s ]
+SQL: SHOW COLUMNS FROM `lh_city` [ RunTime:0.0510s ]
+SQL: SELECT * FROM `lh_city` WHERE `id` = null LIMIT 1   [ RunTime:0.0470s ]
+SQL: SHOW COLUMNS FROM `lh_area` [ RunTime:0.0480s ]
+SQL: SELECT * FROM `lh_area` WHERE `id` = null LIMIT 1   [ RunTime:0.0530s ]
+SQL: SELECT * FROM `lh_technology` WHERE `id` = 78 LIMIT 1   [ RunTime:0.0470s ]
+SQL: SELECT `commodity_id` FROM `lh_farmer_commodity` WHERE `farmer_id` = 284 AND `del_status` = 1  [ RunTime:0.0490s ]
+SQL: SELECT * FROM `lh_province` WHERE `id` = null LIMIT 1   [ RunTime:0.0490s ]
+SQL: SELECT * FROM `lh_city` WHERE `id` = null LIMIT 1   [ RunTime:0.0510s ]
+SQL: SELECT * FROM `lh_area` WHERE `id` = null LIMIT 1   [ RunTime:0.0480s ]
+SQL: SELECT * FROM `lh_technology` WHERE `id` = null LIMIT 1   [ RunTime:0.0480s ]
+SQL: SELECT `commodity_id` FROM `lh_farmer_commodity` WHERE `farmer_id` = 283 AND `del_status` = 1  [ RunTime:0.0510s ]
+SQL: SELECT * FROM `lh_province` WHERE `id` = null LIMIT 1   [ RunTime:0.0550s ]
+SQL: SELECT * FROM `lh_city` WHERE `id` = null LIMIT 1   [ RunTime:0.0550s ]
+SQL: SELECT * FROM `lh_area` WHERE `id` = null LIMIT 1   [ RunTime:0.0480s ]
+SQL: SELECT * FROM `lh_technology` WHERE `id` = 50 LIMIT 1   [ RunTime:0.0490s ]
+SQL: SELECT `commodity_id` FROM `lh_farmer_commodity` WHERE `farmer_id` = 282 AND `del_status` = 1  [ RunTime:0.0500s ]
+SQL: SHOW COLUMNS FROM `lh_commodity` [ RunTime:0.0490s ]
+SQL: SELECT `commodity_sort_id` FROM `lh_commodity` WHERE `id` IN ('41') AND `status` = 1 AND `del_status` = 1  [ RunTime:0.0470s ]
+SQL: SHOW COLUMNS FROM `lh_commodity_sort` [ RunTime:0.0490s ]
+SQL: SELECT `name` FROM `lh_commodity_sort` WHERE `id` IN ('8')  [ RunTime:0.0480s ]
+SQL: SELECT * FROM `lh_province` WHERE `id` = null LIMIT 1   [ RunTime:0.0470s ]
+SQL: SELECT * FROM `lh_city` WHERE `id` = null LIMIT 1   [ RunTime:0.0510s ]
+SQL: SELECT * FROM `lh_area` WHERE `id` = null LIMIT 1   [ RunTime:0.0510s ]
+SQL: SELECT * FROM `lh_technology` WHERE `id` = 112 LIMIT 1   [ RunTime:0.0500s ]
+SQL: SELECT `commodity_id` FROM `lh_farmer_commodity` WHERE `farmer_id` = 281 AND `del_status` = 1  [ RunTime:0.0490s ]
+SQL: SELECT `commodity_sort_id` FROM `lh_commodity` WHERE `id` IN ('41') AND `status` = 1 AND `del_status` = 1  [ RunTime:0.0480s ]
+SQL: SELECT `name` FROM `lh_commodity_sort` WHERE `id` IN ('8')  [ RunTime:0.0510s ]
+SQL: SELECT * FROM `lh_province` WHERE `id` = null LIMIT 1   [ RunTime:0.0470s ]
+SQL: SELECT * FROM `lh_city` WHERE `id` = null LIMIT 1   [ RunTime:0.0480s ]
+SQL: SELECT * FROM `lh_area` WHERE `id` = null LIMIT 1   [ RunTime:0.0500s ]
+SQL: SELECT * FROM `lh_technology` WHERE `id` = 117 LIMIT 1   [ RunTime:0.0510s ]
+SQL: SELECT `commodity_id` FROM `lh_farmer_commodity` WHERE `farmer_id` = 280 AND `del_status` = 1  [ RunTime:0.0490s ]
+SQL: SELECT * FROM `lh_province` WHERE `id` = null LIMIT 1   [ RunTime:0.0500s ]
+SQL: SELECT * FROM `lh_city` WHERE `id` = null LIMIT 1   [ RunTime:0.0490s ]
+SQL: SELECT * FROM `lh_area` WHERE `id` = null LIMIT 1   [ RunTime:0.0520s ]
+SQL: SELECT * FROM `lh_technology` WHERE `id` = 109 LIMIT 1   [ RunTime:0.0480s ]
+SQL: SELECT `commodity_id` FROM `lh_farmer_commodity` WHERE `farmer_id` = 279 AND `del_status` = 1  [ RunTime:0.0480s ]
+SQL: SELECT * FROM `lh_province` WHERE `id` = null LIMIT 1   [ RunTime:0.0510s ]
+SQL: SELECT * FROM `lh_city` WHERE `id` = null LIMIT 1   [ RunTime:0.0500s ]
+SQL: SELECT * FROM `lh_area` WHERE `id` = null LIMIT 1   [ RunTime:0.0470s ]
+SQL: SELECT * FROM `lh_technology` WHERE `id` = 118 LIMIT 1   [ RunTime:0.0480s ]
+SQL: SELECT `commodity_id` FROM `lh_farmer_commodity` WHERE `farmer_id` = 278 AND `del_status` = 1  [ RunTime:0.0500s ]
+SQL: SELECT * FROM `lh_province` WHERE `id` = null LIMIT 1   [ RunTime:0.0520s ]
+SQL: SELECT * FROM `lh_city` WHERE `id` = null LIMIT 1   [ RunTime:0.0470s ]
+SQL: SELECT * FROM `lh_area` WHERE `id` = null LIMIT 1   [ RunTime:0.0490s ]
+SQL: SELECT * FROM `lh_technology` WHERE `id` = 122 LIMIT 1   [ RunTime:0.0480s ]
+SQL: SELECT `commodity_id` FROM `lh_farmer_commodity` WHERE `farmer_id` = 277 AND `del_status` = 1  [ RunTime:0.0470s ]
+SQL: SELECT `commodity_sort_id` FROM `lh_commodity` WHERE `id` IN ('19') AND `status` = 1 AND `del_status` = 1  [ RunTime:0.0480s ]
+SQL: SELECT `name` FROM `lh_commodity_sort` WHERE `id` IN ('1')  [ RunTime:0.0510s ]
+SQL: SELECT * FROM `lh_province` WHERE `id` = null LIMIT 1   [ RunTime:0.0520s ]
+SQL: SELECT * FROM `lh_city` WHERE `id` = null LIMIT 1   [ RunTime:0.0490s ]
+SQL: SELECT * FROM `lh_area` WHERE `id` = null LIMIT 1   [ RunTime:0.0500s ]
+SQL: SELECT * FROM `lh_technology` WHERE `id` = 129 LIMIT 1   [ RunTime:0.0490s ]
+SQL: SELECT `commodity_id` FROM `lh_farmer_commodity` WHERE `farmer_id` = 276 AND `del_status` = 1  [ RunTime:0.0470s ]
+SQL: SELECT * FROM `lh_province` WHERE `id` = null LIMIT 1   [ RunTime:0.0470s ]
+SQL: SELECT * FROM `lh_city` WHERE `id` = null LIMIT 1   [ RunTime:0.0470s ]
+SQL: SELECT * FROM `lh_area` WHERE `id` = null LIMIT 1   [ RunTime:0.0480s ]
+SQL: SELECT * FROM `lh_technology` WHERE `id` = 130 LIMIT 1   [ RunTime:0.0490s ]
+SQL: SELECT `commodity_id` FROM `lh_farmer_commodity` WHERE `farmer_id` = 275 AND `del_status` = 1  [ RunTime:0.0540s ]
+SQL: SELECT * FROM `lh_province` WHERE `id` = null LIMIT 1   [ RunTime:0.0490s ]
+SQL: SELECT * FROM `lh_city` WHERE `id` = null LIMIT 1   [ RunTime:0.0490s ]
+SQL: SELECT * FROM `lh_area` WHERE `id` = null LIMIT 1   [ RunTime:0.0470s ]
+SQL: SELECT * FROM `lh_technology` WHERE `id` = 121 LIMIT 1   [ RunTime:0.0500s ]
+SQL: SELECT `commodity_id` FROM `lh_farmer_commodity` WHERE `farmer_id` = 274 AND `del_status` = 1  [ RunTime:0.0470s ]
+SQL: SELECT `commodity_sort_id` FROM `lh_commodity` WHERE `id` IN ('45') AND `status` = 1 AND `del_status` = 1  [ RunTime:0.0470s ]
+SQL: SELECT `name` FROM `lh_commodity_sort` WHERE `id` IN ('1')  [ RunTime:0.0480s ]
+SQL: SELECT * FROM `lh_province` WHERE `id` = null LIMIT 1   [ RunTime:0.0480s ]
+SQL: SELECT * FROM `lh_city` WHERE `id` = null LIMIT 1   [ RunTime:0.0480s ]
+SQL: SELECT * FROM `lh_area` WHERE `id` = null LIMIT 1   [ RunTime:0.0470s ]
+SQL: SELECT * FROM `lh_technology` WHERE `id` = 125 LIMIT 1   [ RunTime:0.0480s ]
+SQL: SELECT `commodity_id` FROM `lh_farmer_commodity` WHERE `farmer_id` = 273 AND `del_status` = 1  [ RunTime:0.0470s ]
+SQL: SELECT * FROM `lh_province` WHERE `id` = null LIMIT 1   [ RunTime:0.0510s ]
+SQL: SELECT * FROM `lh_city` WHERE `id` = null LIMIT 1   [ RunTime:0.0560s ]
+SQL: SELECT * FROM `lh_area` WHERE `id` = null LIMIT 1   [ RunTime:0.0480s ]
+SQL: SELECT * FROM `lh_technology` WHERE `id` = 120 LIMIT 1   [ RunTime:0.0500s ]
+SQL: SELECT `commodity_id` FROM `lh_farmer_commodity` WHERE `farmer_id` = 272 AND `del_status` = 1  [ RunTime:0.0500s ]
+SQL: SELECT `commodity_sort_id` FROM `lh_commodity` WHERE `id` IN ('21') AND `status` = 1 AND `del_status` = 1  [ RunTime:0.0480s ]
+SQL: SELECT `name` FROM `lh_commodity_sort` WHERE `id` IN ('1')  [ RunTime:0.0500s ]
+SQL: SELECT * FROM `lh_province` WHERE `id` = null LIMIT 1   [ RunTime:0.0500s ]
+SQL: SELECT * FROM `lh_city` WHERE `id` = null LIMIT 1   [ RunTime:0.0470s ]
+SQL: SELECT * FROM `lh_area` WHERE `id` = null LIMIT 1   [ RunTime:0.0550s ]
+SQL: SELECT * FROM `lh_technology` WHERE `id` = 111 LIMIT 1   [ RunTime:0.0490s ]
+SQL: SELECT `commodity_id` FROM `lh_farmer_commodity` WHERE `farmer_id` = 271 AND `del_status` = 1  [ RunTime:0.0470s ]
+SQL: SELECT * FROM `lh_province` WHERE `id` = null LIMIT 1   [ RunTime:0.0530s ]
+SQL: SELECT * FROM `lh_city` WHERE `id` = null LIMIT 1   [ RunTime:0.0500s ]
+SQL: SELECT * FROM `lh_area` WHERE `id` = null LIMIT 1   [ RunTime:0.0530s ]
+SQL: SELECT * FROM `lh_technology` WHERE `id` = 112 LIMIT 1   [ RunTime:0.0540s ]
+SQL: SELECT `commodity_id` FROM `lh_farmer_commodity` WHERE `farmer_id` = 270 AND `del_status` = 1  [ RunTime:0.0490s ]
+SQL: SELECT `commodity_sort_id` FROM `lh_commodity` WHERE `id` IN ('25') AND `status` = 1 AND `del_status` = 1  [ RunTime:0.0510s ]
+SQL: SELECT `name` FROM `lh_commodity_sort` WHERE `id` IN ('1')  [ RunTime:0.0510s ]
+SQL: SELECT * FROM `lh_province` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0470s ]
+SQL: SELECT * FROM `lh_city` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0470s ]
+SQL: SELECT * FROM `lh_area` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0480s ]
+SQL: SELECT * FROM `lh_technology` WHERE `id` = 108 LIMIT 1   [ RunTime:0.0510s ]
+SQL: SELECT `commodity_id` FROM `lh_farmer_commodity` WHERE `farmer_id` = 269 AND `del_status` = 1  [ RunTime:0.0470s ]
+SQL: SELECT `commodity_sort_id` FROM `lh_commodity` WHERE `id` IN ('35') AND `status` = 1 AND `del_status` = 1  [ RunTime:0.0470s ]
+SQL: SELECT `name` FROM `lh_commodity_sort` WHERE `id` IN ('1')  [ RunTime:0.0480s ]
+SQL: SELECT * FROM `lh_province` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0480s ]
+SQL: SELECT * FROM `lh_city` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0470s ]
+SQL: SELECT * FROM `lh_area` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0500s ]
+SQL: SELECT * FROM `lh_technology` WHERE `id` = 113 LIMIT 1   [ RunTime:0.0570s ]
+SQL: SELECT `commodity_id` FROM `lh_farmer_commodity` WHERE `farmer_id` = 268 AND `del_status` = 1  [ RunTime:0.0520s ]
+SQL: SELECT * FROM `lh_province` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0540s ]
+SQL: SELECT * FROM `lh_city` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0500s ]
+SQL: SELECT * FROM `lh_area` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0610s ]
+SQL: SELECT * FROM `lh_technology` WHERE `id` = 119 LIMIT 1   [ RunTime:0.0540s ]
+SQL: SELECT `commodity_id` FROM `lh_farmer_commodity` WHERE `farmer_id` = 267 AND `del_status` = 1  [ RunTime:0.0480s ]
+SQL: SELECT `commodity_sort_id` FROM `lh_commodity` WHERE `id` IN ('35') AND `status` = 1 AND `del_status` = 1  [ RunTime:0.0480s ]
+SQL: SELECT `name` FROM `lh_commodity_sort` WHERE `id` IN ('1')  [ RunTime:0.0530s ]
+SQL: SELECT * FROM `lh_province` WHERE `id` = null LIMIT 1   [ RunTime:0.0500s ]
+SQL: SELECT * FROM `lh_city` WHERE `id` = null LIMIT 1   [ RunTime:0.0490s ]
+SQL: SELECT * FROM `lh_area` WHERE `id` = null LIMIT 1   [ RunTime:0.0470s ]
+SQL: SELECT * FROM `lh_technology` WHERE `id` = 103 LIMIT 1   [ RunTime:0.0480s ]
+SQL: SELECT `commodity_id` FROM `lh_farmer_commodity` WHERE `farmer_id` = 266 AND `del_status` = 1  [ RunTime:0.0470s ]
+SQL: SELECT `commodity_sort_id` FROM `lh_commodity` WHERE `id` IN ('26') AND `status` = 1 AND `del_status` = 1  [ RunTime:0.0530s ]
+SQL: SELECT `name` FROM `lh_commodity_sort` WHERE `id` IN ('1')  [ RunTime:0.0530s ]
+SQL: SELECT * FROM `lh_province` WHERE `id` = null LIMIT 1   [ RunTime:0.0470s ]
+SQL: SELECT * FROM `lh_city` WHERE `id` = null LIMIT 1   [ RunTime:0.0480s ]
+SQL: SELECT * FROM `lh_area` WHERE `id` = null LIMIT 1   [ RunTime:0.0470s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined variable: name G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\ff06b107c338d1dfa1e1b4ee1ad20ef9.php 第 282 行.
+NOTIC: [8] Undefined variable: phone G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\ff06b107c338d1dfa1e1b4ee1ad20ef9.php 第 284 行.
+NOTIC: [8] Array to string conversion G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\ff06b107c338d1dfa1e1b4ee1ad20ef9.php 第 363 行.
+NOTIC: [8] Array to string conversion G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\ff06b107c338d1dfa1e1b4ee1ad20ef9.php 第 363 行.
+NOTIC: [8] Array to string conversion G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\ff06b107c338d1dfa1e1b4ee1ad20ef9.php 第 363 行.
+NOTIC: [8] Array to string conversion G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\ff06b107c338d1dfa1e1b4ee1ad20ef9.php 第 363 行.
+NOTIC: [8] Array to string conversion G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\ff06b107c338d1dfa1e1b4ee1ad20ef9.php 第 363 行.
+NOTIC: [8] Array to string conversion G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\ff06b107c338d1dfa1e1b4ee1ad20ef9.php 第 363 行.
+NOTIC: [8] Array to string conversion G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\ff06b107c338d1dfa1e1b4ee1ad20ef9.php 第 363 行.
+NOTIC: [8] Array to string conversion G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\ff06b107c338d1dfa1e1b4ee1ad20ef9.php 第 363 行.
+NOTIC: [8] Array to string conversion G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\ff06b107c338d1dfa1e1b4ee1ad20ef9.php 第 363 行.
+NOTIC: [8] Array to string conversion G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\ff06b107c338d1dfa1e1b4ee1ad20ef9.php 第 363 行.
+NOTIC: [8] Array to string conversion G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\ff06b107c338d1dfa1e1b4ee1ad20ef9.php 第 363 行.
+NOTIC: [8] Array to string conversion G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\ff06b107c338d1dfa1e1b4ee1ad20ef9.php 第 363 行.
+NOTIC: [8] Array to string conversion G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\ff06b107c338d1dfa1e1b4ee1ad20ef9.php 第 363 行.
+NOTIC: [8] Array to string conversion G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\ff06b107c338d1dfa1e1b4ee1ad20ef9.php 第 363 行.
+NOTIC: [8] Array to string conversion G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\ff06b107c338d1dfa1e1b4ee1ad20ef9.php 第 363 行.
+NOTIC: [8] Array to string conversion G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\ff06b107c338d1dfa1e1b4ee1ad20ef9.php 第 363 行.
+NOTIC: [8] Array to string conversion G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\ff06b107c338d1dfa1e1b4ee1ad20ef9.php 第 363 行.
+NOTIC: [8] Array to string conversion G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\ff06b107c338d1dfa1e1b4ee1ad20ef9.php 第 363 行.
+NOTIC: [8] Array to string conversion G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\ff06b107c338d1dfa1e1b4ee1ad20ef9.php 第 363 行.
+NOTIC: [8] Array to string conversion G:\phpStudy\PHPTutorial\WWW\longhuanongye\Application\Runtime\Cache\Admin\ff06b107c338d1dfa1e1b4ee1ad20ef9.php 第 363 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.230070s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.232070s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007000s ]
+

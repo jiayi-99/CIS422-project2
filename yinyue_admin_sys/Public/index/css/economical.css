@@ -1,0 +1,58 @@
+.progress{
+    color: #202020;
+    font-size: 12px;
+    padding: 23px 28px;
+  }
+  .progress-count{
+    position: relative;
+    padding-right: 25%;
+  }
+  .count{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    color: #AAAAAA;
+  }
+  .progress-question{
+    font-size: 11px;
+    padding-top:20px;
+    text-align: right;
+  }
+  .progress-question span{
+    border-bottom: 1px solid #202020;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  .content{
+    padding:0px 12px;
+  }
+  .list{
+    position: relative;
+    padding: 10px 12px;
+    margin-bottom: 16px;
+    box-shadow: 0px 0px 5px 0px #bdbdbd;
+    border-radius: 5px;
+  }
+  .list-title{
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .list-info{
+    font-size: 12px;
+    color: #aaaaaa;
+    padding-left: 30px;
+    line-height: 14px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    /* text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden; */
+  }
+  .more{
+    position: absolute;
+    right: 12px;
+    top: 0px;
+    line-height: 64px;
+    font-size: 20px;
+    color: #AAAAAA;
+  }

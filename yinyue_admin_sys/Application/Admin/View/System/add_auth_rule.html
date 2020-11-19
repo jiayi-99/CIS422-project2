@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+
+<html>
+
+<include file="Common:head" />
+
+
+
+<link href="__PUBLIC__/webuploader/webuploader.css" rel="stylesheet">
+
+<body>
+
+<include file="Common:nav" />
+
+
+
+<div id="page-wrapper" class="gray-bg" style="min-height: 720px;">
+
+
+
+    <include file="Common:header" />
+
+
+
+    <div class="row wrapper border-bottom white-bg page-heading">
+
+        <div class="col-lg-12">
+
+            <if condition="$form['id'] neq null">
+
+                <h2>规则编辑</h2>
+
+                <else />
+
+                <h2>规则添加</h2>
+
+            </if>
+
+            <ol class="breadcrumb">
+
+
+
+                <li>
+
+                    <if condition="$form['id'] neq null">
+
+                        <strong>规则编辑</strong>
+
+                        <else />
+
+                        <strong>规则添加</strong>
+
+                    </if>
+
+                </li>
+
+            </ol>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <div class="wrapper wrapper-content animated">
+
+        <div class="row">
+
+
+
+            <div class="col-lg-12">
+
+
+
+                <div class="ibox float-e-margins">
+
+
+
+                    <div class="ibox-title">
+
+                        <if condition="$form['id'] neq null">
+
+                            <h5>规则编辑</h5>
+
+                            <else />
+
+                            <h5>规则添加</h5>
+
+                        </if>
+
+
+
+
+
+                        <div class="ibox-tools">
+
+                            <a class="collapse-link">
+
+                                <i class="fa fa-chevron-up"></i>
+
+                            </a>
+
+
+
+                            <a class="close-link">
+
+                                <i class="fa fa-times"></i>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="ibox-content" style="display: block;">
+
+                        <if condition="$form['id'] neq null">
+
+
+
+                            <form autocomplete="off" action="__URL__/admin_edit" method="post" class="form-horizontal">
+
+                                <input type="hidden" name="id" value="{$form.id}" />
+
+
+
+                                <else />
+
+
+
+                                <form autocomplete="off" action="__URL__/admin_add" method="post" class="form-horizontal">
+
+
+
+                        </if>
+
+
+
+
+                        <div class="form-group">
+
+                            <label class="col-sm-2 control-label">所属分类</label>
+
+                            <div class="col-sm-10 col-lg-3">
+
+                                <select name="auth_group_id" class="form-control">
+
+                                    <volist name="auth_group" id="vo">
+
+                                        <option value="{$vo['id']}" <eq name="form['auth_group_id']" value="$vo['id']">selected="selected"</eq> >{$vo["title"]}</option>
+
+                                    </volist>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+
+
+                        <div class="form-group">
+
+                            <label class="col-sm-2 control-label">地址</label>
+
+                            <div class="col-sm-10 col-lg-6">
+
+                                <input name="account" id="" type="text" value="{$form['account']}" class="form-control"  placeholder="请输入账号" />
+
+                            </div>
+
+                        </div>
+
+
+
+
+                        <div class="form-group">
+
+                            <label class="col-sm-2 control-label">标题</label>
+
+                            <div class="col-sm-10 col-lg-6">
+
+                                <input name="name" id="" type="text" value="{$form['name']}" class="form-control"  placeholder="请输入名称" />
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label class="col-sm-2 control-label">状态</label>
+
+                            <div class="col-sm-10 col-lg-3">
+
+                                <select name="status" class="form-control">
+
+                                    <option value="0" <eq name="form['status']" value="0">selected="selected"</eq> >正常</option>
+
+                                    <option value="1" <eq name="form['status']" value="1">selected="selected"</eq> >禁用</option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+
+
+
+
+
+                        <div class="hr-line-dashed"></div>
+
+
+
+                        <div class="form-group">
+
+                            <div class="col-sm-4 col-sm-offset-2">
+
+                                <button class="btn btn-primary" type="submit">提交</button>
+
+                                <span class="btn btn-white" onclick="window.location.reload()">取消</span>
+
+                            </div>
+
+                        </div>
+
+
+
+
+
+                        </form>
+
+                    </div>
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+
+    <include file="Common:footer" />
+
+
+
+</div>
+
+
+
+<include file="Common:js" />
+
+
+
+<script type="text/javascript" src="__PUBLIC__/webuploader/webuploader.js"></script>
+
+<script>
+
+
+
+    /*上传按钮id,显示图片id，进度条id，图片地址*/
+
+    function upimg(upbuttonid,showimgid,progressbar,inputimage){
+
+
+
+        // Web Uploader实例
+
+        var uploader;
+
+
+
+        // 初始化Web Uploader
+
+        uploader = WebUploader.create({
+
+
+
+            // 自动上传。
+
+            auto : true,
+
+
+
+            // swf文件路径
+
+            swf : '__PUBLIC__/webuploader/Uploader.swf',
+
+
+
+            // 文件接收服务端。
+
+            server : '__APP__/Common/uploadimg',
+
+
+
+            // 选择文件的按钮。可选。
+
+            // 内部根据当前运行是创建，可能是input元素，也可能是flash.
+
+            pick : "#"+upbuttonid,
+
+
+
+            // 只允许选择文件，可选。
+
+            accept : {
+
+                title : 'Images',
+
+                extensions : 'gif,jpg,jpeg,bmp,png',
+
+                mimeTypes : 'image/*'
+
+            },
+
+
+
+        });
+
+
+
+        // 当有文件添加进来的时候
+
+        uploader.on('fileQueued', function(file) {
+
+            var $img = $('#'+showimgid);
+
+            // 创建缩略图
+
+            uploader.makeThumb(file, function(error, src) {
+
+                if (error) {
+
+                    $img.replaceWith('<span>不能预览</span>');
+
+                    return;
+
+                }
+
+                $img.attr('src', src);
+
+                //缩略图显示大小
+
+            }, 100, 100);
+
+        });
+
+
+
+        // 文件上传过程中创建进度条实时显示。
+
+        uploader.on('uploadProgress', function(file, percentage) {
+
+            var $li = $('#'+progressbar), $percent = $li.find('.progress span');
+
+
+
+            // 避免重复创建
+
+            if (!$percent.length) {
+
+                $percent = $('<p class="progress"><span></span></p>').appendTo(
+
+                    $li).find('span');
+
+            }
+
+
+
+            $percent.css('width', percentage * 100 + '%');
+
+        });
+
+
+
+        // 文件上传成功，给item添加成功class, 用样式标记上传成功。
+
+        uploader.on('uploadSuccess', function(file,response) {
+
+            $('#'+progressbar).addClass('upload-state-done');
+
+            if(response.status == 200){
+
+                $("#logo").val(response.pic_url);
+
+                //设置图片新地址
+
+                $("#"+showimgid).attr("src",response.pic_url);
+
+
+
+                $("#"+inputimage).val(response.pic_url);
+
+            }else{
+
+
+
+            }
+
+        });
+
+
+
+        // 文件上传失败，现实上传出错。
+
+        uploader.on('uploadError', function(file) {
+
+            var $li = $('#'+progressbar), $error = $li.find('div.error');
+
+            // 避免重复创建
+
+            if (!$error.length) {
+
+                $error = $('<div class="error"></div>').appendTo($li);
+
+            }
+
+            $error.text('上传失败');
+
+        });
+
+
+
+        // 完成上传完了，成功或者失败，先删除进度条。
+
+        uploader.on('uploadComplete', function(file) {
+
+            $('#'+progressbar).find('.progress').remove();
+
+        });
+
+    }
+
+
+
+    upimg('icon_btn','icon_img','icon_progressbar','icon');
+
+
+
+</script>
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,165 @@
+/* pages/index/national.wxss */
+.banner{
+    width:100%;
+    height:128px;
+}
+.active-con{
+    position: relative;
+    padding:30px 18px 0px;
+}
+.active-line{
+    font-size:14px;
+    color:#505050;
+    line-height:21px;
+    margin-bottom:30px;
+}
+.active-title{
+    color:#EC3238;
+    font-size: 14px;
+    background: #FFEEF0;
+    line-height: 25px;
+    height: 24px;
+    display: inline-block;
+    padding:0px 12px;
+    border-radius: 20px;
+    margin-bottom: 16px;
+}
+.active-btn{
+    position: relative;
+    left: 50%;
+    font-size: 16px;
+    line-height:40px;
+    display: inline-block;
+    padding:0px 40px; 
+    color:#ffffff;
+    background: -webkit-linear-gradient(#F7464C, #E11E24); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#F7464C, #E11E24); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#F7464C, #E11E24); /* Firefox 3.6 - 15 */
+    background: linear-gradient(#F7464C, #E11E24); /* 标准的语法 */
+    border-radius: 20px;
+    transform: translate(-50%,0%);
+}
+.active-rule{
+    position: absolute;
+    width: 80px;
+    height:29px;
+    top:30px;
+    right:0px;
+}
+.mask{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#000000;
+    z-index:1;
+    opacity:0.7;
+    -moz-opacity:0.7;
+    filter:alpha(opacity=70);
+}
+.apply{
+    position: fixed;
+    min-height: 200px;
+    bottom: 0px;
+    left: 0px;
+    background: #ffffff;
+    z-index: 1;
+    line-height: 26px;
+    padding: 45px 29px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    box-sizing: border-box;
+
+}
+.apply-con{
+  font-size: 16px;
+  color:#505050;
+}
+.apply-btn{
+    position:fixed;
+    font-size:15px;
+    text-align:center;
+    left:50%;
+    color:#ffffff;
+    background:-webkit-linear-gradient(#F7464C, #E11E24);
+    background:-o-linear-gradient(#F7464C, #E11E24);
+    background:-moz-linear-gradient(#F7464C, #E11E24);
+    background:linear-gradient(#F7464C, #E11E24);
+    line-height:36px;
+    margin-left: -42%;
+    bottom: 10px;
+    width: 84%;
+    border-radius: 20px;
+}
+.apply-close{
+    position:absolute;
+    top:12px;
+    right:12px;
+    width:30px;
+    height:30px;
+
+}
+.active-tishi{
+    font-size: 12px;
+    color:#505050;
+    text-align: center;
+    line-height:36px;
+    letter-spacing:2px;
+}
+.active-tishi span{
+    color:#FF5F78;
+}   
+.rule-box{
+    position:fixed;
+    width:85%;
+    font-size:15px;
+    padding:18px;
+    box-sizing:border-box;
+    background:#ffffff;
+    left:50%;
+    top:50%;
+    -webkit-transform:translate(-50%,-50%);
+    transform:translate(-50%,-50%);
+    z-index:99999991;
+    border-radius:12px;
+    background:#ffffff;
+    min-height:100px;
+}
+.rule-con{
+    min-height: 100px;
+    max-height:300px;
+    overflow-y:auto;
+    overflow-y:script;
+}
+.rule-close{
+    position:absolute;
+    left:50%;
+    width:30px;
+    height:30px;
+    bottom:-45px;
+    margin-left:-15px;
+}
+.tip{
+    position:fixed;
+    text-align: center;
+    width:80%;
+    font-size:15px;
+    box-sizing:border-box;
+    background:#ffffff;
+    left:50%;
+    top:50%;
+    -webkit-transform:translate(-50%,-50%);
+    transform:translate(-50%,-50%);
+    z-index:999;
+    border-radius:6px;
+    background:#ffffff;
+}
+.tip-title{
+    line-height:20px;
+    padding:35px 12px;
+}
+.tip-btn{
+    border-top:1px solid #dddddd;
+    line-height:32px;
+}

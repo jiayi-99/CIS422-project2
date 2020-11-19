@@ -1,0 +1,33 @@
+<header class="row border-bottom">
+	<nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+		<div class="navbar-header">
+			<a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+		</div>
+		<ul class="nav navbar-top-links navbar-right">
+			<li>
+				<span class="m-r-sm text-muted welcome-message"><a href="index.html" title="Back to homepage"><i class="fa fa-home"></i></a>Hello，<?php echo session("admin.name"); ?>，Welcome to login</span>
+			</li>
+			<!--<li class="dropdown">
+				<a class="dropdown-toggle count-info" data-toggle="dropdown" href="index.html#">
+					<i class="fa fa-envelope"></i> <span class="label label-warning">16</span>
+				</a>
+			</li>
+			<li class="dropdown">
+				<a class="dropdown-toggle count-info" data-toggle="dropdown" href="index.html#">
+					<i class="fa fa-bell"></i> <span class="label label-primary">8</span>
+				</a>
+			</li>-->
+			<li>
+				<a href="__APP__/Login/login_out">
+					<i class="fa fa-sign-out"></i> drop out
+				</a>
+			</li>
+		</ul>
+	</nav>
+</header>
+
+<div id="message_inform" style="position: fixed; bottom: -160px; right: 16px; z-index: 999999999; width: 240px; height: auto; text-align: center; background-color: #F6F6F6; border: 1px solid #666666; border-radius: 3px; transition: width 1s linear 2s; -moz-transition: all 1s; -webkit-transition: all 1s; -o-transition: all 1s;">
+	<div style="line-height: 32px; background-color: #2A3542; color: white;">消息通知</div>
+	<div id="push_message" style="line-height: 24px; box-sizing: border-box; padding: 8px; text-align: left; color: #2A3542;">
+	</div>
+</div>
