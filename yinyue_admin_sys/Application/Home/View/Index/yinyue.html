@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>login</title>
+    <title>yinyue</title>
     <link href="__PUBLIC__/hplus/static/js/plugins/layui/css/layui.css" rel="stylesheet">
     <script src="__PUBLIC__/hplus/static/js/jquery-2.1.1.min.js"></script>
     <script src="__PUBLIC__/hplus/static/js/plugins/layui/layui.js" charset="utf-8"></script>
@@ -19,6 +19,8 @@
         <ul class="layui-tab-title">
             <li class="layui-this">search Center</li>
             <li>my collection</li>
+            <li>Singer management</li>
+            <li>Song management</li>
         </ul>
         <div class="layui-tab-content" style="height: 100px;">
             <div class="layui-tab-item layui-show">
@@ -93,22 +95,125 @@
                     </table>
                 </div>
             </div>
+            <div class="layui-tab-item">
+                <!--                <div class="layui-form-item" style="width: 400px;display: inline-block;">-->
+                <!--                    <label class="layui-form-label">歌曲名称</label>-->
+                <!--                    <div class="layui-input-block">-->
+                <!--                        <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入歌曲名称" class="layui-input">-->
+                <!--                    </div>-->
+                <!--                </div>-->
+                <!--                <button type="button" class="layui-btn layui-btn-primary">搜索</button>-->
+
+                <div class="layui-form">
+                    <table class="layui-table">
+                        <colgroup>
+                            <col width="150">
+                            <col width="150">
+                            <col width="200">
+                            <col>
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th>name</th>
+                            <th>artist name</th>
+                            <th>createtime</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <button type="button" class="layui-btn layui-btn-primary" @click="add()">add</button>
+                        <tr v-for="item in singer_list">
+                            <td>{{item.name}}</td>
+                            <td>{{item.createtime}}</td>
+                            <td>
+                                <button type="button" class="layui-btn layui-btn-primary" @click="edit(item.id)">edit</button>
+                                <button type="button" class="layui-btn layui-btn-primary" @click="del(item.id)">delete</button>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="layui-tab-item">
+                <button type="button" class="layui-btn layui-btn-primary" @click="add1()">add</button>
+                <div class="layui-form">
+                    <table class="layui-table">
+                        <colgroup>
+                            <col width="150">
+                            <col width="150">
+                            <col width="200">
+                            <col>
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th>singer_name</th>
+                            <th>name</th>
+                            <th>createtime</th>
+                            <th>operating</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr v-for="item in song_list">
+                            <td>{{item.singer_name}}</td>
+                            <td>{{item.name}}</td>
+                            <td>{{item.createtime}}</td>
+                            <td>
+                                <button type="button" class="layui-btn layui-btn-primary" @click="edit1(item.id)">edit</button>
+                                <button type="button" class="layui-btn layui-btn-primary" @click="del1(item.id)">delete</button>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
     </div>
 
+
+    <div class="layui-form" id="xinxi" style="display: none;margin-top: 20px;">
+        <div class="layui-form-item">
+            <label class="layui-form-label">name</label>
+            <div class="layui-input-block">
+                <input type="text" name="name" autocomplete="off" placeholder="Please enter the singer" class="layui-input" v-model="name">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button type="submit" class="layui-btn" @click="tijao">submit</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="layui-form" id="xinxi1" style="display: none;margin-top: 20px;">
+
+        <div class="layui-inline">
+            <label class="layui-form-label">singer</label>
+            <div class="layui-input-inline">
+                <select name="modules" lay-verify="required" lay-search="" lay-filter="singer_text" id="singer_text">
+                    <option value="">Direct selection or search selection</option>
+                    <option :value="item.id" v-for="item in singer_list">{{item.name}}</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="layui-form-item" style="margin-top: 20px;">
+            <label class="layui-form-label">name</label>
+            <div class="layui-input-block">
+                <input type="text" name="name1" autocomplete="off" placeholder="Please enter the song" class="layui-input" v-model="name1">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button type="submit" class="layui-btn" lay-submit="" lay-filter="demo1" @click="tijao1">submit</button>
+            </div>
+        </div>
+    </div>
 
 
 </div>
 
 <script>
-    layui.use(['form', 'layedit', 'laydate','element'], function(){
-        var form = layui.form
-            ,layer = layui.layer
-            ,layedit = layui.layedit
-            ,laydate = layui.laydate;
-
-    });
-
+    var form,layer,layedit,laydate;
     new Vue({
         el: '#app',
         headers: {
@@ -118,11 +223,16 @@
             user:JSON.parse(localStorage.getItem("user"))?JSON.parse(localStorage.getItem("user")):"",
             gequ_list:[],
             name:"",
-            my_shoucang_list:[]
+            my_shoucang_list:[],
+            singer_list:[],
+            id:"",
+            name:"",
+            song_list:[],
+            name1:"",
+            singer_id:""
         },
         methods: {
             tijiao:function () {
-
                 let nickname=$("#nickname").val();
                 let sex = $('input[name="sex"]:checked').val();
                 let account=$("#account").val();
@@ -138,7 +248,7 @@
                         password:password
                     },
                     success: function (res) {
-                        res=JSON.parse(res)
+                        res=JSON.parse(res);
                         layer.alert(res.msg);
                     },
                 });
@@ -161,7 +271,7 @@
 
                     },
                     success: function (res) {
-                        res=JSON.parse(res)
+                        res=JSON.parse(res);
                         _this.gequ_list=res.data;
                     },
                 });
@@ -175,6 +285,45 @@
                     success: function (res) {
                         res=JSON.parse(res)
                         _this.my_shoucang_list=res.data;
+                    },
+                });
+
+                $.ajax({
+                    type: "get",
+                    url: "__URL__/singer",
+                    data: {
+
+                    },
+                    success: function (res) {
+                        res=JSON.parse(res);
+                        _this.singer_list=res.data;
+                        $(function () {
+                            form.render('select');
+                            form.on('select(singer_text)', function (data) {
+                                console.log(data.value);
+                                _this.singer_id=data.value;
+                            });
+                        })
+                    },
+                });
+
+                $.ajax({
+                    type: "get",
+                    url: "__URL__/song_list",
+                    data: {
+
+                    },
+                    success: function (res) {
+                        res=JSON.parse(res);
+                        _this.song_list=res.data;
+                        $(function () {
+                            form.render('select');
+                            form.on('select(singer)', function (data) {
+                                console.log(data.value);
+                                _this.singer_id=data.value;
+                            });
+                        })
+
                     },
                 });
 
@@ -223,15 +372,156 @@
                         _this.request();
                     },
                 });
+            },
+            add:function () {
+                let _this=this;
+                _this.name="";
+                //页面层
+                layer.open({
+                    type: 1,
+                    skin: 'layui-layer-rim',//加上边框
+                    area: ['420px', '240px'],//宽高
+                    content: $("#xinxi")
+                });
+            },
+            tijao:function () {
+                let _this=this;
+                $.ajax({
+                    type: "get",
+                    url: "__URL__/add_singer",
+                    data: {
+                        id:_this.id,
+                        name:_this.name
+                    },
+                    success: function (res) {
+                        res=JSON.parse(res);
+                        layer.msg(res.msg);
+                        _this.request();
+                        layer.closeAll();
+                    },
+                });
+            },
+            edit:function (id) {
+                let _this=this;
+                _this.id=id;
+                $.ajax({
+                    type: "get",
+                    url: "__URL__/singer_info",
+                    data: {
+                        id:_this.id
+                    },
+                    success: function (res) {
+                        res=JSON.parse(res);
+                        _this.name=res.data.name;
+                        layer.open({
+                            type: 1,
+                            skin: 'layui-layer-rim',//加上边框
+                            area: ['420px', '240px'],//宽高
+                            content: $("#xinxi")
+                        });
+                    },
+                });
+            },
+            del:function (id) {
+                let _this=this;
+                _this.id=id;
+                $.ajax({
+                    type: "get",
+                    url: "__URL__/del_singer",
+                    data: {
+                        id:_this.id
+                    },
+                    success: function (res) {
+                        res=JSON.parse(res);
+                        layer.msg(res.msg);
+                        _this.request();
+                    },
+                });
+            },
+            add1:function () {
+                let _this=this;
+                _this.name1="";
+                $("#singer_text").val("");
+                form.render('select');
+                //页面层
+                layer.open({
+                    type: 1,
+                    skin: 'layui-layer-rim',//加上边框
+                    area: ['420px', '240px'],//宽高
+                    content: $("#xinxi1")
+                });
+            },
+            edit1:function (id) {
+                let _this=this;
+                _this.id1=id;
+                $.ajax({
+                    type: "get",
+                    url: "__URL__/song_info",
+                    data: {
+                        id:_this.id1
+                    },
+                    success: function (res) {
+                        res=JSON.parse(res);
+                        _this.name1=res.data.name;
+                        $("#singer_text").val(res.data.singer_id);
+                        form.render('select');
+                        layer.open({
+                            type: 1,
+                            skin: 'layui-layer-rim',//加上边框
+                            area: ['420px', '240px'],//宽高
+                            content: $("#xinxi1")
+                        });
+                    },
+                });
+            },
+            tijao1:function () {
+                let _this=this;
+                $.ajax({
+                    type: "get",
+                    url: "__URL__/add_song",
+                    data: {
+                        id1:_this.id1,
+                        singer_id:_this.singer_id,
+                        name1:_this.name1
+                    },
+                    success: function (res) {
+                        res=JSON.parse(res);
+                        layer.msg(res.msg);
+                        _this.request();
+                        layer.closeAll();
+                    },
+                });
+            },
+            del1:function (id) {
+                let _this=this;
+                $.ajax({
+                    type: "get",
+                    url: "__URL__/del_song",
+                    data: {
+                        id:id
+                    },
+                    success: function (res) {
+                        res=JSON.parse(res);
+                        layer.msg(res.msg);
+                        _this.request();
+                    },
+                });
             }
         },
         mounted() {
             let _this = this;
-            if (!localStorage.getItem("user")){
-                // layer.msg("未登录，请登录");
-                window.location.href="__URL__/login";
-            }
-            _this.request();
+            layui.use(['form', 'layedit', 'laydate','element'], function(){
+                form=layui.form
+                    ,layer = layui.layer
+                    ,layedit = layui.layedit
+                    ,laydate = layui.laydate;
+                if (!localStorage.getItem("user")){
+                    // layer.msg("未登录，请登录");
+                    window.location.href="__URL__/login";
+                }
+                _this.request();
+            });
+
         }
     })
 

@@ -138,6 +138,111 @@ class IndexController extends Controller
         exit;
     }
 
+    /*获取歌手列表*/
+    public function singer(){
+        $user_id=I("user_id");
+        $where=[];
+//        $where["user_id"]=$user_id;
+        $singer=M("singer")->where($where)->order("id desc")->select();
+        $list=[];
+        foreach ($singer as $key=>$value){
+            $list[$key]=$value;
+            //处理时间
+            $list[$key]["createtime"]=date("Y-m-d H:i:s",$value["createtime"]);
+        }
+        echo json_encode(array("msg"=>"successful","data"=>$list,"code"=>200));
+        exit;
+    }
+
+    /*添加歌手*/
+    public function add_singer(){
+        $id=I("id");
+        $name=I("name");
+        $data=[];
+        $data["name"]=$name;
+        if ($id){
+            M("singer")->where(array("id"=>$id))->save($data);
+            echo json_encode(array("msg"=>"successful","data"=>$data,"code"=>200));
+            exit;
+        }else{
+            $data["createtime"]=time();
+            M("singer")->add($data);
+            echo json_encode(array("msg"=>"successful","data"=>$data,"code"=>200));
+            exit;
+        }
+
+    }
+
+    /*获取歌手详情*/
+    public function singer_info(){
+        $id=I("id");
+        $singer=M("singer")->where(array("id"=>$id))->find();
+        echo json_encode(array("msg"=>"successful","data"=>$singer,"code"=>200));
+        exit;
+    }
+
+
+    /*删除歌手*/
+    public function del_singer(){
+        $id=I("id");
+        $singer=M("singer")->where(array("id"=>$id))->delete();
+        echo json_encode(array("msg"=>"successful","code"=>200));
+        exit;
+    }
+
+    /*获取歌曲列表*/
+    public function song_list(){
+        $song=M("song")->order("id desc")->select();
+        $list=[];
+        foreach ($song as $key=>$value){
+            $list[$key]=$value;
+            //获取歌手信息
+            $singer=M("singer")->where(array("id"=>$value["singer_id"]))->find();
+            $list[$key]["singer_name"]=$singer["name"];
+            //处理时间
+            $list[$key]["createtime"]=date("Y-m-d H:i:s",$value["createtime"]);
+        }
+        echo json_encode(array("msg"=>"successful","data"=>$list,"code"=>200));
+        exit;
+    }
+
+    /*添加、编辑歌曲*/
+    public function add_song(){
+        $id=I("id1");
+        $singer_id=I("singer_id");
+        $name=I("name1");
+        $data=[];
+        $data["name"]=$name;
+        $data["singer_id"]=$singer_id;
+        if ($id){
+            M("song")->where(array("id"=>$id))->save($data);
+            echo json_encode(array("msg"=>"successful","data"=>$data,"code"=>200));
+            exit;
+        }else{
+            $data["createtime"]=time();
+            M("song")->add($data);
+            echo json_encode(array("msg"=>"successful","data"=>$data,"code"=>200));
+            exit;
+        }
+    }
+
+    /*获取详细信息*/
+    public function song_info(){
+        $id=I("id");
+        $song=M("song")->where(array("id"=>$id))->find();
+        echo json_encode(array("msg"=>"successful","data"=>$song,"code"=>200));
+        exit;
+    }
+
+    /*删除歌曲*/
+    public function del_song(){
+        $id=I("id");
+        $singer=M("song")->where(array("id"=>$id))->delete();
+        echo json_encode(array("msg"=>"successful","code"=>200));
+        exit;
+    }
+
+
 
 
 
