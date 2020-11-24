@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign In</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="main">
+
+        <!-- Sing in  Form -->
+        <section class="sign-in">
+            <div class="container">
+                <div class="signin-content">
+
+                    <div class="signin-form">
+                        <h2 class="form-title">Sign in</h2>
+                        <form class="register-form" name="login_form" id="login_form" method="post" onsubmit="return false">
+                            <div class="form-group ">
+                                <label for="your_email"><i class="zmdi zmdi-email "></i></label>
+                                <input type="text" name="your_email" id="your_email" placeholder="Your Email" />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
+                                <input type="password" name="your_pass" id="your_pass" placeholder="Password" />
+                            </div>
+                            <div class="form-group form-button">
+                                <input type="submit" name="signin" id="signin" class="form-submit" onclick='return validateForm()' value="Log in" />
+
+                            </div>
+                            <ul id="errors" class="label-has-error ul-error"></ul>
+                        </form>
+                        <div class="social-login">
+                            <span class="social-label">Or</span>
+                            <a href="register.html" class="signup-image-link">Create an account</a>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- JS -->
+    <script src="js/jquery.min.js"></script>
+    <script>
+        function validateForm() {
+
+            var email = $('#your_email');
+            var password = $('#your_pass');
+            var validEmail = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+            var containsDigit = /[0-9]/;
+            var containsCap = /[A-Z]/;
+
+            var invalid = [];
+            if ($(email).val().length === 0) {
+                invalid.push("Email cannot be blank");
+                $(email).addClass('error')
+                $(email).parent().find('label').addClass('label-has-error')
+
+            } else if (!validEmail.test($(email).val())) {
+                invalid.push("Invalid email address");
+                $(email).addClass('error')
+                $(email).parent().find('label').addClass('label-has-error')
+
+            } else {
+                $(email).removeClass('error')
+                $(email).parent().find('label').removeClass('label-has-error')
+            }
+            if ($(password).val().length === 0) {
+                invalid.push("Password cannot be blank");
+                $(password).addClass('error')
+                $(password).parent().find('label').addClass('label-has-error')
+            } else if ($(password).val().length < 8) {
+                invalid.push("Password must be at least 8 characters long");
+                $(password).addClass('error')
+                $(password).parent().find('label').addClass('label-has-error')
+            } else if (!containsCap.test($(password).val())) {
+                invalid.push("Password must have at least one capital letter");
+                $(password).addClass('error')
+                $(password).parent().find('label').addClass('label-has-error')
+            } else if (!containsDigit.test($(password).val())) {
+                invalid.push("Password must have at least one numeric character (0-9)");
+                $(password).addClass('error')
+                $(password).parent().find('label').addClass('label-has-error')
+            } else {
+                $(password).removeClass('error')
+                $(password).parent().find('label').removeClass('label-has-error')
+            }
+
+            if (invalid.length !== 0) {
+                $('#errors li').remove()
+                var output = ''
+                invalid.forEach(element => {
+                    $('#errors').append('<li>' + element + '</li>')
+                });
+
+            } else {
+                $('#errors li').remove()
+                $(password).removeClass('error')
+                $(password).parent().find('label').removeClass('label-has-error')
+                $(email).removeClass('error')
+                $(email).parent().find('label').removeClass('label-has-error')
+            }
+        };
+    </script>
+
+</body>
+
+</html>
