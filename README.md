@@ -35,6 +35,7 @@
 ## Team contribution and schedule:
 
 Lambert(Xingzhi): login interface account system, Song Cloud system, service & database, document
+
 Jiayi: login interface webpage, service & database, maintain & test, document
  
 
