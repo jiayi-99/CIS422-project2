@@ -37,5 +37,6 @@
 Lambert(Xingzhi): login interface account system, Song Cloud system, service & database, document
 
 Jiayi: login interface webpage, service & database, maintain & test, document
+![Image text](https://github.com/jiayi-99/CIS422-project2/blob/main/img/5561606269179_.pic_hd.jpg)
  
 
