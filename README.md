@@ -12,15 +12,15 @@
   
  1. You need to create the new account when he first time to use this system
    
-   Click "registered" to create a new account
+       Click "registered" to create a new account
    
  2. You can use your account and password to login in the system
    
-   Click "log in" to enter your account
+       Click "log in" to enter your account
    
  3. After the user log in to the account
    
-   you can search the song that you want to collect
+       you can search the song that you want to collect
    
  4. if it doesn't have the song that you need:
        
