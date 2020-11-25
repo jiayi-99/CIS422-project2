@@ -1,4 +1,4 @@
-## design documentation:
+## Design Documentation:
 Log in to the system:
 Contains login page and registration page, and links each user, stores user information in the database
 ![Image text](https://github.com/jiayi-99/CIS422-project2/blob/main/img/WechatIMG1922%201.jpeg)
