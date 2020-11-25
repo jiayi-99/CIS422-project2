@@ -10,24 +10,24 @@
 // +----------------------------------------------------------------------
 
 /**
- * Think 系统函数库
- */
+  * Think system library
+  */
 
 /**
- * 获取和设置配置参数 支持批量定义
- * @param string|array $name 配置变量
- * @param mixed $value 配置值
- * @param mixed $default 默认值
- * @return mixed
- */
+  * Get and set configuration parameters, support batch definition
+  * @param string|array $name configuration variable
+  * @param mixed $value configuration value
+  * @param mixed $default default value
+  * @return mixed
+  */
 function C($name = null, $value = null, $default = null)
 {
     static $_config = array();
-    // 无参数时获取所有
+   
     if (empty($name)) {
         return $_config;
     }
-    // 优先执行设置获取或赋值
+  // Prioritize setting acquisition or assignment
     if (is_string($name)) {
         if (!strpos($name, '.')) {
             $name = strtoupper($name);
@@ -56,12 +56,7 @@ function C($name = null, $value = null, $default = null)
     return null; // 避免非法参数
 }
 
-/**
- * 加载配置文件 支持格式转换 仅支持一级配置
- * @param string $file 配置文件名
- * @param string $parse 配置解析方法 有些格式需要用户自己解析
- * @return array
- */
+
 function load_config($file, $parse = CONF_PARSE)
 {
     $ext = pathinfo($file, PATHINFO_EXTENSION);
@@ -86,8 +81,7 @@ function load_config($file, $parse = CONF_PARSE)
 }
 
 /**
- * 解析yaml文件返回一个数组
- * @param string $file 配置文件名
+ * @param string $file 
  * @return array
  */
 if (!function_exists('yaml_parse_file')) {
@@ -99,9 +93,8 @@ if (!function_exists('yaml_parse_file')) {
 }
 
 /**
- * 抛出异常处理
- * @param string $msg 异常消息
- * @param integer $code 异常代码 默认为0
+ * @param string $msg 
+ * @param integer $code 0
  * @throws Think\Exception
  * @return void
  */
