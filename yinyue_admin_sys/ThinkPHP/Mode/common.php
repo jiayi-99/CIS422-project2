@@ -10,16 +10,16 @@
 // +----------------------------------------------------------------------
 
 /**
- * ThinkPHP 普通模式定义
+ * ThinkPHP 
  */
 return array(
-    // 配置文件
+   
     'config' => array(
-        THINK_PATH . 'Conf/convention.php', // 系统惯例配置
-        CONF_PATH . 'config' . CONF_EXT, // 应用公共配置
+        THINK_PATH . 'Conf/convention.php', 
+        CONF_PATH . 'config' . CONF_EXT, 
     ),
 
-    // 别名定义
+  
     'alias'  => array(
         'Think\Log'               => CORE_PATH . 'Log' . EXT,
         'Think\Log\Driver\File'   => CORE_PATH . 'Log/Driver/File' . EXT,
@@ -32,7 +32,7 @@ return array(
         'Think\Storage'           => CORE_PATH . 'Storage' . EXT,
     ),
 
-    // 函数和类文件
+  
     'core'   => array(
         THINK_PATH . 'Common/functions.php',
         COMMON_PATH . 'Common/function.php',
@@ -47,25 +47,25 @@ return array(
         BEHAVIOR_PATH . 'ParseTemplateBehavior' . EXT,
         BEHAVIOR_PATH . 'ContentReplaceBehavior' . EXT,
     ),
-    // 行为扩展定义
+  
     'tags'   => array(
         'app_init'        => array(
-            'Behavior\BuildLiteBehavior', // 生成运行Lite文件
+            'Behavior\BuildLiteBehavior', //  built Lite
         ),
         'app_begin'       => array(
-            'Behavior\ReadHtmlCacheBehavior', // 读取静态缓存
+            'Behavior\ReadHtmlCacheBehavior', 
         ),
         'app_end'         => array(
-            'Behavior\ShowPageTraceBehavior', // 页面Trace显示
+            'Behavior\ShowPageTraceBehavior', // show Trace
         ),
         'view_parse'      => array(
-            'Behavior\ParseTemplateBehavior', // 模板解析 支持PHP、内置模板引擎和第三方模板引擎
+            'Behavior\ParseTemplateBehavior', 
         ),
         'template_filter' => array(
-            'Behavior\ContentReplaceBehavior', // 模板输出替换
+            'Behavior\ContentReplaceBehavior', 
         ),
         'view_filter'     => array(
-            'Behavior\WriteHtmlCacheBehavior', // 写入静态缓存
+            'Behavior\WriteHtmlCacheBehavior', 
         ),
     ),
 );
