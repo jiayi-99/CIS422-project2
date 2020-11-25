@@ -3,7 +3,7 @@
 ## Music Cloud System
  
 ## Description:
-  This is the system that can help the user save their own song list. The user can add and delete their favorite songs in their own account.
+  This is the system that can help the user save their own song list. The user can add and delete their favorite songs in their own account.When users want to use our code, please download/use the code in yinyue_admin_sys directly, it is the code of all projects
   
 ## Website:
   http://yy.mandyapp.com/Home.php/Index/login
