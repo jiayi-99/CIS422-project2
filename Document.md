@@ -4,8 +4,11 @@ Contains login page and registration page, and links each user, stores user info
 ![Image text](https://github.com/jiayi-99/CIS422-project2/blob/main/img/WechatIMG1922%201.jpeg)
 2. Favorite playlist
 Function: 1. Search system, you can search the playlist in the existing database
+
           2. Save favorite playlist
+	  
           3. Users can add their favorite singer and song
+	  
 ![Image text](https://raw.githubusercontent.com/jiayi-99/CIS422-project2/main/img/WechatIMG552.jpeg)
 ![Image text](https://github.com/jiayi-99/CIS422-project2/blob/main/img/WechatIMG554.png)
 ## Test Case
