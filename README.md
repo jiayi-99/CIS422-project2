@@ -31,3 +31,6 @@
        Then collect the song you just added
                
  5. You also can go to "my collection" to delete the songs that you don't need
+ 
+ ##Requirements and design documentation:
+![Image text](https://raw.githubusercontent.com/jiayi-99/CIS422-project2/main/img/WechatIMG552.jpeg)
