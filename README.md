@@ -32,4 +32,7 @@
                
  5. You also can go to "my collection" to delete the songs that you don't need
  
+ ## Team contribution and schedule:
+ https://www.wrike.com/frontend/ganttchart/index.html?snapshotId=jrcd9iVAmjWK8687lFXLgIj8Vevpcqhb%7CIE2DENBRGY2DQLSTGE3A
+ 
 
