@@ -25,10 +25,10 @@ if (MEMORY_LIMIT_ON) {
 const THINK_VERSION = '3.2.5';
 
 // URL 模式定义
-const URL_COMMON   = 0; //普通模式
-const URL_PATHINFO = 1; //PATHINFO模式
-const URL_REWRITE  = 2; //REWRITE模式
-const URL_COMPAT   = 3; // 兼容模式
+const URL_COMMON   = 0; 
+const URL_PATHINFO = 1; //PATHINFO
+const URL_REWRITE  = 2; //REWRITE
+const URL_COMPAT   = 3; 
 
 // 类文件后缀
 const EXT = '.class.php';
@@ -36,21 +36,21 @@ const EXT = '.class.php';
 // 系统常量定义
 defined('THINK_PATH') or define('THINK_PATH', __DIR__ . '/');
 defined('APP_PATH') or define('APP_PATH', dirname($_SERVER['SCRIPT_FILENAME']) . '/');
-defined('APP_STATUS') or define('APP_STATUS', ''); // 应用状态 加载对应的配置文件
-defined('APP_DEBUG') or define('APP_DEBUG', false); // 是否调试模式
+defined('APP_STATUS') or define('APP_STATUS', ''); 
+defined('APP_DEBUG') or define('APP_DEBUG', false); 
 
 if (function_exists('saeAutoLoader')) {
-// 自动识别SAE环境
+// SAE
     defined('APP_MODE') or define('APP_MODE', 'sae');
     defined('STORAGE_TYPE') or define('STORAGE_TYPE', 'Sae');
 } else {
-    defined('APP_MODE') or define('APP_MODE', 'common'); // 应用模式 默认为普通模式
-    defined('STORAGE_TYPE') or define('STORAGE_TYPE', 'File'); // 存储类型 默认为File
+    defined('APP_MODE') or define('APP_MODE', 'common'); 
+    defined('STORAGE_TYPE') or define('STORAGE_TYPE', 'File'); 
 }
 
-defined('RUNTIME_PATH') or define('RUNTIME_PATH', APP_PATH . 'Runtime/'); // 系统运行时目录
+defined('RUNTIME_PATH') or define('RUNTIME_PATH', APP_PATH . 'Runtime/'); 
 defined('LIB_PATH') or define('LIB_PATH', realpath(THINK_PATH . 'Library') . '/'); // 系统核心类库目录
-defined('CORE_PATH') or define('CORE_PATH', LIB_PATH . 'Think/'); // Think类库目录
+defined('CORE_PATH') or define('CORE_PATH', LIB_PATH . 'Think/'); // Think lib
 defined('BEHAVIOR_PATH') or define('BEHAVIOR_PATH', LIB_PATH . 'Behavior/'); // 行为类库目录
 defined('MODE_PATH') or define('MODE_PATH', THINK_PATH . 'Mode/'); // 系统应用模式目录
 defined('VENDOR_PATH') or define('VENDOR_PATH', LIB_PATH . 'Vendor/'); // 第三方类库目录
@@ -66,7 +66,7 @@ defined('CONF_EXT') or define('CONF_EXT', '.php'); // 配置文件后缀
 defined('CONF_PARSE') or define('CONF_PARSE', ''); // 配置文件解析方法
 defined('ADDON_PATH') or define('ADDON_PATH', APP_PATH . 'Addon');
 
-// 系统信息
+
 if (version_compare(PHP_VERSION, '5.4.0', '<')) {
     ini_set('magic_quotes_runtime', 0);
     define('MAGIC_QUOTES_GPC', get_magic_quotes_gpc() ? true : false);
@@ -78,10 +78,10 @@ define('IS_WIN', strstr(PHP_OS, 'WIN') ? 1 : 0);
 define('IS_CLI', PHP_SAPI == 'cli' ? 1 : 0);
 
 if (!IS_CLI) {
-    // 当前文件名
+    
     if (!defined('_PHP_FILE_')) {
         if (IS_CGI) {
-            //CGI/FASTCGI模式下
+            //CGI/FASTCGI
             $_temp = explode('.php', $_SERVER['PHP_SELF']);
             define('_PHP_FILE_', rtrim(str_replace($_SERVER['HTTP_HOST'], '', $_temp[0] . '.php'), '/'));
         } else {
@@ -94,7 +94,7 @@ if (!IS_CLI) {
     }
 }
 
-// 加载核心Think类
+
 require CORE_PATH . 'Think' . EXT;
-// 应用初始化
+
 Think\Think::start();
