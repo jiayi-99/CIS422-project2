@@ -26,8 +26,8 @@
        
        You can click "singer management" to add the singer
                
-               click "song management" to add the song
+       You can click "song management" to add the song
                
-               then collect it
+       Then collect the song you just added
                
  5. You also can go to "my collection" to delete the songs that you don't need
