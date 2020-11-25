@@ -33,4 +33,5 @@
  5. You also can go to "my collection" to delete the songs that you don't need
  
  ##Requirements and design documentation:
+![Image text](https://github.com/jiayi-99/CIS422-project2/blob/main/img/WechatIMG1922%201.jpeg)
 ![Image text](https://raw.githubusercontent.com/jiayi-99/CIS422-project2/main/img/WechatIMG552.jpeg)
