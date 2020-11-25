@@ -35,3 +35,4 @@
  ##Requirements and design documentation:
 ![Image text](https://github.com/jiayi-99/CIS422-project2/blob/main/img/WechatIMG1922%201.jpeg)
 ![Image text](https://raw.githubusercontent.com/jiayi-99/CIS422-project2/main/img/WechatIMG552.jpeg)
+![Image text](https://github.com/jiayi-99/CIS422-project2/blob/main/img/WechatIMG554.png)
