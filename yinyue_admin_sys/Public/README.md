@@ -1,1 +1,1 @@
-﻿资源文件目录
+Resource file directory
